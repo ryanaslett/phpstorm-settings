@@ -1,0 +1,9 @@
+<toolSet name="Drupal">
+  <tool name="Link to cgit" description="adds a link to cgit to your clipboard" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="false">
+    <exec>
+      <option name="COMMAND" value="pasteboard" />
+      <option name="PARAMETERS" value="http://cgit.drupalcode.org/$ProjectName$/tree/$FileRelativePath$#n$LineNumber$" />
+      <option name="WORKING_DIRECTORY" value="/usr/local/bin" />
+    </exec>
+  </tool>
+</toolSet>

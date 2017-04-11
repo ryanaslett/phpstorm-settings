@@ -1,0 +1,7 @@
+<templateSet group="Drupal 8">
+  <template name="placeholder" value="// @todo" description="D8" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+</templateSet>

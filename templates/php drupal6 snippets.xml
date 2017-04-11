@@ -1,0 +1,32 @@
+<templateSet group="php drupal6">
+  <template name="menu6_item" value="$$items['$PATH$'] = array(&#10;  'title' =&gt; '$TITLE$',&#10;  'description' =&gt; '$DESCRIPTION$',&#10;  'page callback' =&gt; '$PAGE_CALLBACK$',&#10;  'page arguments' =&gt; array(),&#10;  'access arguments' =&gt; array('access content'),&#10;  'type' =&gt; MENU_CALLBACK | MENU_NORMAL_ITEM,&#10;);&#10;&#10;$END$&#10;" description="Drupal6 Menu: item" toReformat="true" toShortenFQNames="true">
+    <variable name="PATH" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TITLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PAGE_CALLBACK" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="drupal6_form" value="/**&#10; * @see hook_form().&#10; */&#10;function $FORM_NAME$_form($$form_state) {&#10;  $$form = array();&#10;  &#10;  $END$&#10;  &#10;  return $$form;&#10;}&#10;&#10;/**&#10; * @see hook_form_validate().&#10; */&#10;function $FORM_NAME$_form_validate($$form_id, $$form_state) {&#10;  $$values =&amp; $$form_state['values'];&#10;  &#10;  if (FALSE) {&#10;    form_set_error('${form_element_name}', t('${error_message}'));&#10;  }&#10;}&#10;&#10;/**&#10; * @see hook_form_submit().&#10; */&#10;function $FORM_NAME$_form_submit($$form_id, $$form_state) {&#10;  $$values =&amp; $$form_state['values'];&#10;  &#10;  drupal_set_message(t('Das Formular $FORM_NAME$ wurde erfolgreich abgespeichert.'));&#10;}&#10;" description="Drupal6 Form" toReformat="true" toShortenFQNames="true">
+    <variable name="FORM_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="drupal6_info" value="; Author: $AUTHOR_NAME$&#10;name = $MODULE_NAME$&#10;description = $DESCRIPTION$&#10;package = $PACKAGE$&#10;core = 6.x&#10;$END$" description="Drupal6: .info" toReformat="true" toShortenFQNames="true">
+    <variable name="AUTHOR_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="MODULE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PACKAGE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="CSS" value="false" />
+      <option name="OTHER" value="true" />
+      <option name="PHP" value="false" />
+      <option name="XML" value="false" />
+      <option name="SQL" value="false" />
+      <option name="HTML" value="false" />
+    </context>
+  </template>
+</templateSet>

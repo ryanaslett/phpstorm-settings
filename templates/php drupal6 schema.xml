@@ -1,0 +1,45 @@
+<templateSet group="php drupal6 db schema">
+  <template name="schema6_int" value="'$NAME$' =&gt; array(&#10;  'description' =&gt; '$DESCRIPTION$',&#10;  'type' =&gt; 'int',&#10;  'unsigned' =&gt; TRUE,&#10;  'not null' =&gt; TRUE,&#10;  'default' =&gt; 0&#10;),&#10;$END$" description="Drupal6 Schema: int" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="schema6_serial" value="'$NAME$' =&gt; array(&#10;  'description' =&gt; '$DESCRIPTION$',&#10;  'type' =&gt; 'serial',&#10;  'unsigned' =&gt; TRUE,&#10;  'not null' =&gt; TRUE,&#10;),&#10;$END$" description="Drupal6 Schema: serial" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="schema6_table" value="$$schema['$NAME$'] = array(&#10;  'description' =&gt; '$DESCRIPTION$',&#10;  'fields' =&gt; array(&#10;    $END$&#10;  ),&#10;  'indexes' =&gt; array(&#10;    '$INDEX_1$' =&gt; array('$INDEX_1$'),&#10;    '$INDEX_2$' =&gt; array('$INDEX_2$'),    &#10;  ),&#10;  'unique keys' =&gt; array(&#10;    '$UNIQUE_1$' =&gt; array('$FIELD_1$', '$FIELD_2$'),&#10;    '$UNIQUE_2$' =&gt; array('$FIELD_3$'),      &#10;  ),&#10;  'primary key' =&gt; array(&#10;  &#9;'$PRIMARY_KEY$'&#10;  ),&#10;);" description="Drupal6 Schema: table" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="INDEX_1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="INDEX_2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="UNIQUE_1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="FIELD_1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="FIELD_2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="UNIQUE_2" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="FIELD_3" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PRIMARY_KEY" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="schema6_text" value="'$NAME$' =&gt; array(&#10;  'description' =&gt; '$DESCRIPTION$',&#10;  'type' =&gt; 'text',&#10;  'size' =&gt; 'normal',&#10;  'not null' =&gt; TRUE,&#10;  'default' =&gt; '',&#10;),&#10;$END$" description="Drupal6 Schema: text" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="schema6_varchar" value="'$NAME$' =&gt; array(&#10;  'description' =&gt; '$DESCRIPTION$',&#10;  'type' =&gt; 'varchar',&#10;  'length' =&gt; 128,&#10;  'not null' =&gt; TRUE,&#10;  'default' =&gt; '',&#10;),&#10;$END$" description="Drupal6 Schema Field: varchar" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+</templateSet>

@@ -1,0 +1,475 @@
+<templateSet group="php drupal6 core hooks">
+  <template name="hook6_action_info" value="/**&#10; * @see hook_action_info().&#10; */&#10;function $MODULE_NAME$_action_info() {&#10;  return array(&#10;    '$ACTION_FUNCTION$_action' =&gt; array(&#10;      'description' =&gt; t(&quot;$DESCRIPTION$&quot;),&#10;      'type' =&gt; '$TYPE$',&#10;      'configurable' =&gt; FALSE,&#10;      'hooks' =&gt; array(&#10;        '$HOOKS$' =&gt; array('insert', 'update'),$END$&#10;      )&#10;    ),&#10;  );&#10;}&#10;" description="Drupal6 Hook: action_info" toReformat="true" toShortenFQNames="true">
+    <variable name="MODULE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ACTION_FUNCTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HOOKS" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="hook6_access" value="/**&#10; * @see hook_access().&#10; */&#10;function $MODULE_NAME$_access($$op, $$node, $$account) {&#10;  switch ($$op) {&#10;    case 'create' :&#10;      return user_access('create $ACCESS_TYPE$', $$account);$END$&#10;      &#10;    case 'view' :&#10;      return user_access('access $ACCESS_TYPE$', $$account);&#10;      &#10;    case 'update' :&#10;    case 'delete' :&#10;      if (user_access('edit own $ACCESS_TYPE$', $$account) &amp;&amp; ($$account-&gt;uid == $$node-&gt;uid)) {&#10;        return TRUE;&#10;      }&#10;  }&#10;  &#10;  return FALSE;&#10;}" description="Drupal6 Hook: access" toReformat="true" toShortenFQNames="true">
+    <variable name="MODULE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ACCESS_TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="hook6_action_info_alter" value="/**&#10; * @see hook_action_info_alter().&#10; */&#10;function $MODULE_NAME$_action_info_alter(&amp;$$actions) {&#10;  ;$END$&#10;}&#10; " description="Drupal6 Hook: action_info_alter" toReformat="true" toShortenFQNames="true">
+    <variable name="MODULE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="hook6_actions_delete" value="/**&#10; * @see hook_actions_delete().&#10; */&#10;function $MODULE_NAME$_actions_delete($$aid) {&#10;  ;$END$&#10;}" description="Drupal6 Hook: actions_delete" toReformat="true" toShortenFQNames="true">
+    <variable name="MODULE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="hook6_block" value="/**&#10; * @see hook_block().&#10; */&#10;function $MODULE_NAME$_block($$op = 'list', $$delta = 0, $$edit = array()) {&#10;  switch ($$op) {&#10;    case 'list' :&#10;      $$blocks = array();&#10;      &#10;      $$blocks[$NAME$] = array(&#10;        'info' =&gt; t('$SUBJECT$'),&#10;      );&#10;      &#10;      return $$blocks;&#10;      &#10;    case 'view' :&#10;      switch ($$delta) {&#10;        case '$NAME$':&#10;          $$block = array(&#10;            'subject' =&gt; t('$SUBJECT$'),&#10;            'content' =&gt; _$FUNCTION$(),&#10;          );&#10;          break;&#10;      }&#10;      &#10;      return $$block;&#10;  }&#10;}&#10;&#10;function _$FUNCTION$() {&#10;  $$output = '';&#10;  &#10;  $$output .= '$END$';&#10;  &#10;  return $$output;&#10;}" description="Drupal6 Hook: block" toReformat="true" toShortenFQNames="true">
+    <variable name="MODULE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="SUBJECT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="FUNCTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="hook6_boot" value="/**&#10; * Implementing hook_boot().&#10; */&#10;function $MODULE_NAME$_boot() {&#10;  ;$END$&#10;}&#10;" description="Drupal6 Hook: boot" toReformat="true" toShortenFQNames="true">
+    <variable name="MODULE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="hook6_comment" value="/**&#10; * @see hook_comment().&#10; */&#10;function $MODULE_NAME$_comment(&amp;$$a1, $$op) {&#10;  if ($$op == 'insert' || $$op == 'update') {&#10;    $$nid = $$a1['nid'];&#10;    $END$&#10;  }&#10;}" description="Drupal6 Hook: comment" toReformat="true" toShortenFQNames="true">
+    <variable name="MODULE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="hook6_comment_full" value="/**&#10; * @see hook_comment().&#10; */&#10;function $MODULE_NAME$_comment(&amp;$$a1, $$op) {&#10;  switch ($$op) {&#10;    case 'validate':&#10;      // form_set_error();&#10;      break;&#10;  &#10;    case 'insert':&#10;    case 'update':&#10;      $END$&#10;      break;&#10;      &#10;    case 'publish':&#10;      break;&#10;      &#10;    case 'unpublish':&#10;      break;&#10;      &#10;    case 'view':&#10;      break;&#10;      &#10;    case 'delete':&#10;      break;&#10;  }&#10;}" description="Drupal6 Hook: comment (full)" toReformat="true" toShortenFQNames="true">
+    <variable name="MODULE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="hook6_cron" value="/**&#10; * @see hook_cron().&#10; */&#10;function $MODULE_NAME$_cron() {&#10;  // $END$drupal_set_message('Module\'s $MODULE_NAME$ cron task is done.');&#10;}" description="Drupal6 Hook: cron" toReformat="true" toShortenFQNames="true">
+    <variable name="MODULE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="hook6_db_rewrite_sql" value="/**&#10; * @see hook_db_rewrite_sql().&#10; */&#10;function $MODULE_NAME$_db_rewrite_sql($$query, $$primary_table, $$primary_field, $$args) {&#10;  switch ($$primary_field) {&#10;    case 'nid':&#10;      $END$&#10;      break;&#10;      &#10;    case 'tid':&#10;      break;&#10;      &#10;    case 'vid':&#10;      break;&#10;  }&#10;}&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="MODULE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="hook6_delete" value="/**&#10; * @see hook_delete().&#10; */&#10;function $MODULE_NAME$_delete(&amp;$$node) {&#10;  $$sql = &quot;&#10;    DELETE FROM {$TABLE$}&#10;    WHERE           nid = %d&#10;    AND                vid = %d&#10;  &quot;;&#10;  &#10;  db_query($$sql, $$node-&gt;nid, $$node-&gt;vid);$END$&#10;}" description="Drupal6 Hook: delete" toReformat="true" toShortenFQNames="true">
+    <variable name="MODULE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TABLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="hook6_disable" value="/**&#10; * @see hook_disable().&#10; */&#10;function $MODULE_NAME$_disable() {&#10;  ;$END$&#10;}&#10;&#10;" description="Drupal6 Hook: disable" toReformat="true" toShortenFQNames="true">
+    <variable name="MODULE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="hook6_elements" value="/**&#10; * @see hook_elements().&#10; */&#10;function $MODULE_NAME$_elements() {&#10;  $$type['filter_format'] = array(&#10;    '#input' =&gt; TRUE,$END$&#10;  );&#10;  &#10;  return $$type;&#10;}&#10;" description="Drupal6 Hook: elements" toReformat="true" toShortenFQNames="true">
+    <variable name="MODULE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="hook6_enable" value="/**&#10; * @see hook_enable().&#10; */&#10;function $MODULE_NAME$_enable() {&#10;  ;$END$&#10;}&#10;&#10;" description="Drupal6 Hook: enable" toReformat="true" toShortenFQNames="true">
+    <variable name="MODULE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="hook6_exit" value="/**&#10; * @see hook_exit().&#10; */&#10;function $MODULE_NAME$_exit($$destination = NULL) {&#10;  ;$END$&#10;}" description="Drupal6 Hook: exit" toReformat="true" toShortenFQNames="true">
+    <variable name="MODULE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="hook6_file_download" value="/**&#10; * @see hook_file_download().&#10; */&#10;function $MODULE_NAME$_file_download($$filepath) {&#10;  if ($$filemime = db_result(db_query(&quot;SELECT filemime FROM {fileupload} WHERE filepath = '%s'&quot;, file_create_path($$filepath)))) {&#10;    if (user_access('access content')) {&#10;      return array('Content-type:' . $$filemime);&#10;    }&#10;    else {&#10;      return -1;&#10;    }&#10;  }$END$&#10;}" description="Drupal6 Hook: file_download" toReformat="true" toShortenFQNames="true">
+    <variable name="MODULE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="hook6_filter" value="/**&#10; * @see hook_filter().&#10; */&#10;function $MODULE_NAME$_filter($$op, $$delta = 0, $$format = -1, $$text = '', $$cache_id = 0) {&#10;  switch ($$op) {&#10;    case 'list':&#10;      return array(0 =&gt; t('Code filter'));$END$&#10;&#10;    case 'description':&#10;      return t('Allows users to post code verbatim using &amp;lt;code&amp;gt; and &amp;lt;?php ?&amp;gt; tags.');&#10;&#10;    case 'prepare':&#10;      // Note: we use the bytes 0xFE and 0xFF to replace &lt; &gt; during the&#10;      // filtering process. These bytes are not valid in UTF-8 data and thus&#10;      // least likely to cause problems.&#10;      $$text = preg_replace('@&lt;code&gt;(.+?)&lt;/code&gt;@se', &quot;'\xFEcode\xFF'. codefilter_escape('\\1') .'\xFE/code\xFF'&quot;, $$text);&#10;      $$text = preg_replace('@&lt;(\?(php)?|%)(.+?)(\?|%)&gt;@se', &quot;'\xFEphp\xFF'. codefilter_escape('\\3') .'\xFE/php\xFF'&quot;, $$text);&#10;      return $$text;&#10;&#10;    case &quot;process&quot;:&#10;      $$text = preg_replace('@\xFEcode\xFF(.+?)\xFE/code\xFF@se', &quot;codefilter_process_code('$$1')&quot;, $$text);&#10;      $$text = preg_replace('@\xFEphp\xFF(.+?)\xFE/php\xFF@se', &quot;codefilter_process_php('$$1')&quot;, $$text);&#10;      return $$text;&#10;&#10;    default:&#10;      return $$text;&#10;  }&#10;}&#10;" description="Drupal6 Hook: filter" toReformat="true" toShortenFQNames="true">
+    <variable name="MODULE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="hook6_filter_tips" value="/**&#10; * @see hook_filter_tips().&#10; */&#10;function $MODULE_NAME$_filter_tips($$delta, $$format, $$long = false) {&#10;  if ($$long) {$END$&#10;    return t('To post pieces of code, surround them with &amp;lt;code&amp;gt;...&amp;lt;/code&amp;gt; tags. For PHP code, you can use &amp;lt;?php ... ?&amp;gt;, which will also colour it based on syntax.');&#10;  }&#10;  else {&#10;    return t('You may post code using &amp;lt;code&amp;gt;...&amp;lt;/code&amp;gt; (generic) or &amp;lt;?php ... ?&amp;gt; (highlighted PHP) tags.');&#10;  }&#10;}&#10;" description="Drupal6 Hook: filter_tips" toReformat="true" toShortenFQNames="true">
+    <variable name="MODULE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="hook6_flush_caches" value="/**&#10; * @see hook_flush_caches().&#10; */&#10;function $MODULE_NAME$_flush_caches() {&#10;  return array(&#10;    'cache_$TABLE_NAME$',$END$&#10;  );&#10;}" description="Drupal6 Hook: flush_caches" toReformat="true" toShortenFQNames="true">
+    <variable name="MODULE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TABLE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="hook6_footer" value="/**&#10; * @see hook_footer().&#10; */&#10;function $MODULE_NAME$_footer($$main = 0) {&#10;  $$output = '';&#10;  &#10;  $END$&#10;  &#10;  return $$output;&#10;}&#10;" description="Drupal6 Hook: footer" toReformat="true" toShortenFQNames="true">
+    <variable name="MODULE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="hook6_form" value="/**&#10; * @see hook_form().&#10; */&#10;function $MODULE_NAME$_form(&amp;$$node, $$form_state) {&#10;  $$form = array();&#10;&#10;  $END$&#10;&#10;  return $$form;&#10;}&#10;&#9;" description="Drupal6 Hook: form" toReformat="true" toShortenFQNames="true">
+    <variable name="MODULE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="hook6_form_alter" value="/**&#10; * @see hook_form_alter().&#10; */&#10;function $MODULE_NAME$_form_alter(&amp;$$form, $$form_state, $$form_id) {&#10;  if ($$form_id != '$FORM_ID$') { &#10;    return;&#10;  }&#10;  &#10;  $END$&#10;}&#10;" description="Drupal6 Hook: form_alter" toReformat="true" toShortenFQNames="true">
+    <variable name="MODULE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="FORM_ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="hook6_FORM_ID_form_alter" value="/**&#10; * @see hook_FORM_ID_form_alter().&#10; */&#10;function $MODULE_NAME$_$FORM_ID$_form_alter(&amp;$$form, $$form_state) {&#10;  ;$END$&#10;}" description="Drupal6 Hook: FORM_IDform_alter" toReformat="true" toShortenFQNames="true">
+    <variable name="MODULE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="FORM_ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="hook6_forms" value="/**&#10; * @see hook_forms().&#10; */&#10;function $MODULE_NAME$_forms($$form_id, $$args) {&#10;  $$forms = array();&#10;&#10;  $forms['$FORM_NAME$'] = array(&#10;    'callback' =&gt; '$FORM_FUNCTION$', &#10;    'callback arguments' =&gt; array('$ARGUMENTS$'),&#10;  );$END$&#10;  &#10;  return $forms;&#10;}" description="Drupal6 Hook: forms" toReformat="true" toShortenFQNames="true">
+    <variable name="MODULE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="FORM_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="FORM_FUNCTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ARGUMENTS" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="hook6_help" value="/**&#10; * @see hook_help().&#10; */&#10;function $MODULE_NAME$_help($$path, $$arg) {&#10;  switch ($$path) {&#10;    case '$NAME$':&#10;      return '&lt;p&gt;'.t('$HELP_TEXT$').'&lt;/p&gt;';$END$&#10;  }&#10;}" description="Drupal6 Hook: help" toReformat="true" toShortenFQNames="true">
+    <variable name="MODULE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HELP_TEXT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="hook6_hook_info" value="/**&#10; * @see hook_hook_info().&#10; */&#10;function $MODULE_NAME$_hook_info() {&#10;  return array(&#10;    '$MODULE_NAME$' =&gt; array(&#10;      // example&#10;      'nodeapi$END$' =&gt; array(&#10;        'presave' =&gt; array(&#10;          'runs when' =&gt; t('When either saving a new post or updating an existing post'),&#10;        ),&#10;        'insert' =&gt; array(&#10;          'runs when' =&gt; t('After saving a new post'),&#10;        ),&#10;      ),&#10;    ),&#10;  );&#10;}&#10;" description="Drupal6 Hook: hook_info" toReformat="true" toShortenFQNames="true">
+    <variable name="MODULE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="hook6_init" value="/**&#10; * @see hook_init().&#10; */&#10;function $MODULE_NAME$_init() {&#10;  ;$END$&#10;}" description="Drupal6 Hook: init" toReformat="true" toShortenFQNames="true">
+    <variable name="MODULE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="hook6_insert" value="/**&#10; * @see hook_insert().&#10; */&#10;function $MODULE_NAME$_insert($$node) {&#10;  $$sql = &quot;&#10;    INSERT INTO {$TABLE$} (&#10;      nid, vid, $COLUMN_NAME$&#10;    ) VALUES (&#10;      %d, %d, '%s'&#10;    )&#10;  &quot;;$END$&#10;  &#10;  db_query($$sql, $$node-&gt;nid, $$node-&gt;vid, $$node-&gt;extra);&#10;}" description="Drupal6 Hook: insert" toReformat="true" toShortenFQNames="true">
+    <variable name="MODULE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TABLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="COLUMN_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="hook6_link" value="/**&#10; * @see hook_link().&#10; */&#10;function $MODULE_NAME$_link($$type, $$object, $$teaser = FALSE) {&#10;  $$links = array();&#10;&#10;  $$links['$UNIQUE_NAME§'] = array(&#10;    'title' =&gt; t('$TITLE$'),&#10;    'href' =&gt; '$DESTINATION$',&#10;    'query' =&gt; '$END$',&#10;    'fragment' =&gt; '',&#10;    'attributes' =&gt; array(&#10;      'title' =&gt; t('$TITLE$')&#10;    ),&#10;  );&#10;&#10;  return $$links;&#10;}" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="MODULE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TITLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DESTINATION" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="hook6_link_alter" value="/**&#10; * @see hook_link_alter().&#10; */&#10;function $MODULE_NAME$_link_alter(&amp;$$links, $$node) {&#10;  foreach ($$links as $$module =&gt; $$link) {&#10;    ;$END$&#10;  }&#10;}" description="Drupal6 Hook: link_alter" toReformat="true" toShortenFQNames="true">
+    <variable name="MODULE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="hook6_load" value="/**&#10; * @see hook_load().&#10; */&#10;function $MODULE_NAME$_load($$node) {&#10;  $$additions = array();&#10;  &#10;  $$sql = &quot;&#10;    SELECT    *&#10;    FROM     {$TABLE$}&#10;    WHERE   nid = %d&#10;    AND        vid = %d&#10;  &quot;;$END$&#10;    &#10;  db_fetch_object($$sql, $$node-&gt;nid, $$node-&gt;vid));&#10;  &#10;  return $$additions;&#10;}" description="Drupal6 Hook: load" toReformat="true" toShortenFQNames="true">
+    <variable name="MODULE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TABLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="hook6_locale" value="/**&#10; * @see hook_locale().&#10; */&#10;function $MODULE_NAME$_locale($$op = 'groups') {&#10;  switch ($$op) {&#10;    case 'groups':&#10;      return array(&#10;        'custom' =&gt; t('$END$')&#10;      );&#10;  }&#10;}" description="Drupal6 Hook: locale" toReformat="true" toShortenFQNames="true">
+    <variable name="MODULE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="hook6_mail" value="/**&#10; * @see hook_mail().&#10; */&#10;function $MODULE_NAME$_mail($$key, &amp;$$message, $$params) {&#10;  ;$END$&#10;}" description="Drupal6 Hook: mail" toReformat="true" toShortenFQNames="true">
+    <variable name="MODULE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="hook6_mail_alter" value="/**&#10; * @see hook_mail_alter().&#10; */&#10;function $MODULE_NAME$_mail_alter(&amp;$$message) {&#10;  ;$END$&#10;}" description="Drupal6 Hook: mail_alter" toReformat="true" toShortenFQNames="true">
+    <variable name="MODULE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="hook6_menu" value="/**&#10; * @see hook_menu().&#10; */&#10;function $MODULE_NAME$_menu() {&#10;  $$items = array();&#10;&#10;  $$items['$PATH$'] = array(&#10;    'title' =&gt; '$TITLE$',&#10;    'description' =&gt; '$DESCRIPTION$',&#10;    'page callback' =&gt; '$CALLBACK$',&#10;    'page arguments' =&gt; array($END$),&#10;    'access arguments' =&gt; array('access content'),&#10;    'type' =&gt; MENU_CALLBACK | MENU_NORMAL_ITEM,&#10;  );&#10; &#10;  return $$items;&#10;}" description="Drupal6 Hook: menu" toReformat="true" toShortenFQNames="true">
+    <variable name="MODULE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PATH" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TITLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CALLBACK" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="hook6_menu_alter" value="/**&#10; * @see hook_menu_alter().&#10; */&#10;function $MODULE_NAME$_menu_alter(&amp;$$items) {&#10;  $$items['$PATH$'] = '$END$;&#10;}" description="Drupal6 Hook: menu_alter" toReformat="true" toShortenFQNames="true">
+    <variable name="MODULE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PATH" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="hook6_menu_link_alter" value="/**&#10; * @see hook_menu_link_alter().&#10; */&#10;function $MODULE_NAME$_menu_link_alter(&amp;$$item, $$menu) {&#10;  ;$END$&#10;}" description="Drupal6 Hook: menu_link_alter" toReformat="true" toShortenFQNames="true">
+    <variable name="MODULE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="hook6_node_access_records" value="/**&#10; * @see hook_node_access_records().&#10; */&#10;function $MODULE_NAME$_node_access_records($$node) {&#10;  if (node_access_example_disabling()) {&#10;    return;$END$&#10;  }&#10;&#10;  // example:&#10;  if ($$node-&gt;private) {&#10;    $$grants = array();&#10;    &#10;    $$grants[] = array(&#10;      'realm' =&gt; 'example',&#10;      'gid' =&gt; TRUE,&#10;      'grant_view' =&gt; TRUE,&#10;      'grant_update' =&gt; FALSE,&#10;      'grant_delete' =&gt; FALSE,&#10;      'priority' =&gt; 0,&#10;    );&#10;&#10;    $$grants[] = array(&#10;      'realm' =&gt; 'example_author',&#10;      'gid' =&gt; $$node-&gt;uid,&#10;      'grant_view' =&gt; TRUE,&#10;      'grant_update' =&gt; TRUE,&#10;      'grant_delete' =&gt; TRUE,&#10;      'priority' =&gt; 0,&#10;    );&#10;    &#10;    return $$grants;&#10;  }&#10;}&#10;" description="Drupal6 Hook: node_access_records" toReformat="true" toShortenFQNames="true">
+    <variable name="MODULE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="hook6_node_grants" value="/**&#10; * @see hook_grants().&#10; */&#10;function $MODULE_NAME$_node_grants($$account, $$op) {&#10;  if (user_access('access private content', $$account)) {&#10;    $$grants['$REALM$'] = array(1);$END$&#10;  }&#10;  &#10;  $$grants['$REALM$_owner'] = array($$user-&gt;uid);&#10;  &#10;  return $$grants;&#10;}&#10;" description="" toReformat="true" toShortenFQNames="true">
+    <variable name="MODULE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="REALM" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="hook6_node_info" value="/**&#10; * @see hook_node_info().&#10; */&#10;function $MODULE_NAME$_node_info() {&#10;  return array(&#10;    '$MODULE_NAME$' =&gt; array(&#10;      'name' =&gt; t('$NAME$'),&#10;      'module' =&gt; '$MODULE_NAME$',&#10;      'description' =&gt; t(&quot;$DESCRIPTION$&quot;),&#10;      'help' =&gt; t(&quot;$HELP$&quot;),&#10;      'has_title' =&gt; TRUE,&#10;      'title_label' =&gt; t('Title'),&#10;      'has_body' =&gt; TRUE,&#10;      'body_label' =&gt; t('Body'),&#10;      'min_word_count' =&gt; 0,&#10;      'locked' =&gt; TRUE,&#10;    )$END$&#10;  );&#10;}" description="Drupal6 Hook: node_info" toReformat="true" toShortenFQNames="true">
+    <variable name="MODULE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HELP" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="hook6_node_operations" value="/**&#10; * @see hook_node_operations().&#10; */&#10;function $MODULE_NAME$_node_operations() {&#10;  return array(&#10;    '${key}' =&gt; array(&#10;      'label' =&gt; t('$DESCRIPTION$'),&#10;      'callback' =&gt; '$CALLBACK$',&#10;      'callback arguments' =&gt; array($END$),&#10;    ),&#10;  );&#10;}" description="Drupal6 Hook: node_operations" toReformat="true" toShortenFQNames="true">
+    <variable name="MODULE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CALLBACK" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="hook6_node_type" value="/**&#10; * @see hook_node_type().&#10; */&#10;function $MODULE_NAME$_node_type($$op, $$info) {&#10;  switch ($$op) {&#10;    case 'insert':&#10;      $END$&#10;      break;&#10;&#10;    case 'update':&#10;      break;&#10;&#10;    case 'delete':&#10;      break;&#10;  }&#10;}&#10;" description="Drupal6 Hook: node_type" toReformat="true" toShortenFQNames="true">
+    <variable name="MODULE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="hook6_nodeapi" value="/**&#10; * @see hook_nodeapi().&#10; */&#10;function $MODULE_NAME$_nodeapi(&amp;$$node, $$op, $$a3 = NULL, $$a4 = NULL) {&#10;  switch ($$op) {&#10;    case 'load':&#10;      break;&#10;      &#10;    case 'insert':&#10;    case 'update':&#10;      $END$&#10;      break;&#10;      &#10;    case 'view':&#10;      break;&#10;  }&#10;}" description="Drupal6 Hook: nodeapi" toReformat="true" toShortenFQNames="true">
+    <variable name="MODULE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="hook6_nodeapi_full" value="/**&#10; * @see hook_nodeapi().&#10; */&#10;function $MODULE_NAME$_nodeapi(&amp;$$node, $$op, $$a3 = NULL, $$a4 = NULL) {&#10;  switch ($$op) {&#10;    case 'load':&#10;      break;&#10;      &#10;    case 'prepare':&#10;      break;&#10;     &#10;    case 'validate':&#10;      break;&#10;      &#10;    case 'insert':&#10;    case 'update':&#10;      $END$&#10;      break;&#10;      &#10;    case 'submit':&#10;      break;&#10;      &#10;    case 'view':&#10;      break;&#10;      &#10;    case 'delete':&#10;      break;&#10;      &#10;    case 'delete revision':&#10;      break;&#10;      &#10;    case 'search result':&#10;      break;&#10;      &#10;    case 'update index':&#10;      break;&#10;      &#10;    case 'print':&#10;      break;&#10;      &#10;    case 'alter':&#10;      break;&#10;      &#10;    case 'rss item':&#10;      break;&#10;  }&#10;}&#10;" description="Drupal6 Hook: nodeapi" toReformat="true" toShortenFQNames="true">
+    <variable name="MODULE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="hook6_perm" value="/**&#10; * @see hook_perm().&#10; */&#10;function $MODULE_NAME$_perm() {&#10;  return array(&#10;  &#9;'$PERMISSION_1$',&#10;  &#9;'$PERMISSION_2$',$END§&#10;  );&#10;}&#10;" description="Drupal6 Hook: perm" toReformat="true" toShortenFQNames="true">
+    <variable name="MODULE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PERMISSION_1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PERMISSION_2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="hook6_ping" value="/**&#10; * @see hook_ping().&#10; */&#10;function $MODULE_NAME$_ping($$name = '', $$url = '') {&#10;  // example code&#10;  $$feed = url('node/feed');$END$&#10;&#10;  $$client = new xmlrpc_client('/RPC2', 'rpc.weblogs.com', 80);&#10;&#10;  $$message = new xmlrpcmsg('weblogUpdates.ping',&#10;    array(new xmlrpcval($$name), new xmlrpcval($$url)));&#10;&#10;  $$result = $$client-&gt;send($$message);&#10;&#10;  if (!$$result || $$result-&gt;faultCode()) {&#10;    watchdog('error', 'failed to notify &quot;weblogs.com&quot; (site)');&#10;  }&#10;&#10;  unset($$client);&#10;}" description="Drupal6 Hook: ping" toReformat="true" toShortenFQNames="true">
+    <variable name="MODULE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="hook6_prepare" value="/**&#10; * @see hook_prepare().&#10; */&#10;function $MODULE_NAME$_prepare(&amp;$$node) {&#10;  ;$END$&#10;}" description="Drupal Hook: prepare" toReformat="true" toShortenFQNames="true">
+    <variable name="MODULE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="hook6_profile_alter" value="/**&#10; * @see hook_profile_alter().&#10; */&#10;function $MODULE_NAME$_profile_alter(&amp;$$account) {&#10;  foreach ($$account-&gt;content as $$key =&gt; $$field) {&#10;    ;$END$&#10;  }&#10;}" description="Drupal6 Hook: profile_alter" toReformat="true" toShortenFQNames="true">
+    <variable name="MODULE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="hook6_schema_alter" value="/**&#10; * @see hook_schema_alter().&#10; */&#10;function $MODULE_NAME$_schema_alter(&amp;$$schema) {&#10;  ;$END$&#10;}&#10; " description="Drupal6 Hook:schema_alter" toReformat="true" toShortenFQNames="true">
+    <variable name="MODULE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="hook6_search" value="/**&#10; * @see hook_search().&#10; */&#10;function $MODULE_NAME$_search($$op = 'search', $$keys = null) {&#10;  switch($$op) {&#10;    case 'admin':&#10;      $$form = array();&#10;      &#10;      return $$form;&#10;      &#10;    case 'name':&#10;      return t('$NAME$');&#10;      &#10;    case 'reset':&#10;      return;&#10;      &#10;    case 'search':&#10;      // search logic here&#10;      $$sql = '$END$';&#10;&#10;      // do search.&#10;      $$items = do_search($$keys, 'node', $$sql);&#10;&#10;      // load results.&#10;      $$results = array();&#10;      foreach ($$items as $$item) {&#10;        // build the node body.&#10;        $$node = node_load($$item-&gt;sid);&#10;        $$node = node_build_content($$node, FALSE, FALSE);&#10;        $$node-&gt;body = drupal_render($$node-&gt;content);&#10;&#10;        // fetch comments for snippet.&#10;        $$node-&gt;body .= module_invoke('comment', 'nodeapi', $$node, 'update index');&#10;        // fetch terms for snippet.&#10;        $$node-&gt;body .= module_invoke('taxonomy', 'nodeapi', $$node, 'update index');&#10;&#10;        $$extra = node_invoke_nodeapi($$node, 'search result');&#10;        &#10;        $$results[] = array(&#10;          'link' =&gt; url('node/'. $$item-&gt;sid, NULL, NULL, TRUE),&#10;          'type' =&gt; node_get_types('name', $$node),&#10;          'title' =&gt; $$node-&gt;title,&#10;          'user' =&gt; theme('username', $$node),&#10;          'date' =&gt; $$node-&gt;changed,&#10;          'node' =&gt; $$node,&#10;          'extra' =&gt; $$extra,&#10;          'score' =&gt; $$item-&gt;score / $$total,&#10;          'snippet' =&gt; search_excerpt($$keys, $$node-&gt;body),&#10;        );&#10;      }&#10;      return $$results;&#10;      &#10;    case 'status':&#10;      $$remaining = 0;&#10;      $$total = 0;&#10;      &#10;      return array(&#10;        'remaining' =&gt; $$remaining, &#10;        'total' =&gt; $$total&#10;      );&#10;  }&#10;}&#10;" description="Drupal6 Hook: search" toReformat="true" toShortenFQNames="true">
+    <variable name="MODULE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="hook6_search_preprocess" value="/**&#10; * @see hook_search_preprocess().&#10; */&#10;function $MODULE_NAME$_search_preprocess($$text) {&#10;  $END$&#10;  &#10;  return $$text;&#10;}" description="Drupal6 Hook: search_preprocess" toReformat="true" toShortenFQNames="true">
+    <variable name="MODULE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="hook6_system_info_alter" value="/**&#10; * @see hook_system_info_alter().&#10; */&#10;function $MODULE_NAME$_system_info_alter(&amp;$$info, $$file) {&#10;  ;$END$&#10;}" description="Drupal6 Hook: system_info_alter" toReformat="true" toShortenFQNames="true">
+    <variable name="MODULE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="hook6_taxonomy" value="/**&#10; * @see hook_taxonomy().&#10; */&#10;function $MODULE_NAME$_taxonomy($$op, $$type, $$array = NULL) {&#10;  if ($$type == 'vocabulary') {&#10;    switch ($$op) {&#10;      case 'insert':&#10;      case 'update':&#10;        $END$&#10;        return;&#10;        &#10;      case 'delete':&#10;        return;&#10;    }&#10;  }&#10;  &#10;  if ($$type == 'term') {&#10;    switch ($$op) {&#10;      case 'insert':&#10;      case 'update':&#10;        return;&#10;        &#10;      case 'delete':&#10;        return;&#10;    }&#10;  }&#10;}&#10;" description="Drupal6 Hook: taxonomy" toReformat="true" toShortenFQNames="true">
+    <variable name="MODULE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="hook6_term_path" value="/**&#10; * @see hook_term_path().&#10; */&#10;function $MODULE_NAME$_term_path($$term) {&#10;  return 'taxonomy/term/'.$$term-&gt;tid;$END$&#10;}&#10;" description="Drupal6 Hook: term_path" toReformat="true" toShortenFQNames="true">
+    <variable name="MODULE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="hook6_theme" value="/**&#10; * @see hook_theme().&#10; */&#10;function $MODULE_NAME$_theme($$existing, $$type, $$theme, $$path) {&#10;  return array(&#10;    '$FUNCTION_NAME$' =&gt; array(&#10;      'arguments' =&gt; array('$ARG$' =&gt; NULL,),&#10;    ),&#10;  );&#10;}&#10;&#10;/**&#10; * $COMMENT$&#10; */&#10;function theme_$FUNCTION_NAME$() {&#10;  $$output = '';&#10;  &#10;  $$output .= '$END$';&#10;  &#10;  return $$output;&#10;}" description="Drupal6 Hook: theme (function)" toReformat="true" toShortenFQNames="true">
+    <variable name="MODULE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="FUNCTION_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ARG" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="COMMENT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="hook6_theme_full" value="/**&#10; * @see hook_theme().&#10; */&#10;function $MODULE_NAME$_theme($$existing, $$type, $$theme, $$path) {&#10;  return array(&#10;    '$FUNCTION_NAME$' =&gt; array(&#10;      'arguments' =&gt; array('$ARG$' =&gt; NULL,),&#10;      'file' =&gt; '$INCLUDE_FILE$',&#10;      'path' =&gt; drupal_get_path('module', '$MODULE_NAME$').'/templates', // example&#10;      'template' =&gt; $TEMPLATE_FILE$,&#10;      'function' =&gt; '$TEMPLATE_FUNCTION$',&#10;      'pattern' =&gt; '$REGEX$',&#10;      'preprocess functions' =&gt; array('$PREPROCESS_FUNCTION$'),&#10;      'override preprocess functions' =&gt; FALSE,$END$&#10;    ),&#10;  );&#10;}&#10;" description="Drupal6 Hook: theme (parameter list)" toReformat="true" toShortenFQNames="true">
+    <variable name="MODULE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="FUNCTION_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ARG" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="INCLUDE_FILE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TEMPLATE_FILE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TEMPLATE_FUNCTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="REGEX" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PREPROCESS_FUNCTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="hook6_theme_tpl_pp" value="/**&#10; * @see hook_theme().&#10; */&#10;function $MODULE_NAME$_theme($$existing, $$type, $$theme, $$path) {&#10;  return array(&#10;    '$FUNCTION_NAME$' =&gt; array(&#10;      'arguments' =&gt; array('$ARG$' =&gt; NULL,),&#10;      'template' =&gt; '$TEMPLATE_FILE$',&#10;    ),&#10;  );&#10;}&#10;&#10;function $MODULE_NAME$_preprocess_$FUNCTION_NAME$(&amp;$$variables) {&#10;  ;$END$&#10;}" description="Drupal6 Hook: theme (tpl file, preprocess)" toReformat="true" toShortenFQNames="true">
+    <variable name="MODULE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="FUNCTION_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ARG" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TEMPLATE_FILE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="hook6_theme_tpl" value="/**&#10; * @see hook_theme().&#10; */&#10;function $MODULE_NAME$_theme($$existing, $$type, $$theme, $$path) {&#10;  return array(&#10;    '$FUNCTION_NAME$' =&gt; array(&#10;      'arguments' =&gt; array('$ARG$' =&gt; NULL,),&#10;      'template' =&gt; '$TEMPLATE_FILE$',&#10;    ),$END$&#10;  );&#10;}" description="Drupal6 Hook: theme (tpl file)" toReformat="true" toShortenFQNames="true">
+    <variable name="MODULE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="FUNCTION_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ARG" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TEMPLATE_FILE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="hook6_theme_registry_alter" value="/**&#10; * @see hook_theme_registry_alter().&#10; */&#10;function $MODULE_NAME$_theme_registry_alter(&amp;$$theme_registry) {&#10;  foreach ($$theme_registry as $$key =&gt; $$value) {&#10;    ;$END$&#10;  }&#10;}" description="Drupal6 Hook: theme_registry_alter" toReformat="true" toShortenFQNames="true">
+    <variable name="MODULE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="hook6_translated_menu_link_alter" value="/**&#10; * @see hook_translated_menu_link_alter().&#10; */&#10;function $MODULE_NAME$_translated_menu_link_alter(&amp;$$item, $$map) {&#10;  ;$END$&#10;}" description="Drupal6 Hook: translated_menu_link_alter" toReformat="true" toShortenFQNames="true">
+    <variable name="MODULE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="hook6_translation_link_alter" value="/**&#10; * @see hook_translation_link_alter().&#10; */&#10;function $MODULE_NAME$_translation_link_alter(&amp;$$links, $$path) {&#10;  global $$language;&#10;&#10;  if (isset($$links[$$language])) {&#10;    foreach ($$links[$$language] as $$link) {&#10;      ;$END$&#10;    }&#10;  }&#10;}" description="Drupal6 Hook: translation_link_alter" toReformat="true" toShortenFQNames="true">
+    <variable name="MODULE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="hook6_update" value="/**&#10; * @see hook_update().&#10; */&#10;function $MODULE_NAME$_update($$node) {&#10;  $$sql = &quot;&#10;    UPDATE {$TABLE$}&#10;    SET        extra = '%s'&#10;    WHERE  nid = %d&#10;    AND       vid = %d&#10;  &quot;;&#10;&#10;  db_query($$sql, $$node-&gt;extra, $$node-&gt;nid, $$node-&gt;vid);$END$&#10;}" description="Drupal6 Hook: update" toReformat="true" toShortenFQNames="true">
+    <variable name="MODULE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TABLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="hook6_update_index" value="/**&#10; * @see hook_update_index().&#10; */&#10;function $MODULE_NAME$_update_index() {&#10;  $$last = variable_get('node_cron_last', 0);&#10;  $$limit = (int) variable_get('search_cron_limit', 100);$END$&#10;}" description="Drupal6 Hook: update_index" toReformat="true" toShortenFQNames="true">
+    <variable name="MODULE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="hook6_update_last_removed" value="/**&#10; * @see hook_update_last_removed&#10; */&#10;function $MODULE_NAME$_update_last_removed() {&#10;  return $UPDATE_VERSION_NUMBER$;$END$&#10;}&#10;" description="Drupal6 Hook: update_last_removed" toReformat="true" toShortenFQNames="true">
+    <variable name="MODULE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="UPDATE_VERSION_NUMBER" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="hook6_update_projects_alter" value="/**&#10; * @see hook_update_projects_alter().&#10; */&#10;function $MODULE_NAME$_update_projects_alter(&amp;$$projects) {&#10;  ;$END$&#10;}&#10;" description="Drupal6 Hook: update_projects_alter" toReformat="true" toShortenFQNames="true">
+    <variable name="MODULE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="hook6_update_status_alter" value="/**&#10; * @see hook_update_status_alter().&#10; */&#10;function $MODULE_NAME$_update_status_alter(&amp;$$projects) {&#10;  foreach ($$projects as $$project =&gt; $$project_info) {&#10;    ;$END$&#10;  }&#10;}" description="Drupal6 Hook: update_status_alter" toReformat="true" toShortenFQNames="true">
+    <variable name="MODULE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="hook6_user" value="/**&#10; * @see hook_user().&#10; */&#10;function $MODUEL_NAME$_user($$op, &amp;$$edit, &amp;$$account, $$category = NULL) {&#10;  switch ($$op) {&#10;    case 'after_update':&#10;      break;&#10;&#10;    case 'categories':&#10;      break;&#10;&#10;    case 'delete':&#10;      break;&#10;&#10;    case 'form':&#10;      break;&#10;&#10;    case 'insert':&#10;      $END$&#10;      break;&#10;&#10;    case 'load':&#10;      break;&#10;&#10;    case 'login':&#10;      break;&#10;&#10;    case 'logout':&#10;      break;&#10;&#10;    case 'register':&#10;      break;&#10;&#10;    case 'submit':&#10;      break;&#10;&#10;    case 'update':&#10;      break;&#10;&#10;    case 'validate':&#10;      break;&#10;&#10;    case' view':&#10;      break;&#10;  }&#10;}" description="Drupal6 Hook: user" toReformat="true" toShortenFQNames="true">
+    <variable name="MODUEL_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="hook6_user_operations" value="/**&#10; * @see hook_user_operations().&#10; */&#10;function $MODULE_NAME$_user_operations() {&#10;  return array(&#10;    '$KEY$' =&gt; array(&#10;      'label' =&gt; t('$DESCRIPTION$'),&#10;      'callback' =&gt; '$CALLBACK$',&#10;      'callback arguments' =&gt; array($END$),&#10;    ),&#10;  );&#10;}" description="Drupal6 hook: user_operations" toReformat="true" toShortenFQNames="true">
+    <variable name="MODULE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="KEY" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CALLBACK" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="hook6_validate" value="/**&#10; * @see hook_validate().&#10; */&#10;function $MODULE_NAME$_validate($$node, &amp;$$form) {&#10;  if (FALSE$END$) {&#10;    form_set_error('$FORM_FIELD$', t('$ERROR_MESSAGE$'));&#10;  }&#10;}" description="Drupal6 Hook: validate" toReformat="true" toShortenFQNames="true">
+    <variable name="MODULE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="FORM_FIELD" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ERROR_MESSAGE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+</templateSet>

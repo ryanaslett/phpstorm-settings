@@ -1,0 +1,18 @@
+<application>
+  <component name="XDebuggerSettings">
+    <data-views />
+    <general>
+      <unmute-on-stop>true</unmute-on-stop>
+    </general>
+    <debuggers>
+      <debugger id="javascript">
+        <configuration>
+          <custom-object-presentation />
+          <stepping-filters>
+            <stepping-filter url-pattern="phpcs" />
+          </stepping-filters>
+        </configuration>
+      </debugger>
+    </debuggers>
+  </component>
+</application>

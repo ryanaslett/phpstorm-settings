@@ -1,0 +1,9 @@
+<templateSet group="Drupal 7 - JavaScript">
+  <template name="d.b" value="Drupal.behaviors.$module$$name$ = {&#10;  attach: function (context, settings) {&#10;    $END$&#10;  }&#10;  //,detach = function(context, settings) {}&#10;};" description="Drupal.behaviour.mymodule" toReformat="false" toShortenFQNames="true">
+    <variable name="module" expression="underscoresToCamelCase(fileNameWithoutExtension())" defaultValue="" alwaysStopAt="true" />
+    <variable name="name" expression="" defaultValue="&quot;Foo&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+</templateSet>

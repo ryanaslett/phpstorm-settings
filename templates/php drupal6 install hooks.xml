@@ -1,0 +1,36 @@
+<templateSet group="php drupal6 .install hooks">
+  <template name="hook6_install" value="/**&#10; * Implements @see hook_install().&#10; */&#10;function $MODULE_NAME$_install() {&#10;  drupal_install_schema('$MODULE_NAME$');$END$&#10;}" description="Drupal6 hook: install" toReformat="true" toShortenFQNames="true">
+    <variable name="MODULE_NAME" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="hook6_requirements" value="/**&#10; * Implements @see hook_requirements().&#10; */&#10;function $MODULE_NAME$_requirements($$phase) {&#10;  $$requirements = array();&#10;  // Ensure translations don't break at install time&#10;  $$t = get_t();&#10;&#10;  // Report Drupal version&#10;  if ($$phase == 'runtime') {&#10;    $$requirements['drupal'] = array(&#10;      'title' =&gt; $$t('Drupal'),$END$&#10;      'value' =&gt; VERSION,&#10;      'severity' =&gt; REQUIREMENT_INFO&#10;    );&#10;  }&#10;&#10;  // Test PHP version&#10;  $$requirements['php'] = array(&#10;    'title' =&gt; $$t('PHP'),&#10;    'value' =&gt; ($$phase == 'runtime') ? l(phpversion(), 'admin/logs/status/php') : phpversion(),&#10;  );&#10;  if (version_compare(phpversion(), DRUPAL_MINIMUM_PHP) &lt; 0) {&#10;    $$requirements['php']['description'] = $$t('Your PHP installation is too old. Drupal requires at least PHP %version.', array('%version' =&gt; DRUPAL_MINIMUM_PHP));&#10;    $$requirements['php']['severity'] = REQUIREMENT_ERROR;&#10;  }&#10;&#10;  // Report cron status&#10;  if ($$phase == 'runtime') {&#10;    $$cron_last = variable_get('cron_last', NULL);&#10;&#10;    if (is_numeric($$cron_last)) {&#10;      $$requirements['cron']['value'] = $$t('Last run !time ago', array('!time' =&gt; format_interval(time() - $$cron_last)));&#10;    }&#10;    else {&#10;      $$requirements['cron'] = array(&#10;        'description' =&gt; $$t('Cron has not run. It appears cron jobs have not been setup on your system. Please check the help pages for &lt;a href=&quot;@url&quot;&gt;configuring cron jobs&lt;/a&gt;.', array('@url' =&gt; 'http://drupal.org/cron')),&#10;        'severity' =&gt; REQUIREMENT_ERROR,&#10;        'value' =&gt; $$t('Never run'),&#10;      );&#10;    }&#10;&#10;    $$requirements['cron']['description'] .= ' '. t('You can &lt;a href=&quot;@cron&quot;&gt;run cron manually&lt;/a&gt;.', array('@cron' =&gt; url('admin/logs/status/run-cron')));&#10;&#10;    $$requirements['cron']['title'] = $$t('Cron maintenance tasks');&#10;  }&#10;&#10;  return $$requirements;&#10;}" description="Drupal6 Hook: requirements" toReformat="true" toShortenFQNames="true">
+    <variable name="MODULE_NAME" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="hook6_schema" value="/**&#10; * Implements hook_schema().&#10; */&#10;function $MODULE_NAME$_schema() {&#10;  $$schema = array();&#10;  &#10;  $END$&#10;  &#10;  return $$schema;&#10;}" description="Drupal6 Hook: schema" toReformat="true" toShortenFQNames="true">
+    <variable name="MODULE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="hook6_uninstall" value="/**&#10; * Implements hook_uninstall().&#10; */&#10;function $MODULE_NAME$_uninstall() {&#10;  db_query(&quot;DROP TABLE {$TABLE$}&quot;);&#10;&#10;  variable_del('$VARIABLE_1$');&#10;  variable_del('$VARIABLE_2$');$END$&#10;}" description="Drupal6 Hook: uninstall" toReformat="true" toShortenFQNames="true">
+    <variable name="MODULE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TABLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VARIABLE_1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VARIABLE_2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="hook6_update_N" value="/**&#10; * Implements hook_update_N().&#10; */&#10;function $MODULE_NAME$_update_$VERSION_NUMBER$() {&#10;  $$ret = array();&#10;  &#10;  $END$&#10;  &#10;  return $$ret;&#10;}" description="Drupal6 Hook: update_N" toReformat="true" toShortenFQNames="true">
+    <variable name="MODULE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VERSION_NUMBER" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+</templateSet>

@@ -1,0 +1,63 @@
+<application>
+  <component name="LanguageInjectionConfiguration">
+    <option name="INSTRUMENTATION" value="ASSERT" />
+    <option name="LANGUAGE_ANNOTATION" value="org.intellij.lang.annotations.Language" />
+    <option name="PATTERN_ANNOTATION" value="org.intellij.lang.annotations.Pattern" />
+    <option name="SUBST_ANNOTATION" value="org.intellij.lang.annotations.Subst" />
+    <option name="RESOLVE_REFERENCES" value="true" />
+    <injection language="SQLite" injector-id="js">
+      <display-name>HTML5 SQL Database (SQLite)</display-name>
+      <place disabled="true"><![CDATA[jsLiteralExpression().and(jsArgument("executeSql", 0))]]></place>
+    </injection>
+    <injection language="SQLite" injector-id="js">
+      <display-name>flash.data (SQLite)</display-name>
+      <place disabled="true"><![CDATA[jsLiteralExpression().and(asAssignedValue("text", "*", "dbStatement"))]]></place>
+      <place disabled="true"><![CDATA[jsLiteralExpression().and(asAssignedValue("text", "*", "statement", "st").withText(string().matchesBrics(" *(((SELECT|DELETE) .*FROM)|((INSERT|REPLACE) .*INTO)|(UPDATE .*SET)|((CREATE|DROP|ALTER) +(TABLE|INDEX))) .*")))]]></place>
+      <place disabled="true"><![CDATA[jsLiteralExpression().and(asAssignedValue("text", "flash.data.SQLStatement"))]]></place>
+    </injection>
+    <injection language="HTML" injector-id="php">
+      <display-name>&quot;&lt;html&gt;&quot;</display-name>
+      <place disabled="true"><![CDATA[and(phpLiteralExpression().withText(string().matchesBrics("(\\<\\<\\<)?.*\\</?<anyname>.*>.*")), not(phpLiteralExpression().withSuperParent(2, phpFunctionReference().withText(or(string().startsWith("strip_tags"), string().startsWith("preg_"))))))]]></place>
+    </injection>
+    <injection language="SQL" injector-id="php">
+      <display-name>&quot;SQL select/delete/insert/update/create&quot;</display-name>
+      <place disabled="true"><![CDATA[phpLiteralExpression().withText(string().matchesBrics(" *(((SELECT|DELETE) .*FROM)|((INSERT|REPLACE) .*INTO)|(UPDATE .* SET)|((CREATE|DROP|ALTER) +((TEMPORARY )?TABLE|(UNIQUE )?INDEX))) .*"))]]></place>
+    </injection>
+    <injection language="CSS" injector-id="php">
+      <display-name>&lt;&lt;&lt; CSS</display-name>
+      <place disabled="true"><![CDATA[phpLiteralExpression("CSS")]]></place>
+    </injection>
+    <injection language="HTML" injector-id="php">
+      <display-name>&lt;&lt;&lt; HTML</display-name>
+      <place disabled="true"><![CDATA[phpLiteralExpression("HTML")]]></place>
+    </injection>
+    <injection language="SQL" injector-id="php">
+      <display-name>&lt;&lt;&lt; SQL</display-name>
+      <place disabled="true"><![CDATA[phpLiteralExpression("SQL")]]></place>
+    </injection>
+    <injection language="JavaScript" injector-id="xml">
+      <display-name>*/@href</display-name>
+      <value-pattern>^javascript:(.+)</value-pattern>
+      <place disabled="true"><![CDATA[xmlAttribute().withLocalName(string().equalTo("href")).withParent(xmlTag().withNamespace(string().equalTo("http://www.w3.org/1999/xhtml")))]]></place>
+    </injection>
+    <injection language="JavaScript" injector-id="xml">
+      <display-name>*/@on.*</display-name>
+      <place disabled="true"><![CDATA[xmlAttribute().withLocalName(string().startsWith("on")).withParent(xmlTag().withNamespace(string().equalTo("http://www.w3.org/1999/xhtml")))]]></place>
+    </injection>
+    <injection language="CSS" injector-id="xml">
+      <display-name>*/@style</display-name>
+      <prefix>dummy_selector {</prefix>
+      <suffix>}</suffix>
+      <place disabled="true"><![CDATA[xmlAttribute().withLocalName(string().equalTo("style")).inside(xmlTag().withNamespace(string().equalTo("http://www.w3.org/1999/xhtml")))]]></place>
+    </injection>
+    <injection language="JavaScript" injector-id="xml">
+      <display-name>script</display-name>
+      <place disabled="true"><![CDATA[xmlTag().withLocalName(string().equalTo("script")).withNamespace(string().equalTo("http://www.w3.org/1999/xhtml"))]]></place>
+    </injection>
+    <injection language="CSS" injector-id="xml">
+      <display-name>style</display-name>
+      <place disabled="true"><![CDATA[xmlTag().withLocalName(string().equalTo("style")).withNamespace(string().equalTo("http://www.w3.org/1999/xhtml"))]]></place>
+      <xpath-condition>lower-case(@type)='text/css'</xpath-condition>
+    </injection>
+  </component>
+</application>

@@ -1,0 +1,49 @@
+<application>
+  <component name="WebServers">
+    <sftpAdvancedGlobalOptions>
+      <SftpAdvancedOptions hostKeyCheckingLevel="NO">
+        <option name="hostKeyCheckingLevel" value="NO" />
+      </SftpAdvancedOptions>
+    </sftpAdvancedGlobalOptions>
+    <option name="servers">
+      <webServer id="36d8755e-7781-4182-a0ee-44550cd0074d" name="Wedding" url="http://wedding">
+        <fileTransfer accessType="LOCAL" />
+      </webServer>
+      <webServer id="ccb0c3f4-86ad-40dd-92e9-0dfd5a474a9c" name="d8" url="http://d8">
+        <fileTransfer accessType="LOCAL" />
+      </webServer>
+      <webServer id="6604661a-5c85-4119-b4ec-9fb0577aa37d" name="http://pgc3" url="http://localhost">
+        <fileTransfer accessType="LOCAL" />
+      </webServer>
+      <webServer id="a400b0da-fde9-48e0-9a48-5b7930d4da16" name="mixologic composer dev site" url="https://composer2-drupal.dev.devdrupal.org/">
+        <fileTransfer host="wwwdev1.drupalsystems.org" port="22" privateKey="$USER_HOME$/.ssh/drupal" accessType="SFTP" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="bfae2735-2ff2-45a9-a1dd-765e88498091" name="drupalcitestbot" url="http://localhost">
+        <fileTransfer host="ec2-54-69-224-48.us-west-2.compute.amazonaws.com" port="22" privateKey="$USER_HOME$/.ssh/id_rsa-drupalci-incl-slave" accessType="SFTP" keyPair="true">
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="f0ca1bf0-6aa4-4cf9-8ac8-f60a0c1804c9" name="pift-dev" url="https://composer2-drupal.dev.devdrupal.org/">
+        <fileTransfer host="wwwdev1.drupalsystems.org" port="22" privateKey="$USER_HOME$/.ssh/drupal" accessType="SFTP" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="9a47d775-fa15-493f-bb89-4d92e3a13824" name="devassoc" url="https://ryanassoc2-association.dev.devdrupal.org">
+        <fileTransfer host="wwwdev1.drupalsystems.org" port="22" privateKey="$USER_HOME$/.ssh/drupal" accessType="SFTP" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</application>

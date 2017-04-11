@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application>
+  <component name="AbbreviationManager">
+    <abbreviations>
+      <action id="Macro.Split vertically">
+        <abbreviation name=":vs" />
+      </action>
+    </abbreviations>
+  </component>
+</application>
+

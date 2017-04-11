@@ -1,0 +1,148 @@
+<templateSet group="php drupal6 fapi">
+  <template name="fapi6_button" value="$$form['$NAME$'] = array(&#10;  '#type' =&gt; 'button',&#10;  '#value' =&gt; t('$VALUE$'),&#10;);&#10;&#10;$END$" description="Drupal6 FAPI: button" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="fapi6_button_adv" value="$$form['$NAME$'] = array(&#10;  '#type' =&gt; 'button',&#10;  '#value' =&gt; t('$VALUE$'),&#10;  '#weight' =&gt; 0,&#10;  '#access' =&gt; TRUE,&#10;  '#attributes' =&gt; array('class' =&gt; '$CSSCLASS$',&#10;  '#disabled' =&gt; FALSE,&#10;);&#10;&#10;$END$" description="Drupal6 FAPI: button (full)" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CSSCLASS" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="fapi6_checkbox" value="$$form['$NAME$'] = array(&#10;  '#type' =&gt; 'checkbox',&#10;  '#title' =&gt; t('$TITLE$'),&#10;);&#10;&#10;$END$" description="Drupal6 FAPI: checkbox" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TITLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="fapi6_checkboxes" value="$$form['$NAME$'] = array(&#10;  '#type' =&gt; 'checkboxes',&#10;  '#title' =&gt; t('$TITLE$'),&#10;  '#default_value' =&gt; '',&#10;  '#options' =&gt; array(&#10;    'key_1' =&gt; t('name_1'),&#10;    'key_2' =&gt; t('name_2'),&#10;  ),&#10;//  '#options' =&gt; $$options,&#10;  '#description' =&gt; t('$DESCRIPTION$'),&#10;);&#10;&#10;$END$" description="Drupal6 FAPI: checkboxes" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TITLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="fapi6_date" value="$$form['$NAME$'] = array(&#10;  '#type' =&gt; 'date',&#10;  '#title' =&gt; '$TITLE$',&#10;  '#default_value' =&gt; $DEFAULT$, // array('year' =&gt; 2009, 'month' =&gt; 1, 'day' =&gt; 1),&#10;  '#description' =&gt; t('$DESCRIPTION$'),&#10;  '#required' =&gt; TRUE,&#10;);&#10;&#10;$END$" description="Drupal6 FAPI: date" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TITLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DEFAULT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="fapi6_fieldset" value="$$form['$NAME$'] = array(&#10;  '#type' =&gt; 'fieldset',&#10;  '#title' =&gt; t('$TITLE$'),&#10;  '#weight' =&gt; 0,&#10;  '#collapsible' =&gt; TRUE,&#10;  '#collapsed' =&gt; FALSE,&#10;  '#tree' =&gt; FALSE,&#10;);&#10;&#10;$END$" description="Drupal6 FAPI: fieldset" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TITLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="fapi6_file" value="$$form['$NAME$'] = array(&#10;  '#type' =&gt; 'file',&#10;  '#title' =&gt; t('$TITLE$'),&#10;  '#size' =&gt; 40,&#10;);&#10;&#10;$END$" description="Drupal6 FAPI: file" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TITLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="fapi6_form" value="$$form = array();&#10;&#10;$END$&#10;&#10;return $$form;" description="Drupal6 FAPI: form" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="fapi6_item" value="$$form['$NAME$'] = array(&#10;  '#type' =&gt; 'item',&#10;  '#title' =&gt; t('$TITLE$'),&#10;  '#value' =&gt; '$VALUE$',&#10;);&#10;&#10;$END$&#10;" description="Drupal6 FAPI: item" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TITLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="fapi6_hidden" value="$$form['$NAME$'] = array(&#10;  '#type' =&gt; 'hidden', &#10;  '#value' =&gt; $VALUE$&#10;);&#10;&#10;$END$" description="Drupal6 FAPI: hidden" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="fapi6_password" value="$$form['$NAME$'] = array(&#10;  '#type' =&gt; 'password',&#10;  '#title' =&gt; t('$TITLE$'),&#10;  '#maxlength' =&gt; 64,&#10;  '#size' =&gt; 15,&#10;);&#10;&#10;$END$" description="Drupal6 FAPI: password" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TITLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="fapi6_markup" value="$$form['$NAME$'] = array(&#10;  '#value' =&gt; '$HTML$',&#10;);&#10;&#10;$END$" description="Drupal6 FAPI: markup" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HTML" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="fapi6_radios" value="$$form['$NAME$'] = array(&#10;  '#type' =&gt; 'radios',&#10;  '#title' =&gt; t('$TITLE$'),&#10;  '#default_value' =&gt; '$DEFAULT$',&#10;  '#options' =&gt; $$options,&#10;//  '#options' =&gt; array(1, 2, 3, 4),&#10;//  '#options' =&gt; array(1 =&gt; t('One'), 2 =&gt; t('Two')),    &#10;);&#10;&#10;$END$" shortcut="TAB" description="Drupal6 FAPI: radios" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TITLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DEFAULT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="fapi6_select" value="$$form['$NAME$'] = array(&#10;  '#type' =&gt; 'select',&#10;  '#title' =&gt; t('$TITLE$'),&#10;  '#default_value' =&gt; '$DEFAULT$',&#10;  '#options' =&gt; $$options,&#10;//  '#options' =&gt; array(&#10;//    'title' =&gt; t('Titles only'),&#10;//    'teaser' =&gt; t('Titles plus teaser'),&#10;//    'fulltext' =&gt; t('Full text'),&#10;//  ),&#10;  '#description' =&gt; t('$DESCRIPTION$'),&#10;);&#10;&#10;$CURSOR$" description="Drupal6 FAPI: select" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TITLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DEFAULT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CURSOR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="fapi6_submit" value="$$form['$NAME$'] = array(&#10;  '#type' =&gt; 'submit', &#10;  '#value' =&gt; t('Submit')&#10;);&#10;&#10;$CURSOR$" description="Drupal6 FAPI: submit" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CURSOR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="fapi6_textfield" value="$$form['$NAME$'] = array(&#10;  '#type' =&gt; 'textfield',&#10;  '#title' =&gt; t('$END$'),&#10;  '#default_value' =&gt; '',&#10;  '#size' =&gt; 60,&#10;  '#maxlength' =&gt; 128,&#10;  '#required' =&gt; TRUE,&#10;);&#10;" description="Drupal6 FAPI: textfield" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="fapi6_weight" value="$$form['$NAME$'] = array(&#10;  '#type' =&gt; 'weight',&#10;  '#title' =&gt; t('Weight'),&#10;  '#default_value' =&gt; $VALUE$,&#10;  '#delta' =&gt; 10,&#10;  '#description' =&gt; t('Optional. In the menu, the heavier items will sink and the lighter items will be positioned nearer the top.'),&#10;);&#10;&#10;$END$" description="Drupal6 FAPI: weight" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="fapi6_textarea" value="$$form['$NAME$'] = array(&#10;  '#type' =&gt; 'textarea',&#10;  '#title' =&gt; t('$TITLE$'),&#10;  '#default_value' =&gt; '',&#10;);&#10;&#10;$END$" description="Drupal6 FAPI: textarea" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TITLE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="fapi6_form_submit" value="/**&#10; * Implements hook_form_submit().&#10; */&#10;function $FORM_ID$_form_submit($$form_id, $$form_state) {&#10;  $$values =&amp; $$form_state['values'];&#10;  &#10;  drupal_set_message(t('The form $FORM_ID$ was successfully submitted.'));$END$&#10;}" description="Drupal6 FAPI: form_submit" toReformat="true" toShortenFQNames="true">
+    <variable name="FORM_ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="fapi6_form_validate" value="/**&#10; * Implements hook_form_validate().&#10; */&#10;function $FORM_ID$_form_validate($$form_id, $$form_state) {&#10;  $$values =&amp; $$form_state['values'];&#10;  &#10;  if (FALSE$END$) {&#10;    form_set_error('$FORM_ELEMENT$', t('$ERROR_MESSAGE$'));&#10;  }&#10;}" description="Drupal6 FAPI: form_validate" toReformat="true" toShortenFQNames="true">
+    <variable name="FORM_ID" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="FORM_ELEMENT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ERROR_MESSAGE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+</templateSet>

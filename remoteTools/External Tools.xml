@@ -1,0 +1,9 @@
+<toolSet name="External Tools">
+  <tool name="drush pcpn" description="pcpn" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true" CONNECTION_TYPE="DEPLOYMENT_SERVER" CONNECTION_ID="9808039e-49c5-4987-923f-7c90968b3d2a">
+    <exec>
+      <option name="COMMAND" value="/usr/local/sbin/drush6/vendor/drush/drush" />
+      <option name="PARAMETERS" value="pcpn" />
+      <option name="WORKING_DIRECTORY" value="/var/www/dev/project-composer-drupal.dev.devdrupal.org/htdocs" />
+    </exec>
+  </tool>
+</toolSet>

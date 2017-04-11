@@ -1,0 +1,131 @@
+<keymap version="1" name="Mac OS X copy" parent="Mac OS X">
+  <action id="ActivateHierarchyToolWindow" />
+  <action id="ActivateTerminalToolWindow">
+    <keyboard-shortcut first-keystroke="alt f12" />
+    <keyboard-shortcut first-keystroke="meta 8" />
+  </action>
+  <action id="Annotate">
+    <keyboard-shortcut first-keystroke="shift ctrl a" />
+  </action>
+  <action id="CheckinFiles">
+    <keyboard-shortcut first-keystroke="shift meta c" />
+  </action>
+  <action id="Compare.SameVersion">
+    <keyboard-shortcut first-keystroke="shift meta d" />
+  </action>
+  <action id="Console.TableResult.DeleteRows" />
+  <action id="CopyPaths" />
+  <action id="DatabaseView.GenerateDDLAction" />
+  <action id="EditorDeleteLine" />
+  <action id="FindInPath">
+    <keyboard-shortcut first-keystroke="shift meta s" />
+  </action>
+  <action id="Github.Create.Gist">
+    <keyboard-shortcut first-keystroke="shift meta g" />
+  </action>
+  <action id="GotoRelated">
+    <keyboard-shortcut first-keystroke="meta alt home" />
+    <keyboard-shortcut first-keystroke="ctrl alt numpad7" />
+  </action>
+  <action id="Macro.Debug drush command">
+    <keyboard-shortcut first-keystroke="shift ctrl meta d" />
+  </action>
+  <action id="Macro.Failing Test Redo">
+    <keyboard-shortcut first-keystroke="shift ctrl c" />
+  </action>
+  <action id="Macro.redrushdebug">
+    <keyboard-shortcut first-keystroke="shift ctrl meta r" />
+  </action>
+  <action id="MethodDown">
+    <keyboard-shortcut first-keystroke="shift meta down" />
+  </action>
+  <action id="MethodUp">
+    <keyboard-shortcut first-keystroke="shift meta up" />
+  </action>
+  <action id="MoveStatementDown" />
+  <action id="MoveStatementUp" />
+  <action id="PhpListenDebugAction">
+    <keyboard-shortcut first-keystroke="shift meta o" />
+  </action>
+  <action id="QuickImplementations" />
+  <action id="ReloadInBrowserAction">
+    <keyboard-shortcut first-keystroke="shift meta r" />
+  </action>
+  <action id="RemoteHostView.CopyPaths" />
+  <action id="ResizeToolWindowDown" />
+  <action id="ResizeToolWindowUp" />
+  <action id="SavaAs" />
+  <action id="ShowUsages">
+    <keyboard-shortcut first-keystroke="meta alt f7" />
+    <keyboard-shortcut first-keystroke="meta y" />
+  </action>
+  <action id="StructuralSearchPlugin.StructuralReplaceAction" />
+  <action id="StructuralSearchPlugin.StructuralSearchAction" />
+  <action id="SwitchApply">
+    <keyboard-shortcut first-keystroke="ctrl alt enter" />
+  </action>
+  <action id="SwitchDown">
+    <keyboard-shortcut first-keystroke="ctrl alt down" />
+  </action>
+  <action id="SwitchLeft">
+    <keyboard-shortcut first-keystroke="ctrl alt left" />
+  </action>
+  <action id="SwitchRight">
+    <keyboard-shortcut first-keystroke="ctrl alt right" />
+  </action>
+  <action id="SwitchUp">
+    <keyboard-shortcut first-keystroke="ctrl alt up" />
+  </action>
+  <action id="Tool_Caches_APC Cache Clear">
+    <keyboard-shortcut first-keystroke="shift ctrl meta c" />
+  </action>
+  <action id="Tool_Drupal_Drupal Code Repository Viewer">
+    <keyboard-shortcut first-keystroke="shift alt d" />
+  </action>
+  <action id="Tool_Drupal_Link to cgit">
+    <keyboard-shortcut first-keystroke="shift meta f" />
+  </action>
+  <action id="Tool_Drupal_PatchSnatch">
+    <keyboard-shortcut first-keystroke="shift ctrl p" />
+  </action>
+  <action id="Tool_External Tools_ag">
+    <keyboard-shortcut first-keystroke="shift ctrl meta s" />
+  </action>
+  <action id="Tool_External Tools_ag2">
+    <keyboard-shortcut first-keystroke="shift ctrl meta q" />
+  </action>
+  <action id="Tool_Migration_Migrate 1 user">
+    <keyboard-shortcut first-keystroke="shift ctrl meta right" />
+  </action>
+  <action id="Tool_Migration_Rollback Migrate">
+    <keyboard-shortcut first-keystroke="shift ctrl meta left" />
+  </action>
+  <action id="Tool_Update Stats Development_Import Usage Stats">
+    <keyboard-shortcut first-keystroke="shift meta i" />
+  </action>
+  <action id="Tool_drush_Drush Cache Clear">
+    <keyboard-shortcut first-keystroke="shift meta 1" />
+  </action>
+  <action id="Uml.ShowDiff" />
+  <action id="XDebugger.MuteBreakpoints">
+    <keyboard-shortcut first-keystroke="shift meta m" />
+  </action>
+  <action id="com.jetbrains.php.drupal.DrupalSearchDocsAction">
+    <keyboard-shortcut first-keystroke="ctrl meta alt d" />
+  </action>
+  <action id="com.jetbrains.plugins.vagrant.actions.VagrantDestroyAction">
+    <keyboard-shortcut first-keystroke="ctrl meta x" />
+  </action>
+  <action id="com.jetbrains.plugins.vagrant.actions.VagrantProvisionAction">
+    <keyboard-shortcut first-keystroke="ctrl meta p" />
+  </action>
+  <action id="com.jetbrains.plugins.vagrant.actions.VagrantReloadAction">
+    <keyboard-shortcut first-keystroke="ctrl meta r" />
+  </action>
+  <action id="com.jetbrains.plugins.vagrant.actions.VagrantUpAction">
+    <keyboard-shortcut first-keystroke="ctrl meta u" />
+  </action>
+  <action id="hg4idea.push">
+    <keyboard-shortcut first-keystroke="shift meta p" />
+  </action>
+</keymap>

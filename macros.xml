@@ -1,0 +1,39 @@
+<application>
+  <component name="ActionMacroManager">
+    <macro name="Re-Debug">
+      <action id="XDebugger.MuteBreakpoints" />
+      <action id="Resume" />
+      <action id="Debug" />
+    </macro>
+    <macro name="Split vertically">
+      <action id="SplitVertically" />
+    </macro>
+    <macro name="Find and Replace">
+      <action id="ReplaceInPath" />
+      <action id="EditorRight" />
+      <typing text-keycode="48:1">)</typing>
+      <action id="EditorLineStart" />
+      <typing text-keycode="57:1">(</typing>
+    </macro>
+    <macro name="Failing Test Redo">
+      <action id="EditorSelectWord" />
+      <action id="EditorSelectWord" />
+      <action id="ReplaceInPath" />
+      <action id="EditorLineEnd" />
+      <typing text-keycode="48:1">)</typing>
+      <action id="EditorLineStart" />
+      <typing text-keycode="57:1">(</typing>
+    </macro>
+    <macro name="redrushdebug">
+      <action id="ActivateDebugToolWindow" />
+      <action id="Rerun" />
+      <action id="ActivateTerminalToolWindow" />
+      <shortuct text="UP" />
+      <shortuct text="ENTER" />
+    </macro>
+    <macro name="Debug drush command">
+      <action id="Rerun" />
+      <action id="Tool_Update Stats Development_Import Usage Stats" />
+    </macro>
+  </component>
+</application>
