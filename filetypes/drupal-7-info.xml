@@ -14,4 +14,7 @@
     <keywords2 keywords="[;]" />
     <keywords3 keywords="=" />
   </highlighting>
+  <extensionMap>
+    <mapping ext="info" />
+  </extensionMap>
 </filetype>

@@ -17,6 +17,7 @@
   </highlighting>
   <extensionMap>
     <mapping pattern="scratch_12.awk" />
+    <mapping pattern="awstats_reformatter" />
     <mapping ext="gawk" />
     <mapping ext="awk" />
   </extensionMap>
