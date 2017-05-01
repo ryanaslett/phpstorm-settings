@@ -5,7 +5,6 @@
       <mapping pattern="selenium" type="Bash" />
       <mapping pattern="compress-logs" type="Bash" />
       <mapping ext="old" type="Dockerfile" />
-      <mapping ext="info" type="Ini" />
       <mapping ext="lock" type="JSON" />
       <mapping ext="sqlite" type="Native" />
       <mapping ext="profile" type="PHP" />
