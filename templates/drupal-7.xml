@@ -246,7 +246,7 @@
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="cdd_field_formatter_settings_date_default" value="array(&#10;  'format_type' =&gt; '$format_type$',&#10;  'multiple_number' =&gt; '$multiple_number$',&#10;  'multiple_from' =&gt; '$multiple_from$',&#10;  'multiple_to' =&gt; '$multiple_to$',&#10;  'fromto' =&gt; '$fromto$',&#10;)$END$" toReformat="true" toShortenFQNames="true">
+  <template name="cdd_field_formatter_settings_date_default" value="array(&#10;  'format_type' =&gt; '$format_type$',&#10;  'multiple_number' =&gt; '$multiple_number$',&#10;  'multiple_from' =&gt; '$multiple_from$',&#10;  'multiple_to' =&gt; '$multiple_to$',&#10;  'fromto' =&gt; '$fromto$',&#10;)$END$" description="" toReformat="true" toShortenFQNames="true">
     <variable name="format_type" expression="enum(&quot;long&quot;, &quot;medium&quot;, &quot;short&quot;)" defaultValue="" alwaysStopAt="true" />
     <variable name="multiple_number" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="multiple_from" expression="" defaultValue="" alwaysStopAt="true" />
@@ -256,113 +256,113 @@
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="cdd_field_formatter_settings_date_plain" value="array()$END$" toReformat="true" toShortenFQNames="true">
+  <template name="cdd_field_formatter_settings_date_plain" value="array()$END$" description="" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="cdd_field_formatter_settings_entityreference_entity_id" value="array()$END$" toReformat="true" toShortenFQNames="true">
+  <template name="cdd_field_formatter_settings_entityreference_entity_id" value="array()$END$" description="" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="cdd_field_formatter_settings_entityreference_entity_view" value="array(&#10;  'view_mode' =&gt; '$view_mode$',&#10;)$END$" toReformat="true" toShortenFQNames="true">
+  <template name="cdd_field_formatter_settings_entityreference_entity_view" value="array(&#10;  'view_mode' =&gt; '$view_mode$',&#10;)$END$" description="" toReformat="true" toShortenFQNames="true">
     <variable name="view_mode" expression="enum(&quot;teaser&quot;, &quot;full&quot;, &quot;colorbox&quot;)" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="cdd_field_formatter_settings_entityreference_label" value="array(&#10;  'link' =&gt; '$link$',&#10;)$END$" toReformat="true" toShortenFQNames="true">
+  <template name="cdd_field_formatter_settings_entityreference_label" value="array(&#10;  'link' =&gt; '$link$',&#10;)$END$" description="" toReformat="true" toShortenFQNames="true">
     <variable name="link" expression="enum(&quot;TRUE&quot;, &quot;FALSE&quot;)" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="cdd_field_formatter_settings_file_default" value="array()$END$" toReformat="true" toShortenFQNames="true">
+  <template name="cdd_field_formatter_settings_file_default" value="array()$END$" description="" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="cdd_field_formatter_settings_file_table" value="array()$END$" toReformat="true" toShortenFQNames="true">
+  <template name="cdd_field_formatter_settings_file_table" value="array()$END$" description="" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="cdd_field_formatter_settings_file_url_plain" value="array()$END$" toReformat="true" toShortenFQNames="true">
+  <template name="cdd_field_formatter_settings_file_url_plain" value="array()$END$" description="" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="cdd_field_formatter_settings_format_interval" value="array(&#10;  'interval' =&gt; '$interval$',&#10;  'interval_display' =&gt; '$interval_display$',&#10;)$END$" toReformat="true" toShortenFQNames="true">
+  <template name="cdd_field_formatter_settings_format_interval" value="array(&#10;  'interval' =&gt; '$interval$',&#10;  'interval_display' =&gt; '$interval_display$',&#10;)$END$" description="" toReformat="true" toShortenFQNames="true">
     <variable name="interval" expression="enum(&quot;2&quot;, &quot;1&quot;, &quot;3&quot;, &quot;4&quot;, &quot;5&quot;, &quot;6&quot;)" defaultValue="&quot;2&quot;" alwaysStopAt="true" />
     <variable name="interval_display" expression="enum(&quot;time ago&quot;, &quot;raw time ago&quot;, &quot;raw time hence&quot;, &quot;raw time span&quot;, &quot;inverse time span&quot;, &quot;time span&quot;)" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="cdd_field_formatter_settings_hidden" value="array()$END$" toReformat="true" toShortenFQNames="true">
+  <template name="cdd_field_formatter_settings_hidden" value="array()$END$" description="" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="cdd_field_formatter_settings_image" value="array(&#10;  'image_style' =&gt; '$image_style$',&#10;  'image_link' =&gt; '$image_link$',&#10;)$END$" toReformat="true" toShortenFQNames="true">
+  <template name="cdd_field_formatter_settings_image" value="array(&#10;  'image_style' =&gt; '$image_style$',&#10;  'image_link' =&gt; '$image_link$',&#10;)$END$" description="" toReformat="true" toShortenFQNames="true">
     <variable name="image_style" expression="enum(&quot;thumbnail&quot;, &quot;medium&quot;, &quot;large&quot;)" defaultValue="" alwaysStopAt="true" />
     <variable name="image_link" expression="enum(&quot;content&quot;, &quot;file&quot;)" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="cdd_field_formatter_settings_link_absolute" value="array()$END$" toReformat="true" toShortenFQNames="true">
+  <template name="cdd_field_formatter_settings_link_absolute" value="array()$END$" description="" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="cdd_field_formatter_settings_link_default" value="array()$END$" toReformat="true" toShortenFQNames="true">
+  <template name="cdd_field_formatter_settings_link_default" value="array()$END$" description="" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="cdd_field_formatter_settings_link_label" value="array()$END$" toReformat="true" toShortenFQNames="true">
+  <template name="cdd_field_formatter_settings_link_label" value="array()$END$" description="" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="cdd_field_formatter_settings_link_plain" value="array()$END$" toReformat="true" toShortenFQNames="true">
+  <template name="cdd_field_formatter_settings_link_plain" value="array()$END$" description="" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="cdd_field_formatter_settings_link_separate" value="array()$END$" toReformat="true" toShortenFQNames="true">
+  <template name="cdd_field_formatter_settings_link_separate" value="array()$END$" description="" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="cdd_field_formatter_settings_link_short" value="array()$END$" toReformat="true" toShortenFQNames="true">
+  <template name="cdd_field_formatter_settings_link_short" value="array()$END$" description="" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="cdd_field_formatter_settings_link_title_plain" value="array()$END$" toReformat="true" toShortenFQNames="true">
+  <template name="cdd_field_formatter_settings_link_title_plain" value="array()$END$" description="" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="cdd_field_formatter_settings_link_url" value="array()$END$" toReformat="true" toShortenFQNames="true">
+  <template name="cdd_field_formatter_settings_link_url" value="array()$END$" description="" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="cdd_field_formatter_settings_list_default" value="array()$END$" toReformat="true" toShortenFQNames="true">
+  <template name="cdd_field_formatter_settings_list_default" value="array()$END$" description="" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="cdd_field_formatter_settings_list_key" value="array()$END$" toReformat="true" toShortenFQNames="true">
+  <template name="cdd_field_formatter_settings_list_key" value="array()$END$" description="" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="cdd_field_formatter_settings_number_decimal" value="array(&#10;  'thousand_separator' =&gt; '$thousand_separator$',&#10;  'decimal_separator' =&gt; '$decimal_separator$',&#10;  'scale' =&gt; '$scale$',&#10;  'prefix_suffix' =&gt; $prefix_suffix$,&#10;)$END$" toReformat="true" toShortenFQNames="true">
+  <template name="cdd_field_formatter_settings_number_decimal" value="array(&#10;  'thousand_separator' =&gt; '$thousand_separator$',&#10;  'decimal_separator' =&gt; '$decimal_separator$',&#10;  'scale' =&gt; '$scale$',&#10;  'prefix_suffix' =&gt; $prefix_suffix$,&#10;)$END$" description="" toReformat="true" toShortenFQNames="true">
     <variable name="thousand_separator" expression="enum(&quot; &quot;, &quot;'&quot;)" defaultValue="" alwaysStopAt="true" />
     <variable name="decimal_separator" expression="enum(&quot;.&quot;, &quot;,&quot;)" defaultValue="" alwaysStopAt="true" />
     <variable name="scale" expression="enum(&quot;2&quot;, &quot;0&quot;, &quot;1&quot;, &quot;3&quot;, &quot;4&quot;, &quot;5&quot;, &quot;6&quot;)" defaultValue="" alwaysStopAt="true" />
@@ -371,7 +371,7 @@
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="cdd_field_formatter_settings_number_integer" value="array(&#10;  'thousand_separator' =&gt; $thousand_separator$,&#10;  'decimal_separator' =&gt; '$decimal_separator$',&#10;  'scale' =&gt; '$scale$',&#10;  'prefix_suffix' =&gt; $prefix_suffix$,&#10;)$END$" toReformat="true" toShortenFQNames="true">
+  <template name="cdd_field_formatter_settings_number_integer" value="array(&#10;  'thousand_separator' =&gt; $thousand_separator$,&#10;  'decimal_separator' =&gt; '$decimal_separator$',&#10;  'scale' =&gt; '$scale$',&#10;  'prefix_suffix' =&gt; $prefix_suffix$,&#10;)$END$" description="" toReformat="true" toShortenFQNames="true">
     <variable name="thousand_separator" expression="enum(&quot;' '&quot;, &quot;\&quot;'\&quot;&quot;)" defaultValue="" alwaysStopAt="true" />
     <variable name="decimal_separator" expression="enum(&quot;.&quot;, &quot;,&quot;)" defaultValue="" alwaysStopAt="true" />
     <variable name="scale" expression="enum(&quot;0&quot;, &quot;1&quot;, &quot;2&quot;, &quot;3&quot;, &quot;4&quot;, &quot;5&quot;, &quot;6&quot;)" defaultValue="" alwaysStopAt="true" />
@@ -380,43 +380,43 @@
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="cdd_field_formatter_settings_number_taxonomy_term_reference_link" value="array()$END$" toReformat="true" toShortenFQNames="true">
+  <template name="cdd_field_formatter_settings_number_taxonomy_term_reference_link" value="array()$END$" description="" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="cdd_field_formatter_settings_number_taxonomy_term_reference_plain" value="array()$END$" toReformat="true" toShortenFQNames="true">
+  <template name="cdd_field_formatter_settings_number_taxonomy_term_reference_plain" value="array()$END$" description="" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="cdd_field_formatter_settings_number_taxonomy_term_reference_rss_category" value="array()$END$" toReformat="true" toShortenFQNames="true">
+  <template name="cdd_field_formatter_settings_number_taxonomy_term_reference_rss_category" value="array()$END$" description="" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="cdd_field_formatter_settings_number_unformatted" value="array()$END$" toReformat="true" toShortenFQNames="true">
+  <template name="cdd_field_formatter_settings_number_unformatted" value="array()$END$" description="" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="cdd_field_formatter_settings_text_default" value="array()$END$" toReformat="true" toShortenFQNames="true">
+  <template name="cdd_field_formatter_settings_text_default" value="array()$END$" description="" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="cdd_field_formatter_settings_text_plain" value="array()$END$" toReformat="true" toShortenFQNames="true">
+  <template name="cdd_field_formatter_settings_text_plain" value="array()$END$" description="" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="cdd_field_formatter_settings_text_summary_or_trimmed" value="array(&#10;  'trim_length' =&gt; $trim_length$,&#10;)$END$" toReformat="true" toShortenFQNames="true">
+  <template name="cdd_field_formatter_settings_text_summary_or_trimmed" value="array(&#10;  'trim_length' =&gt; $trim_length$,&#10;)$END$" description="" toReformat="true" toShortenFQNames="true">
     <variable name="trim_length" expression="" defaultValue="&quot;600&quot;" alwaysStopAt="true" />
     <context>
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="cdd_field_formatter_settings_text_trimmed" value="array(&#10;  'trim_length' =&gt; $trim_length$,&#10;)$END$" toReformat="true" toShortenFQNames="true">
+  <template name="cdd_field_formatter_settings_text_trimmed" value="array(&#10;  'trim_length' =&gt; $trim_length$,&#10;)$END$" description="" toReformat="true" toShortenFQNames="true">
     <variable name="trim_length" expression="" defaultValue="&quot;600&quot;" alwaysStopAt="true" />
     <context>
       <option name="PHP" value="true" />
@@ -558,7 +558,7 @@
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="cdd_field_instance_view_mode_date" value="'$view_mode$' =&gt; array(&#10;  'label' =&gt; '$label$',&#10;  'module' =&gt; '$module$',&#10;  'type' =&gt; '$type$',&#10;  'settings' =&gt; cdd_field_formatter_settings_$type$$END$,&#10;  'weight' =&gt; $weight$,&#10;),&#10;//cdd_field_instance_view_mode_date" toReformat="true" toShortenFQNames="true">
+  <template name="cdd_field_instance_view_mode_date" value="'$view_mode$' =&gt; array(&#10;  'label' =&gt; '$label$',&#10;  'module' =&gt; '$module$',&#10;  'type' =&gt; '$type$',&#10;  'settings' =&gt; cdd_field_formatter_settings_$type$$END$,&#10;  'weight' =&gt; $weight$,&#10;),&#10;//cdd_field_instance_view_mode_date" description="" toReformat="true" toShortenFQNames="true">
     <variable name="view_mode" expression="enum(&quot;default&quot;, &quot;teaser&quot;, &quot;full&quot;)" defaultValue="" alwaysStopAt="true" />
     <variable name="label" expression="enum(&quot;above&quot;, &quot;inline&quot;, &quot;hidden&quot;)" defaultValue="" alwaysStopAt="true" />
     <variable name="module" expression="enum(&quot;date&quot;)" defaultValue="" alwaysStopAt="true" />
@@ -568,7 +568,7 @@
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="cdd_field_instance_view_mode_datestamp" value="'$view_mode$' =&gt; array(&#10;  'label' =&gt; '$label$',&#10;  'module' =&gt; '$module$',&#10;  'type' =&gt; '$type$',&#10;  'settings' =&gt; cdd_field_formatter_settings_$type$$END$,&#10;  'weight' =&gt; $weight$,&#10;),&#10;//cdd_field_instance_view_mode_datestamp" toReformat="true" toShortenFQNames="true">
+  <template name="cdd_field_instance_view_mode_datestamp" value="'$view_mode$' =&gt; array(&#10;  'label' =&gt; '$label$',&#10;  'module' =&gt; '$module$',&#10;  'type' =&gt; '$type$',&#10;  'settings' =&gt; cdd_field_formatter_settings_$type$$END$,&#10;  'weight' =&gt; $weight$,&#10;),&#10;//cdd_field_instance_view_mode_datestamp" description="" toReformat="true" toShortenFQNames="true">
     <variable name="view_mode" expression="enum(&quot;default&quot;, &quot;teaser&quot;, &quot;full&quot;)" defaultValue="" alwaysStopAt="true" />
     <variable name="label" expression="enum(&quot;above&quot;, &quot;inline&quot;, &quot;hidden&quot;)" defaultValue="" alwaysStopAt="true" />
     <variable name="module" expression="enum(&quot;date&quot;)" defaultValue="" alwaysStopAt="true" />
@@ -578,7 +578,7 @@
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="cdd_field_instance_view_mode_datetime" value="'$view_mode$' =&gt; array(&#10;  'label' =&gt; '$label$',&#10;  'module' =&gt; '$module$',&#10;  'type' =&gt; '$type$',&#10;  'settings' =&gt; cdd_field_formatter_settings_$type$$END$,&#10;  'weight' =&gt; $weight$,&#10;),&#10;//cdd_field_instance_view_mode_datestamp" toReformat="true" toShortenFQNames="true">
+  <template name="cdd_field_instance_view_mode_datetime" value="'$view_mode$' =&gt; array(&#10;  'label' =&gt; '$label$',&#10;  'module' =&gt; '$module$',&#10;  'type' =&gt; '$type$',&#10;  'settings' =&gt; cdd_field_formatter_settings_$type$$END$,&#10;  'weight' =&gt; $weight$,&#10;),&#10;//cdd_field_instance_view_mode_datestamp" description="" toReformat="true" toShortenFQNames="true">
     <variable name="view_mode" expression="enum(&quot;default&quot;, &quot;teaser&quot;, &quot;full&quot;)" defaultValue="" alwaysStopAt="true" />
     <variable name="label" expression="enum(&quot;above&quot;, &quot;inline&quot;, &quot;hidden&quot;)" defaultValue="" alwaysStopAt="true" />
     <variable name="module" expression="enum(&quot;date&quot;)" defaultValue="" alwaysStopAt="true" />
@@ -588,7 +588,7 @@
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="cdd_field_instance_view_mode_entityreference" value="'$view_mode$' =&gt; array(&#10;  'label' =&gt; '$label$',&#10;  'module' =&gt; '$module$',&#10;  'type' =&gt; '$type$',&#10;  'settings' =&gt; cdd_field_formatter_settings_$type$$END$,&#10;  'weight' =&gt; $weight$,&#10;),&#10;//cdd_field_instance_view_mode_entityreference" toReformat="true" toShortenFQNames="true">
+  <template name="cdd_field_instance_view_mode_entityreference" value="'$view_mode$' =&gt; array(&#10;  'label' =&gt; '$label$',&#10;  'module' =&gt; '$module$',&#10;  'type' =&gt; '$type$',&#10;  'settings' =&gt; cdd_field_formatter_settings_$type$$END$,&#10;  'weight' =&gt; $weight$,&#10;),&#10;//cdd_field_instance_view_mode_entityreference" description="" toReformat="true" toShortenFQNames="true">
     <variable name="view_mode" expression="enum(&quot;default&quot;, &quot;teaser&quot;, &quot;full&quot;)" defaultValue="" alwaysStopAt="true" />
     <variable name="label" expression="enum(&quot;above&quot;, &quot;inline&quot;, &quot;hidden&quot;)" defaultValue="" alwaysStopAt="true" />
     <variable name="module" expression="enum(&quot;entityreference&quot;)" defaultValue="" alwaysStopAt="true" />
@@ -598,7 +598,7 @@
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="cdd_field_instance_view_mode_file" value="'$view_mode$' =&gt; array(&#10;  'label' =&gt; '$label$',&#10;  'module' =&gt; '$module$',&#10;  'type' =&gt; '$type$',&#10;  'settings' =&gt; cdd_field_formatter_settings_$type$$END$,&#10;  'weight' =&gt; $weight$,&#10;),&#10;//cdd_field_instance_view_mode_file" toReformat="true" toShortenFQNames="true">
+  <template name="cdd_field_instance_view_mode_file" value="'$view_mode$' =&gt; array(&#10;  'label' =&gt; '$label$',&#10;  'module' =&gt; '$module$',&#10;  'type' =&gt; '$type$',&#10;  'settings' =&gt; cdd_field_formatter_settings_$type$$END$,&#10;  'weight' =&gt; $weight$,&#10;),&#10;//cdd_field_instance_view_mode_file" description="" toReformat="true" toShortenFQNames="true">
     <variable name="view_mode" expression="enum(&quot;default&quot;, &quot;teaser&quot;, &quot;full&quot;)" defaultValue="" alwaysStopAt="true" />
     <variable name="label" expression="enum(&quot;above&quot;, &quot;inline&quot;, &quot;hidden&quot;)" defaultValue="" alwaysStopAt="true" />
     <variable name="module" expression="enum(&quot;file&quot;)" defaultValue="" alwaysStopAt="true" />
@@ -608,7 +608,7 @@
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="cdd_field_instance_view_mode_image" value="'$view_mode$' =&gt; array(&#10;  'label' =&gt; '$label$',&#10;  'module' =&gt; '$module$',&#10;  'type' =&gt; '$type$',&#10;  'settings' =&gt; cdd_field_formatter_settings_$type$$END$,&#10;  'weight' =&gt; $weight$,&#10;),&#10;//cdd_field_instance_view_mode_image" toReformat="true" toShortenFQNames="true">
+  <template name="cdd_field_instance_view_mode_image" value="'$view_mode$' =&gt; array(&#10;  'label' =&gt; '$label$',&#10;  'module' =&gt; '$module$',&#10;  'type' =&gt; '$type$',&#10;  'settings' =&gt; cdd_field_formatter_settings_$type$$END$,&#10;  'weight' =&gt; $weight$,&#10;),&#10;//cdd_field_instance_view_mode_image" description="" toReformat="true" toShortenFQNames="true">
     <variable name="view_mode" expression="enum(&quot;default&quot;, &quot;teaser&quot;, &quot;full&quot;)" defaultValue="" alwaysStopAt="true" />
     <variable name="label" expression="enum(&quot;above&quot;, &quot;inline&quot;, &quot;hidden&quot;)" defaultValue="" alwaysStopAt="true" />
     <variable name="module" expression="enum(&quot;image&quot;)" defaultValue="" alwaysStopAt="true" />
@@ -618,7 +618,7 @@
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="cdd_field_instance_view_mode_link_field" value="'$view_mode$' =&gt; array(&#10;  'label' =&gt; '$label$',&#10;  'module' =&gt; '$module$',&#10;  'type' =&gt; '$type$',&#10;  'settings' =&gt; cdd_field_formatter_settings_$type$$END$,&#10;  'weight' =&gt; $weight$,&#10;),&#10;//cdd_field_instance_view_mode_link_field" toReformat="true" toShortenFQNames="true">
+  <template name="cdd_field_instance_view_mode_link_field" value="'$view_mode$' =&gt; array(&#10;  'label' =&gt; '$label$',&#10;  'module' =&gt; '$module$',&#10;  'type' =&gt; '$type$',&#10;  'settings' =&gt; cdd_field_formatter_settings_$type$$END$,&#10;  'weight' =&gt; $weight$,&#10;),&#10;//cdd_field_instance_view_mode_link_field" description="" toReformat="true" toShortenFQNames="true">
     <variable name="view_mode" expression="enum(&quot;default&quot;, &quot;teaser&quot;, &quot;full&quot;)" defaultValue="" alwaysStopAt="true" />
     <variable name="label" expression="enum(&quot;above&quot;, &quot;inline&quot;, &quot;hidden&quot;)" defaultValue="" alwaysStopAt="true" />
     <variable name="module" expression="enum(&quot;link&quot;)" defaultValue="" alwaysStopAt="true" />
@@ -628,7 +628,7 @@
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="cdd_field_instance_view_mode_list_boolean" value="'$view_mode$' =&gt; array(&#10;  'label' =&gt; '$label$',&#10;  'module' =&gt; '$module$',&#10;  'type' =&gt; '$type$',&#10;  'settings' =&gt; cdd_field_formatter_settings_$type$$END$,&#10;  'weight' =&gt; $weight$,&#10;),&#10;//cdd_field_instance_view_mode_list_boolean" toReformat="true" toShortenFQNames="true">
+  <template name="cdd_field_instance_view_mode_list_boolean" value="'$view_mode$' =&gt; array(&#10;  'label' =&gt; '$label$',&#10;  'module' =&gt; '$module$',&#10;  'type' =&gt; '$type$',&#10;  'settings' =&gt; cdd_field_formatter_settings_$type$$END$,&#10;  'weight' =&gt; $weight$,&#10;),&#10;//cdd_field_instance_view_mode_list_boolean" description="" toReformat="true" toShortenFQNames="true">
     <variable name="view_mode" expression="enum(&quot;default&quot;, &quot;teaser&quot;, &quot;full&quot;)" defaultValue="" alwaysStopAt="true" />
     <variable name="label" expression="enum(&quot;above&quot;, &quot;inline&quot;, &quot;hidden&quot;)" defaultValue="" alwaysStopAt="true" />
     <variable name="module" expression="enum(&quot;list&quot;)" defaultValue="" alwaysStopAt="true" />
@@ -638,7 +638,7 @@
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="cdd_field_instance_view_mode_list_float" value="'$view_mode$' =&gt; array(&#10;  'label' =&gt; '$label$',&#10;  'module' =&gt; '$module$',&#10;  'type' =&gt; '$type$',&#10;  'settings' =&gt; cdd_field_formatter_settings_$type$$END$,&#10;  'weight' =&gt; $weight$,&#10;),&#10;//cdd_field_instance_view_mode_list_float" toReformat="true" toShortenFQNames="true">
+  <template name="cdd_field_instance_view_mode_list_float" value="'$view_mode$' =&gt; array(&#10;  'label' =&gt; '$label$',&#10;  'module' =&gt; '$module$',&#10;  'type' =&gt; '$type$',&#10;  'settings' =&gt; cdd_field_formatter_settings_$type$$END$,&#10;  'weight' =&gt; $weight$,&#10;),&#10;//cdd_field_instance_view_mode_list_float" description="" toReformat="true" toShortenFQNames="true">
     <variable name="view_mode" expression="enum(&quot;default&quot;, &quot;teaser&quot;, &quot;full&quot;)" defaultValue="" alwaysStopAt="true" />
     <variable name="label" expression="enum(&quot;above&quot;, &quot;inline&quot;, &quot;hidden&quot;)" defaultValue="" alwaysStopAt="true" />
     <variable name="module" expression="enum(&quot;list&quot;)" defaultValue="" alwaysStopAt="true" />
@@ -648,7 +648,7 @@
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="cdd_field_instance_view_mode_list_integer" value="'$view_mode$' =&gt; array(&#10;  'label' =&gt; '$label$',&#10;  'module' =&gt; '$module$',&#10;  'type' =&gt; '$type$',&#10;  'settings' =&gt; cdd_field_formatter_settings_$type$$END$,&#10;  'weight' =&gt; $weight$,&#10;),&#10;//cdd_field_instance_view_mode_list_integer" toReformat="true" toShortenFQNames="true">
+  <template name="cdd_field_instance_view_mode_list_integer" value="'$view_mode$' =&gt; array(&#10;  'label' =&gt; '$label$',&#10;  'module' =&gt; '$module$',&#10;  'type' =&gt; '$type$',&#10;  'settings' =&gt; cdd_field_formatter_settings_$type$$END$,&#10;  'weight' =&gt; $weight$,&#10;),&#10;//cdd_field_instance_view_mode_list_integer" description="" toReformat="true" toShortenFQNames="true">
     <variable name="view_mode" expression="enum(&quot;default&quot;, &quot;teaser&quot;, &quot;full&quot;)" defaultValue="" alwaysStopAt="true" />
     <variable name="label" expression="enum(&quot;above&quot;, &quot;inline&quot;, &quot;hidden&quot;)" defaultValue="" alwaysStopAt="true" />
     <variable name="module" expression="enum(&quot;list&quot;)" defaultValue="" alwaysStopAt="true" />
@@ -658,7 +658,7 @@
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="cdd_field_instance_view_mode_list_text" value="'$view_mode$' =&gt; array(&#10;  'label' =&gt; '$label$',&#10;  'module' =&gt; '$module$',&#10;  'type' =&gt; '$type$',&#10;  'settings' =&gt; cdd_field_formatter_settings_$type$$END$,&#10;  'weight' =&gt; $weight$,&#10;),&#10;//cdd_field_instance_view_mode_list_text" toReformat="true" toShortenFQNames="true">
+  <template name="cdd_field_instance_view_mode_list_text" value="'$view_mode$' =&gt; array(&#10;  'label' =&gt; '$label$',&#10;  'module' =&gt; '$module$',&#10;  'type' =&gt; '$type$',&#10;  'settings' =&gt; cdd_field_formatter_settings_$type$$END$,&#10;  'weight' =&gt; $weight$,&#10;),&#10;//cdd_field_instance_view_mode_list_text" description="" toReformat="true" toShortenFQNames="true">
     <variable name="view_mode" expression="enum(&quot;default&quot;, &quot;teaser&quot;, &quot;full&quot;)" defaultValue="" alwaysStopAt="true" />
     <variable name="label" expression="enum(&quot;above&quot;, &quot;inline&quot;, &quot;hidden&quot;)" defaultValue="" alwaysStopAt="true" />
     <variable name="module" expression="enum(&quot;list&quot;)" defaultValue="" alwaysStopAt="true" />
@@ -668,7 +668,7 @@
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="cdd_field_instance_view_mode_number_decimal" value="'$view_mode$' =&gt; array(&#10;  'label' =&gt; '$label$',&#10;  'module' =&gt; '$module$',&#10;  'type' =&gt; '$type$',&#10;  'settings' =&gt; cdd_field_formatter_settings_$type$$END$,&#10;  'weight' =&gt; $weight$,&#10;),&#10;//cdd_field_instance_view_mode_number_decimal" toReformat="true" toShortenFQNames="true">
+  <template name="cdd_field_instance_view_mode_number_decimal" value="'$view_mode$' =&gt; array(&#10;  'label' =&gt; '$label$',&#10;  'module' =&gt; '$module$',&#10;  'type' =&gt; '$type$',&#10;  'settings' =&gt; cdd_field_formatter_settings_$type$$END$,&#10;  'weight' =&gt; $weight$,&#10;),&#10;//cdd_field_instance_view_mode_number_decimal" description="" toReformat="true" toShortenFQNames="true">
     <variable name="view_mode" expression="enum(&quot;default&quot;, &quot;teaser&quot;, &quot;full&quot;)" defaultValue="" alwaysStopAt="true" />
     <variable name="label" expression="enum(&quot;above&quot;, &quot;inline&quot;, &quot;hidden&quot;)" defaultValue="" alwaysStopAt="true" />
     <variable name="module" expression="enum(&quot;number&quot;)" defaultValue="" alwaysStopAt="true" />
@@ -678,7 +678,7 @@
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="cdd_field_instance_view_mode_number_float" value="'$view_mode$' =&gt; array(&#10;  'label' =&gt; '$label$',&#10;  'module' =&gt; '$module$',&#10;  'type' =&gt; '$type$',&#10;  'settings' =&gt; cdd_field_formatter_settings_$type$$END$,&#10;  'weight' =&gt; $weight$,&#10;),&#10;//cdd_field_instance_view_mode_number_float" toReformat="true" toShortenFQNames="true">
+  <template name="cdd_field_instance_view_mode_number_float" value="'$view_mode$' =&gt; array(&#10;  'label' =&gt; '$label$',&#10;  'module' =&gt; '$module$',&#10;  'type' =&gt; '$type$',&#10;  'settings' =&gt; cdd_field_formatter_settings_$type$$END$,&#10;  'weight' =&gt; $weight$,&#10;),&#10;//cdd_field_instance_view_mode_number_float" description="" toReformat="true" toShortenFQNames="true">
     <variable name="view_mode" expression="enum(&quot;default&quot;, &quot;teaser&quot;, &quot;full&quot;)" defaultValue="" alwaysStopAt="true" />
     <variable name="label" expression="enum(&quot;above&quot;, &quot;inline&quot;, &quot;hidden&quot;)" defaultValue="" alwaysStopAt="true" />
     <variable name="module" expression="enum(&quot;number&quot;)" defaultValue="" alwaysStopAt="true" />
@@ -688,7 +688,7 @@
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="cdd_field_instance_view_mode_number_integer" value="'$view_mode$' =&gt; array(&#10;  'label' =&gt; '$label$',&#10;  'module' =&gt; '$module$',&#10;  'type' =&gt; '$type$',&#10;  'settings' =&gt; cdd_field_formatter_settings_$type$$END$,&#10;  'weight' =&gt; $weight$,&#10;),&#10;//cdd_field_instance_view_mode_number_integer" toReformat="true" toShortenFQNames="true">
+  <template name="cdd_field_instance_view_mode_number_integer" value="'$view_mode$' =&gt; array(&#10;  'label' =&gt; '$label$',&#10;  'module' =&gt; '$module$',&#10;  'type' =&gt; '$type$',&#10;  'settings' =&gt; cdd_field_formatter_settings_$type$$END$,&#10;  'weight' =&gt; $weight$,&#10;),&#10;//cdd_field_instance_view_mode_number_integer" description="" toReformat="true" toShortenFQNames="true">
     <variable name="view_mode" expression="enum(&quot;default&quot;, &quot;teaser&quot;, &quot;full&quot;)" defaultValue="" alwaysStopAt="true" />
     <variable name="label" expression="enum(&quot;above&quot;, &quot;inline&quot;, &quot;hidden&quot;)" defaultValue="" alwaysStopAt="true" />
     <variable name="module" expression="enum(&quot;number&quot;)" defaultValue="" alwaysStopAt="true" />
@@ -698,7 +698,7 @@
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="cdd_field_instance_view_mode_taxonomy_term_reference" value="'$view_mode$' =&gt; array(&#10;  'label' =&gt; '$label$',&#10;  'module' =&gt; '$module$',&#10;  'type' =&gt; '$type$',&#10;  'settings' =&gt; cdd_field_formatter_settings_$type$$END$,&#10;  'weight' =&gt; $weight$,&#10;),&#10;//cdd_field_instance_view_mode_taxonomy_term_reference" toReformat="true" toShortenFQNames="true">
+  <template name="cdd_field_instance_view_mode_taxonomy_term_reference" value="'$view_mode$' =&gt; array(&#10;  'label' =&gt; '$label$',&#10;  'module' =&gt; '$module$',&#10;  'type' =&gt; '$type$',&#10;  'settings' =&gt; cdd_field_formatter_settings_$type$$END$,&#10;  'weight' =&gt; $weight$,&#10;),&#10;//cdd_field_instance_view_mode_taxonomy_term_reference" description="" toReformat="true" toShortenFQNames="true">
     <variable name="view_mode" expression="enum(&quot;default&quot;, &quot;teaser&quot;, &quot;full&quot;)" defaultValue="" alwaysStopAt="true" />
     <variable name="label" expression="enum(&quot;above&quot;, &quot;inline&quot;, &quot;hidden&quot;)" defaultValue="" alwaysStopAt="true" />
     <variable name="module" expression="enum(&quot;taxonomy&quot;)" defaultValue="" alwaysStopAt="true" />
@@ -708,7 +708,7 @@
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="cdd_field_instance_view_mode_text" value="'$view_mode$' =&gt; array(&#10;  'label' =&gt; '$label$',&#10;  'module' =&gt; '$module$',&#10;  'type' =&gt; '$type$',&#10;  'settings' =&gt; cdd_field_formatter_settings_$type$$END$,&#10;  'weight' =&gt; $weight$,&#10;),&#10;//cdd_field_instance_view_mode_text" toReformat="true" toShortenFQNames="true">
+  <template name="cdd_field_instance_view_mode_text" value="'$view_mode$' =&gt; array(&#10;  'label' =&gt; '$label$',&#10;  'module' =&gt; '$module$',&#10;  'type' =&gt; '$type$',&#10;  'settings' =&gt; cdd_field_formatter_settings_$type$$END$,&#10;  'weight' =&gt; $weight$,&#10;),&#10;//cdd_field_instance_view_mode_text" description="" toReformat="true" toShortenFQNames="true">
     <variable name="view_mode" expression="enum(&quot;default&quot;, &quot;teaser&quot;, &quot;full&quot;)" defaultValue="" alwaysStopAt="true" />
     <variable name="label" expression="enum(&quot;above&quot;, &quot;inline&quot;, &quot;hidden&quot;)" defaultValue="" alwaysStopAt="true" />
     <variable name="module" expression="enum(&quot;text&quot;)" defaultValue="" alwaysStopAt="true" />
@@ -718,7 +718,7 @@
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="cdd_field_instance_view_mode_text_long" value="'$view_mode$' =&gt; array(&#10;  'label' =&gt; '$label$',&#10;  'module' =&gt; '$module$',&#10;  'type' =&gt; '$type$',&#10;  'settings' =&gt; cdd_field_formatter_settings_$type$$END$,&#10;  'weight' =&gt; $weight$,&#10;),&#10;//cdd_field_instance_view_mode_text_long" toReformat="true" toShortenFQNames="true">
+  <template name="cdd_field_instance_view_mode_text_long" value="'$view_mode$' =&gt; array(&#10;  'label' =&gt; '$label$',&#10;  'module' =&gt; '$module$',&#10;  'type' =&gt; '$type$',&#10;  'settings' =&gt; cdd_field_formatter_settings_$type$$END$,&#10;  'weight' =&gt; $weight$,&#10;),&#10;//cdd_field_instance_view_mode_text_long" description="" toReformat="true" toShortenFQNames="true">
     <variable name="view_mode" expression="enum(&quot;default&quot;, &quot;teaser&quot;, &quot;full&quot;)" defaultValue="" alwaysStopAt="true" />
     <variable name="label" expression="enum(&quot;above&quot;, &quot;inline&quot;, &quot;hidden&quot;)" defaultValue="" alwaysStopAt="true" />
     <variable name="module" expression="enum(&quot;text&quot;)" defaultValue="" alwaysStopAt="true" />
@@ -728,7 +728,7 @@
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="cdd_field_instance_view_mode_text_summary_or_trimmed" value="'$view_mode$' =&gt; array(&#10;  'label' =&gt; '$label$',&#10;  'module' =&gt; '$module$',&#10;  'type' =&gt; '$type$',&#10;  'settings' =&gt; cdd_field_formatter_settings_$type$$END$,&#10;  'weight' =&gt; $weight$,&#10;),&#10;//cdd_field_instance_view_mode_text_summary_or_trimmed" toReformat="true" toShortenFQNames="true">
+  <template name="cdd_field_instance_view_mode_text_summary_or_trimmed" value="'$view_mode$' =&gt; array(&#10;  'label' =&gt; '$label$',&#10;  'module' =&gt; '$module$',&#10;  'type' =&gt; '$type$',&#10;  'settings' =&gt; cdd_field_formatter_settings_$type$$END$,&#10;  'weight' =&gt; $weight$,&#10;),&#10;//cdd_field_instance_view_mode_text_summary_or_trimmed" description="" toReformat="true" toShortenFQNames="true">
     <variable name="view_mode" expression="enum(&quot;default&quot;, &quot;teaser&quot;, &quot;full&quot;)" defaultValue="" alwaysStopAt="true" />
     <variable name="label" expression="enum(&quot;above&quot;, &quot;inline&quot;, &quot;hidden&quot;)" defaultValue="" alwaysStopAt="true" />
     <variable name="module" expression="enum(&quot;text&quot;)" defaultValue="" alwaysStopAt="true" />
@@ -738,91 +738,91 @@
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="cdd_field_instance_widget_settings_date_popup" value="array(&#10;  'increment' =&gt; '15',&#10;  'input_format' =&gt; 'm/d/Y - H:i:s',&#10;  'input_format_custom' =&gt; '',&#10;  'label_position' =&gt; 'above',&#10;  'text_parts' =&gt; array(),&#10;  'year_range' =&gt; '-3:+3',&#10;)$terminator$" toReformat="true" toShortenFQNames="true">
+  <template name="cdd_field_instance_widget_settings_date_popup" value="array(&#10;  'increment' =&gt; '15',&#10;  'input_format' =&gt; 'm/d/Y - H:i:s',&#10;  'input_format_custom' =&gt; '',&#10;  'label_position' =&gt; 'above',&#10;  'text_parts' =&gt; array(),&#10;  'year_range' =&gt; '-3:+3',&#10;)$terminator$" description="" toReformat="true" toShortenFQNames="true">
     <variable name="terminator" expression="enum(&quot;&quot;, &quot;,&quot;, &quot;;&quot;)" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="cdd_field_instance_widget_settings_date_select" value="array(/* @todo */)$terminator$" toReformat="true" toShortenFQNames="true">
+  <template name="cdd_field_instance_widget_settings_date_select" value="array(/* @todo */)$terminator$" description="" toReformat="true" toShortenFQNames="true">
     <variable name="terminator" expression="enum(&quot;&quot;, &quot;,&quot;, &quot;;&quot;)" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="cdd_field_instance_widget_settings_date_text" value="array(/* @todo */)$terminator$" toReformat="true" toShortenFQNames="true">
+  <template name="cdd_field_instance_widget_settings_date_text" value="array(/* @todo */)$terminator$" description="" toReformat="true" toShortenFQNames="true">
     <variable name="terminator" expression="enum(&quot;&quot;, &quot;,&quot;, &quot;;&quot;)" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="cdd_field_instance_widget_settings_entityreference_autocomplete" value="array(/* @todo */)$terminator$" toReformat="true" toShortenFQNames="true">
+  <template name="cdd_field_instance_widget_settings_entityreference_autocomplete" value="array(/* @todo */)$terminator$" description="" toReformat="true" toShortenFQNames="true">
     <variable name="terminator" expression="enum(&quot;&quot;, &quot;,&quot;, &quot;;&quot;)" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="cdd_field_instance_widget_settings_entityreference_autocomplete_tags" value="array(/* @todo */)$terminator$" toReformat="true" toShortenFQNames="true">
+  <template name="cdd_field_instance_widget_settings_entityreference_autocomplete_tags" value="array(/* @todo */)$terminator$" description="" toReformat="true" toShortenFQNames="true">
     <variable name="terminator" expression="enum(&quot;&quot;, &quot;,&quot;, &quot;;&quot;)" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="cdd_field_instance_widget_settings_file_generic" value="array(/* @todo */)$terminator$" toReformat="true" toShortenFQNames="true">
+  <template name="cdd_field_instance_widget_settings_file_generic" value="array(/* @todo */)$terminator$" description="" toReformat="true" toShortenFQNames="true">
     <variable name="terminator" expression="enum(&quot;&quot;, &quot;,&quot;, &quot;;&quot;)" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="cdd_field_instance_widget_settings_image_image" value="array(/* @todo */)$terminator$" toReformat="true" toShortenFQNames="true">
+  <template name="cdd_field_instance_widget_settings_image_image" value="array(/* @todo */)$terminator$" description="" toReformat="true" toShortenFQNames="true">
     <variable name="terminator" expression="enum(&quot;&quot;, &quot;,&quot;, &quot;;&quot;)" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="cdd_field_instance_widget_settings_link_field" value="array(/* @todo */)$terminator$" toReformat="true" toShortenFQNames="true">
+  <template name="cdd_field_instance_widget_settings_link_field" value="array(/* @todo */)$terminator$" description="" toReformat="true" toShortenFQNames="true">
     <variable name="terminator" expression="enum(&quot;&quot;, &quot;,&quot;, &quot;;&quot;)" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="cdd_field_instance_widget_settings_number" value="array()$terminator$" toReformat="true" toShortenFQNames="true">
+  <template name="cdd_field_instance_widget_settings_number" value="array()$terminator$" description="" toReformat="true" toShortenFQNames="true">
     <variable name="terminator" expression="enum(&quot;&quot;, &quot;,&quot;, &quot;;&quot;)" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="cdd_field_instance_widget_settings_options_buttons" value="array()$terminator$" toReformat="true" toShortenFQNames="true">
+  <template name="cdd_field_instance_widget_settings_options_buttons" value="array()$terminator$" description="" toReformat="true" toShortenFQNames="true">
     <variable name="terminator" expression="enum(&quot;&quot;, &quot;,&quot;, &quot;;&quot;)" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="cdd_field_instance_widget_settings_options_select" value="array(/* @todo */)$termimnator$" toReformat="true" toShortenFQNames="true">
+  <template name="cdd_field_instance_widget_settings_options_select" value="array(/* @todo */)$termimnator$" description="" toReformat="true" toShortenFQNames="true">
     <variable name="termimnator" expression="enum(&quot;&quot;, &quot;,&quot;, &quot;;&quot;)" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="cdd_field_instance_widget_settings_taxonomy_autocomplete" value="array(/* @todo */)$terminator$" toReformat="true" toShortenFQNames="true">
+  <template name="cdd_field_instance_widget_settings_taxonomy_autocomplete" value="array(/* @todo */)$terminator$" description="" toReformat="true" toShortenFQNames="true">
     <variable name="terminator" expression="enum(&quot;&quot;, &quot;,&quot;, &quot;;&quot;)" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="cdd_field_instance_widget_settings_text_text_with_summary" value="array(/* @todo */)$terminator$" toReformat="true" toShortenFQNames="true">
+  <template name="cdd_field_instance_widget_settings_text_text_with_summary" value="array(/* @todo */)$terminator$" description="" toReformat="true" toShortenFQNames="true">
     <variable name="terminator" expression="enum(&quot;&quot;, &quot;,&quot;, &quot;;&quot;)" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="cdd_field_instance_widget_settings_text_textarea" value="array(&#10;  'rows' =&gt; 5,&#10;)$terminator$" toReformat="true" toShortenFQNames="true">
+  <template name="cdd_field_instance_widget_settings_text_textarea" value="array(&#10;  'rows' =&gt; 5,&#10;)$terminator$" description="" toReformat="true" toShortenFQNames="true">
     <variable name="terminator" expression="enum(&quot;&quot;, &quot;,&quot;, &quot;;&quot;)" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="cdd_field_instance_widget_settings_text_textfield" value="array(/* @todo */)$terminator$" toReformat="true" toShortenFQNames="true">
+  <template name="cdd_field_instance_widget_settings_text_textfield" value="array(/* @todo */)$terminator$" description="" toReformat="true" toShortenFQNames="true">
     <variable name="terminator" expression="enum(&quot;&quot;, &quot;,&quot;, &quot;;&quot;)" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="PHP" value="true" />
@@ -900,7 +900,7 @@
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="cdd_field_instance_widget_type_list_boolean" value="array(&#10;  'active' =&gt; 1,&#10;  'module' =&gt; '$module$',&#10;  'type' =&gt; '$type$',&#10;  'settings' =&gt; cdd_field_instance_widget_settings_$type$$END$,&#10;  'weight' =&gt; '$weight$',&#10;)$terminator$" toReformat="true" toShortenFQNames="true">
+  <template name="cdd_field_instance_widget_type_list_boolean" value="array(&#10;  'active' =&gt; 1,&#10;  'module' =&gt; '$module$',&#10;  'type' =&gt; '$type$',&#10;  'settings' =&gt; cdd_field_instance_widget_settings_$type$$END$,&#10;  'weight' =&gt; '$weight$',&#10;)$terminator$" description="" toReformat="true" toShortenFQNames="true">
     <variable name="module" expression="enum(&quot;options&quot;)" defaultValue="" alwaysStopAt="true" />
     <variable name="type" expression="enum(&quot;options_buttons&quot;, &quot;options_onoff&quot;)" defaultValue="" alwaysStopAt="true" />
     <variable name="weight" expression="" defaultValue="&quot;0&quot;" alwaysStopAt="true" />
@@ -909,7 +909,7 @@
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="cdd_field_instance_widget_type_list_float" value="array(&#10;  'active' =&gt; 1,&#10;  'module' =&gt; '$module$',&#10;  'type' =&gt; '$type$',&#10;  'settings' =&gt; cdd_field_instance_widget_settings_$type$$END$,&#10;  'weight' =&gt; '$weight$',&#10;)$terminator$" toReformat="true" toShortenFQNames="true">
+  <template name="cdd_field_instance_widget_type_list_float" value="array(&#10;  'active' =&gt; 1,&#10;  'module' =&gt; '$module$',&#10;  'type' =&gt; '$type$',&#10;  'settings' =&gt; cdd_field_instance_widget_settings_$type$$END$,&#10;  'weight' =&gt; '$weight$',&#10;)$terminator$" description="" toReformat="true" toShortenFQNames="true">
     <variable name="module" expression="enum(&quot;options&quot;)" defaultValue="" alwaysStopAt="true" />
     <variable name="type" expression="enum(&quot;options_buttons&quot;, &quot;options_select&quot;)" defaultValue="" alwaysStopAt="true" />
     <variable name="weight" expression="" defaultValue="&quot;0&quot;" alwaysStopAt="true" />
@@ -918,7 +918,7 @@
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="cdd_field_instance_widget_type_list_integer" value="array(&#10;  'active' =&gt; 1,&#10;  'module' =&gt; '$module$',&#10;  'type' =&gt; '$type$',&#10;  'settings' =&gt; cdd_field_instance_widget_settings_$type$$END$,&#10;  'weight' =&gt; '$weight$',&#10;)$terminator$" toReformat="true" toShortenFQNames="true">
+  <template name="cdd_field_instance_widget_type_list_integer" value="array(&#10;  'active' =&gt; 1,&#10;  'module' =&gt; '$module$',&#10;  'type' =&gt; '$type$',&#10;  'settings' =&gt; cdd_field_instance_widget_settings_$type$$END$,&#10;  'weight' =&gt; '$weight$',&#10;)$terminator$" description="" toReformat="true" toShortenFQNames="true">
     <variable name="module" expression="enum(&quot;options&quot;)" defaultValue="" alwaysStopAt="true" />
     <variable name="type" expression="enum(&quot;options_buttons&quot;, &quot;options_select&quot;)" defaultValue="" alwaysStopAt="true" />
     <variable name="weight" expression="" defaultValue="&quot;0&quot;" alwaysStopAt="true" />
@@ -927,7 +927,7 @@
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="cdd_field_instance_widget_type_list_text" value="array(&#10;  'active' =&gt; 1,&#10;  'module' =&gt; '$module$',&#10;  'type' =&gt; '$type$',&#10;  'settings' =&gt; cdd_field_instance_widget_settings_$type$$END$,&#10;  'weight' =&gt; '$weight$',&#10;)$terminator$" toReformat="true" toShortenFQNames="true">
+  <template name="cdd_field_instance_widget_type_list_text" value="array(&#10;  'active' =&gt; 1,&#10;  'module' =&gt; '$module$',&#10;  'type' =&gt; '$type$',&#10;  'settings' =&gt; cdd_field_instance_widget_settings_$type$$END$,&#10;  'weight' =&gt; '$weight$',&#10;)$terminator$" description="" toReformat="true" toShortenFQNames="true">
     <variable name="module" expression="enum(&quot;options&quot;)" defaultValue="" alwaysStopAt="true" />
     <variable name="type" expression="enum(&quot;options_buttons&quot;, &quot;options_select&quot;)" defaultValue="" alwaysStopAt="true" />
     <variable name="weight" expression="" defaultValue="&quot;0&quot;" alwaysStopAt="true" />
