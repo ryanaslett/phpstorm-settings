@@ -5,45 +5,31 @@
     <option name="IS_ENSURE_NEWLINE_AT_EOF" value="true" />
     <option name="IS_ALL_SOFTWRAPS_SHOWN" value="true" />
   </component>
+  <component name="SqlEditorOptions">
+    <option name="concatenateStringsOnEnter" value="true" />
+    <option name="qualificationType" value="On collisions" />
+  </component>
   <component name="TodoConfiguration">
-    <pattern icon="default" useCustomColors="false" case-sensitive="false" pattern="\btodo\b.*">
-      <option name="FOREGROUND" value="586e75" />
-    </pattern>
-    <pattern icon="default" useCustomColors="false" case-sensitive="false" pattern="\bfixme\b.*">
-      <option name="FOREGROUND" value="586e75" />
-    </pattern>
-    <pattern icon="important" useCustomColors="false" case-sensitive="false" pattern="\bXXX\b.*">
-      <option name="FOREGROUND" value="586e75" />
-    </pattern>
+    <pattern pattern="\btodo\b.*" />
+    <pattern pattern="\bfixme\b.*" />
+    <pattern icon="important" pattern="\bXXX\b.*" />
     <pattern icon="question" useCustomColors="true" case-sensitive="true" pattern="DOCKER">
       <option name="FOREGROUND" value="586e75" />
       <option name="BACKGROUND" value="d33682" />
     </pattern>
-    <pattern icon="question" useCustomColors="false" case-sensitive="true" pattern="WORKFLOW">
-      <option name="FOREGROUND" value="586e75" />
-    </pattern>
-    <pattern icon="question" useCustomColors="false" case-sensitive="true" pattern="CODEBASE">
-      <option name="FOREGROUND" value="586e75" />
-    </pattern>
-    <pattern icon="default" useCustomColors="false" case-sensitive="true" pattern="ENVIRONMENT">
-      <option name="FOREGROUND" value="586e75" />
-    </pattern>
-    <pattern icon="default" useCustomColors="false" case-sensitive="true" pattern="OPUT">
-      <option name="FOREGROUND" value="586e75" />
-    </pattern>
-    <filter name="xxx">
-      <pattern index="-1" />
-    </filter>
+    <pattern icon="question" case-sensitive="true" pattern="WORKFLOW" />
+    <pattern icon="question" case-sensitive="true" pattern="CODEBASE" />
+    <pattern case-sensitive="true" pattern="ENVIRONMENT" />
+    <pattern case-sensitive="true" pattern="OPUT" />
+    <filter name="xxx" />
     <filter name="Plans">
-      <pattern index="6" />
-      <pattern index="3" />
       <pattern index="7" />
-      <pattern index="4" />
       <pattern index="5" />
+      <pattern index="3" />
+      <pattern index="6" />
+      <pattern index="4" />
     </filter>
-    <filter name="Normasl">
-      <pattern index="-1" />
-    </filter>
+    <filter name="Normasl" />
     <filter name="enviros">
       <pattern index="6" />
     </filter>
@@ -51,11 +37,9 @@
       <pattern index="3" />
     </filter>
     <filter name="Codebase">
-      <pattern index="6" />
       <pattern index="5" />
+      <pattern index="6" />
     </filter>
-    <filter name="fixme">
-      <pattern index="-1" />
-    </filter>
+    <filter name="fixme" />
   </component>
 </application>
