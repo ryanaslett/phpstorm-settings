@@ -18,7 +18,6 @@
       <mask>*.fc</mask>
       <mask>*.php, *.inc</mask>
       <mask>*.js</mask>
-      <mask>*</mask>
       <mask>*.json</mask>
       <mask>composer.json</mask>
       <mask>*.test</mask>
@@ -31,8 +30,9 @@
       <mask>*.p</mask>
       <mask>*.d</mask>
       <mask>*.dm</mask>
-      <mask>*.</mask>
       <mask>*.md</mask>
+      <mask>*.</mask>
+      <mask>*</mask>
     </recentFileMasks>
   </component>
 </application>
