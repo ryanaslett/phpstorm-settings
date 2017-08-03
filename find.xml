@@ -7,6 +7,7 @@
     <option name="LOCAL_REGULAR_EXPRESSIONS" value="true" />
     <option name="SHOW_RESULTS_IN_SEPARATE_VIEW" value="true" />
     <option name="SEARCH_SCOPE" value="Project Files" />
+    <option name="FILE_MASK" value="*f" />
     <recentFileMasks>
       <mask>*.properties</mask>
       <mask>*.html</mask>
@@ -35,6 +36,7 @@
       <mask>*.md</mask>
       <mask>*.</mask>
       <mask>*</mask>
+      <mask>*f</mask>
     </recentFileMasks>
   </component>
 </application>
