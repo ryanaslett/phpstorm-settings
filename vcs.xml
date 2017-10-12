@@ -438,9 +438,13 @@
           <option name="url" value="git@github.com:geerlingguy/drupal-vm.git" />
           <option name="userName" value="" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="http://git.drupal.org/project/antispam.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
       </list>
     </option>
-    <option name="cloneParentDir" value="$USER_HOME$/Documents/Work/Current/DrupalAssociation" />
+    <option name="cloneParentDir" value="$USER_HOME$/Documents/Work/Current/DrupalAssociation/contrib_modules" />
   </component>
   <component name="VcsApplicationSettings">
     <option name="PATCH_STORAGE_LOCATION" value="$USER_HOME$/Documents/Work/Current/DA/Devops/puppet" />
