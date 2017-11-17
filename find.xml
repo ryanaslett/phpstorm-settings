@@ -5,6 +5,7 @@
     <option name="showResultsInSeparateView" value="true" />
     <option name="SHOW_RESULTS_IN_SEPARATE_VIEW" value="true" />
     <option name="SEARCH_SCOPE" value="Project Production Files" />
+    <option name="FILE_MASK" value="*.yml" />
     <recentFileMasks>
       <mask>*.properties</mask>
       <mask>*.html</mask>
@@ -31,9 +32,11 @@
       <mask>*.d</mask>
       <mask>*.dm</mask>
       <mask>*.md</mask>
-      <mask>*.</mask>
-      <mask>*</mask>
       <mask>*f</mask>
+      <mask>*</mask>
+      <mask>*.</mask>
+      <mask>*.y</mask>
+      <mask>*.yml</mask>
     </recentFileMasks>
   </component>
 </application>
