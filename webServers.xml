@@ -28,7 +28,7 @@
           <option name="port" value="22" />
         </fileTransfer>
       </webServer>
-      <webServer id="f0ca1bf0-6aa4-4cf9-8ac8-f60a0c1804c9" name="pift-dev" url="https://composer2-drupal.dev.devdrupal.org/">
+      <webServer id="f0ca1bf0-6aa4-4cf9-8ac8-f60a0c1804c9" name="pift-ping" url="https://pift-ping-drupal.dev.devdrupal.org">
         <fileTransfer host="wwwdev1.drupalsystems.org" port="22" privateKey="$USER_HOME$/.ssh/drupal" accessType="SFTP" keyPair="true">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
