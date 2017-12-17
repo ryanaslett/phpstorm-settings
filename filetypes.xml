@@ -17,10 +17,10 @@
       <mapping pattern="fastlyusagestats2" type="PLAIN_TEXT" />
       <mapping pattern="Vagrantfile" type="PLAIN_TEXT" />
       <mapping pattern="file" type="PLAIN_TEXT" />
+      <mapping pattern="docker-php-ext-pecl-install" type="PLAIN_TEXT" />
       <mapping pattern="configure" type="PLAIN_TEXT" />
       <mapping pattern="sysstat" type="PLAIN_TEXT" />
       <mapping pattern="aliases" type="PLAIN_TEXT" />
-      <mapping pattern="docker-php-ext-pecl-install" type="PLAIN_TEXT" />
       <mapping pattern=".env.example" type="PLAIN_TEXT" />
       <mapping pattern="thing" type="PLAIN_TEXT" />
       <mapping pattern="foo" type="PLAIN_TEXT" />
@@ -29,6 +29,7 @@
       <mapping pattern="docker-php-entrypoint" type="PLAIN_TEXT" />
       <mapping pattern="pub" type="PLAIN_TEXT" />
       <mapping ext="5" type="PLAIN_TEXT" />
+      <mapping ext="m4" type="PLAIN_TEXT" />
       <mapping ext="cfg" type="PLAIN_TEXT" />
       <mapping ext="te" type="PLAIN_TEXT" />
       <removed_mapping ext="cgi" type="PLAIN_TEXT" />
