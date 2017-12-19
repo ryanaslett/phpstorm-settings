@@ -456,5 +456,6 @@
   </component>
   <component name="VcsApplicationSettings">
     <option name="PATCH_STORAGE_LOCATION" value="$USER_HOME$/Documents/Work/Current/DA/Devops/puppet" />
+    <option name="SHOW_LST_WORD_DIFFERENCES" value="false" />
   </component>
 </application>
