@@ -2,6 +2,8 @@
   <component name="FileTypeManager" version="17">
     <ignoreFiles list="*.hprof;*.orig;*.pyc;*.pyo;*.rbc;*~;.DS_Store;.git;.hg;.svn;CVS;RCS;SCCS;__pycache__;_svn;rcs;" />
     <extensionMap>
+      <mapping pattern="selenium" type="Bash" />
+      <mapping pattern="compress-logs" type="Bash" />
       <mapping ext="old" type="Dockerfile" />
       <mapping ext="lock" type="JSON" />
       <mapping ext="sqlite" type="Native" />
@@ -18,15 +20,17 @@
       <mapping pattern="fastlyusagestats2" type="PLAIN_TEXT" />
       <mapping pattern="Vagrantfile" type="PLAIN_TEXT" />
       <mapping pattern="file" type="PLAIN_TEXT" />
-      <mapping pattern="docker-php-ext-pecl-install" type="PLAIN_TEXT" />
+      <mapping pattern="docker-php-source" type="PLAIN_TEXT" />
       <mapping pattern="configure" type="PLAIN_TEXT" />
       <mapping pattern="sysstat" type="PLAIN_TEXT" />
       <mapping pattern="aliases" type="PLAIN_TEXT" />
+      <mapping pattern="docker-php-ext-pecl-install" type="PLAIN_TEXT" />
       <mapping pattern=".env.example" type="PLAIN_TEXT" />
       <mapping pattern="thing" type="PLAIN_TEXT" />
       <mapping pattern="foo" type="PLAIN_TEXT" />
       <mapping pattern="twisted-drupalGitSSHDaemon" type="PLAIN_TEXT" />
       <mapping pattern="README" type="PLAIN_TEXT" />
+      <mapping pattern="docker-php-source-head" type="PLAIN_TEXT" />
       <mapping pattern="docker-php-entrypoint" type="PLAIN_TEXT" />
       <mapping pattern="pub" type="PLAIN_TEXT" />
       <mapping ext="5" type="PLAIN_TEXT" />
@@ -43,8 +47,6 @@
       <mapping ext="gawk" type="Awk/Gawk" />
       <mapping ext="info" type="drupal-7-info" />
       <mapping pattern="awstats_reformatter" type="Awk/Gawk" />
-      <mapping pattern="compress-logs" type="Bash" />
-      <mapping pattern="selenium" type="Bash" />
     </extensionMap>
   </component>
 </application>
