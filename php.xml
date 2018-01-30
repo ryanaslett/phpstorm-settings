@@ -20,10 +20,10 @@
         <remote_data VAGRANT_FOLDER="$USER_HOME$/Documents/Work/Current/Drupal Association/drupalci/drupalci_testbot" INTERPRETER_PATH="/usr/bin/php" HELPERS_PATH="/home/vagrant/.phpstorm_helpers" INITIALIZED="false" VALID="true" />
       </interpreter>
       <interpreter home="ssh://mixologic@stagingwww1.drupalsystems.org:22/usr/bin/php" id="f5991be7-45c3-4232-9646-3dbe875151e7" name="Remote PHP 5.4" debugger_id="php.debugger.XDebug">
-        <remote_data HOST="stagingwww1.drupalsystems.org" PORT="22" USERNAME="mixologic" PRIVATE_KEY_FILE="$USER_HOME$/.ssh/drupal" MY_KNOWN_HOSTS_FILE="" USE_KEY_PAIR="true" USE_AUTH_AGENT="false" INTERPRETER_PATH="/usr/bin/php" HELPERS_PATH="/home/mixologic/.phpstorm_helpers" INITIALIZED="false" VALID="true" />
+        <remote_data HOST="stagingwww1.drupalsystems.org" PORT="22" USERNAME="mixologic" PRIVATE_KEY_FILE="$USER_HOME$/.ssh/drupal" USE_KEY_PAIR="true" USE_AUTH_AGENT="false" INTERPRETER_PATH="/usr/bin/php" HELPERS_PATH="/home/mixologic/.phpstorm_helpers" INITIALIZED="false" VALID="true" />
       </interpreter>
       <interpreter home="$USER_HOME$/.phpbrew/php/php-7.0.11/bin/php" id="e95c712b-1f4f-4d7c-b82f-fff970f7891e" name="PHP 7.0.11" debugger_id="php.debugger.XDebug" debugger_extension="$USER_HOME$/.phpbrew/php/php-7.0.11/lib/php/extensions/no-debug-non-zts-20151012/xdebug.so" />
-      <interpreter home="sftp://mixologic@wwwdev1.drupalsystems.org:22/usr/bin/php" id="04d3bdc6-ebc1-4278-8b26-ed2984279aed" name="Remote PHP on Devwww" debugger_id="php.debugger.XDebug" debugger_extension="/usr/lib/php5/20131226/xdebug.so">
+      <interpreter home="sftp://mixologic@wwwdev1.drupalsystems.org:22/usr/bin/php" id="04d3bdc6-ebc1-4278-8b26-ed2984279aed" name="Remote PHP on Devwww" debugger_id="php.debugger.XDebug">
         <remote_data WEB_SERVER_CONFIG_ID="f0ca1bf0-6aa4-4cf9-8ac8-f60a0c1804c9" WEB_SERVER_CONFIG_NAME="pift-dev" WEB_SERVER_CREDENTIALS_ID="sftp://mixologic@wwwdev1.drupalsystems.org:22" INTERPRETER_PATH="/usr/bin/php" HELPERS_PATH="/home/mixologic/.phpstorm_helpers" INITIALIZED="false" VALID="true" />
       </interpreter>
       <interpreter home="/usr/bin/php" id="314b7a16-dff9-44a6-9496-44138e18a61a" name="PHP 5.5.36" debugger_id="php.debugger.XDebug" debugger_extension="/usr/lib/php/extensions/no-debug-non-zts-20121212/xdebug.so" />
@@ -1336,7 +1336,7 @@
         </phpinfo>
       </interpreter>
       <interpreter name="Remote PHP on Devwww">
-        <phpinfo binary_type="PHP" php_cli="/usr/bin/php5" path_separator=":" remote_host="75.164.193.176" version="5.6.27-0+deb8u1" warning="Cannot load Xdebug - extension already loaded&#10;">
+        <phpinfo binary_type="PHP" php_cli="/usr/bin/php5" path_separator=":" remote_host="75.164.166.58" version="5.6.30-0+deb8u1">
           <additional_php_ini>/etc/php5/cli/conf.d/05-opcache.ini, /etc/php5/cli/conf.d/10-mysqlnd.ini, /etc/php5/cli/conf.d/10-pdo.ini, /etc/php5/cli/conf.d/20-curl.ini, /etc/php5/cli/conf.d/20-gd.ini, /etc/php5/cli/conf.d/20-imap.ini, /etc/php5/cli/conf.d/20-json.ini, /etc/php5/cli/conf.d/20-mcrypt.ini, /etc/php5/cli/conf.d/20-memcache.ini, /etc/php5/cli/conf.d/20-mysql.ini, /etc/php5/cli/conf.d/20-mysqli.ini, /etc/php5/cli/conf.d/20-pdo_mysql.ini, /etc/php5/cli/conf.d/20-readline.ini, /etc/php5/cli/conf.d/20-solr.ini, /etc/php5/cli/conf.d/20-xdebug.ini, /etc/php5/cli/conf.d/20-xhprof.ini, /etc/php5/cli/conf.d/20-xmlrpc.ini</additional_php_ini>
           <configuration_file>/etc/php5/cli/php.ini</configuration_file>
           <configuration_options>
@@ -1507,6 +1507,8 @@
             <configuration_option name="opcache.revalidate_path" value="0" />
             <configuration_option name="opcache.save_comments" value="1" />
             <configuration_option name="opcache.use_cwd" value="1" />
+            <configuration_option name="opcache.validate_permission" value="0" />
+            <configuration_option name="opcache.validate_root" value="0" />
             <configuration_option name="opcache.validate_timestamps" value="1" />
             <configuration_option name="open_basedir" value="" />
             <configuration_option name="openssl.cafile" value="" />
@@ -1603,7 +1605,7 @@
             <configuration_option name="xdebug.extended_info" value="1" />
             <configuration_option name="xdebug.file_link_format" value="" />
             <configuration_option name="xdebug.idekey" value="composerdebug" />
-            <configuration_option name="xdebug.max_nesting_level" value="256" />
+            <configuration_option name="xdebug.max_nesting_level" value="749" />
             <configuration_option name="xdebug.overload_var_dump" value="1" />
             <configuration_option name="xdebug.profiler_aggregate" value="0" />
             <configuration_option name="xdebug.profiler_append" value="0" />
