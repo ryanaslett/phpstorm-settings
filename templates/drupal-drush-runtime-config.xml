@@ -389,7 +389,7 @@
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="drushrc_command_specific_ctools_export_enable" value="$command_specific['ctools-export-enable'] = array(&#10;  // Filter the list of exportables by module. This will come from the&#10;  // 'export_module' key on the exportable.&#10;  'module' =&gt; '$module$',&#10;  // Perform this operation all CTools exportables available on the system (all&#10;  // tables).&#10;  'all' =&gt; '$all$',&#10;);&#10;&#10;$END$//drushrc_command_specific_" description="Generated - Enable CTools exportables." toReformat="true" toShortenFQNames="true">
+  <template name="drushrc_command_specific_ctools_export_enable" value="$command_specific['ctools-export-enable'] = array(&#10;  // Filter the list of exportables by module. This will come from the&#10;  // 'export_module' key on the exportable.&#10;  'module' =&gt; '$module$',&#10;  // Perform this operation all CTools exportables available on the system (all&#10;  // tables).&#10;  'all' =&gt; '$all$',&#10;);&#10;&#10;$END$//drushrc_command_specific_" description="Generated - Enable CTools exportables." toReformat="true" toShortenFQNames="true" deactivated="true">
     <variable name="module" expression="" defaultValue="&quot;foo&quot;" alwaysStopAt="true" />
     <variable name="all" expression="" defaultValue="&quot;foo&quot;" alwaysStopAt="true" />
     <context>

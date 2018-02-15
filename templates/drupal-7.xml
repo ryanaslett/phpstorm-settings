@@ -540,7 +540,7 @@
       <option name="PHP" value="true" />
     </context>
   </template>
-  <template name="cdd_field_instance_settings_text" value="array(/* @todo */)$terminator$" description="" toReformat="true" toShortenFQNames="true">
+  <template name="cdd_field_instance_settings_text" value="array(/* @todo */)$terminator$" description="" toReformat="true" toShortenFQNames="true" deactivated="true">
     <variable name="terminator" expression="enum(&quot;&quot;, &quot;,&quot;, &quot;;&quot;)" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="PHP" value="true" />
