@@ -8,7 +8,6 @@
   <component name="PhpCodeSniffer">
     <phpcs_settings>
       <PhpCSConfiguration max_messages_per_file="100" standards="Drupal;DrupalPractice;MySource;PEAR;PHPCS;PSR1;PSR2;Squiz;Zend" timeout="30000" tool_path="$USER_HOME$/Documents/Work/Current/DrupalAssociation/drupalci/drupalci_testbot/vendor/squizlabs/php_codesniffer/scripts/phpcs" />
-      <phpcs_by_interpreter interpreter_id="8671dcb0-2ac1-429e-bd18-c04139a1f79a" max_messages_per_file="100" standards="MySource;PEAR;PHPCS;PSR1;PSR2;Squiz;Zend" timeout="30000" tool_path="/home/testbot/testrunner/bin/phpcs" />
     </phpcs_settings>
   </component>
   <component name="PhpInterpreters">
