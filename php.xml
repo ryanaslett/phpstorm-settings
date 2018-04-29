@@ -30,7 +30,7 @@
         <remote_data VAGRANT_FOLDER="$USER_HOME$/Documents/Work/Current/DrupalAssociation/drupalci/drupalci_testbot" INTERPRETER_PATH="/usr/bin/php" HELPERS_PATH="/home/testbot/.phpstorm_helpers" INITIALIZED="false" VALID="true" />
       </interpreter>
       <interpreter home="$USER_HOME$/.phpbrew/php/php-5.6.30/bin/php" id="03e7751e-8966-494a-a0a7-ee7e79143bb6" name="PHP 5.6.30 phpbrew" debugger_id="php.debugger.XDebug" debugger_extension="$USER_HOME$/.phpbrew/php/php-5.6.30/lib/php/extensions/no-debug-non-zts-20131226/xdebug.so" />
-      <interpreter home="$USER_HOME$/.phpbrew/php/php-7.1.17/bin/php" id="3bbffc5b-61f5-4ff8-ad3e-85248cff63a6" name="PHPbrew 7.1.17" debugger_id="php.debugger.XDebug" />
+      <interpreter home="$USER_HOME$/.phpbrew/php/php-7.1.17/bin/php" id="3bbffc5b-61f5-4ff8-ad3e-85248cff63a6" name="PHPbrew 7.1.17" debugger_id="php.debugger.XDebug" debugger_extension="$USER_HOME$/.phpbrew/php/php-7.1.17/lib/php/extensions/no-debug-non-zts-20160303/xdebug.so" />
     </interpreters>
   </component>
   <component name="PhpInterpretersPhpInfoCache">
