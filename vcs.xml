@@ -474,9 +474,13 @@
           <option name="url" value="https://github.com/ryanaslett/drupal.git" />
           <option name="userName" value="" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="https://github.com/cweagans/composer-patches.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
       </list>
     </option>
-    <option name="cloneParentDir" value="$USER_HOME$/Documents/Work/Current/DrupalAssociation/drupal_core" />
+    <option name="cloneParentDir" value="$USER_HOME$/Documents/Work/Current/DrupalAssociation/composer" />
   </component>
   <component name="VcsApplicationSettings">
     <option name="PATCH_STORAGE_LOCATION" value="$USER_HOME$/Documents/Work/Current/DA/Devops/puppet" />
