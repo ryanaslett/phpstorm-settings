@@ -482,6 +482,10 @@
           <option name="url" value="https://git.drupal.org/project/versioncontrol_gitlab.git" />
           <option name="userName" value="" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="git@github.com:drupal-composer/drupal-scaffold.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
       </list>
     </option>
     <option name="cloneParentDir" value="$USER_HOME$/Documents/Work/Current/DrupalAssociation/composer" />
