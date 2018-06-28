@@ -23,6 +23,10 @@
       </interpreter>
       <interpreter home="$USER_HOME$/.phpbrew/php/php-7.0.11/bin/php" id="e95c712b-1f4f-4d7c-b82f-fff970f7891e" name="PHP 7.0.11" debugger_id="php.debugger.XDebug" debugger_extension="$USER_HOME$/.phpbrew/php/php-7.0.11/lib/php/extensions/no-debug-non-zts-20151012/xdebug.so" />
       <interpreter home="sftp://mixologic@wwwdev1.drupalsystems.org:22/usr/bin/php" id="04d3bdc6-ebc1-4278-8b26-ed2984279aed" name="Remote PHP on Devwww" debugger_id="php.debugger.XDebug">
+        <configuration_options>
+          <configuration_option name="xdebug.remote_host" value="127.0.0.1" />
+          <configuration_option name="xdebug.remote_port" value="6452" />
+        </configuration_options>
         <remote_data WEB_SERVER_CONFIG_ID="f0ca1bf0-6aa4-4cf9-8ac8-f60a0c1804c9" WEB_SERVER_CONFIG_NAME="pift-dev" WEB_SERVER_CREDENTIALS_ID="sftp://mixologic@wwwdev1.drupalsystems.org:22" INTERPRETER_PATH="/usr/bin/php" HELPERS_PATH="/home/mixologic/.phpstorm_helpers" INITIALIZED="false" VALID="true" />
       </interpreter>
       <interpreter home="/usr/bin/php" id="314b7a16-dff9-44a6-9496-44138e18a61a" name="PHP 5.5.36" debugger_id="php.debugger.XDebug" debugger_extension="/usr/lib/php/extensions/no-debug-non-zts-20121212/xdebug.so" />
