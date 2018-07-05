@@ -502,6 +502,10 @@
           <option name="url" value="git@github.com:drupal/drupal-scaffold.git" />
           <option name="userName" value="" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="git@github.com:composer/installers.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
       </list>
     </option>
     <option name="cloneParentDir" value="$USER_HOME$/Documents/Work/Current/DrupalAssociation/composer" />
