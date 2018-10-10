@@ -10,7 +10,7 @@
         <fileTransfer accessType="LOCAL" />
       </webServer>
       <webServer id="ccb0c3f4-86ad-40dd-92e9-0dfd5a474a9c" name="d8" url="http://d8">
-        <fileTransfer accessType="LOCAL" />
+        <fileTransfer port="0" accessType="LOCAL" />
       </webServer>
       <webServer id="6604661a-5c85-4119-b4ec-9fb0577aa37d" name="http://pgc3" url="http://localhost">
         <fileTransfer accessType="LOCAL" />
