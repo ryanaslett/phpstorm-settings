@@ -6,8 +6,8 @@
     <notification groupId="Database view" displayType="TOOL_WINDOW" />
     <notification groupId="Debugger messages" />
     <notification groupId="Docker: Dockerfile detection" displayType="NONE" shouldLog="false" />
-    <notification groupId="Git Important Messages" displayType="STICKY_BALLOON" shouldReadAloud="true" />
-    <notification groupId="Git Messages" displayType="TOOL_WINDOW" shouldReadAloud="true" />
+    <notification groupId="Git Important Messages" displayType="STICKY_BALLOON" />
+    <notification groupId="Git Messages" displayType="TOOL_WINDOW" />
     <notification groupId="IDE Usage Statistics" displayType="STICKY_BALLOON" shouldLog="false" />
     <notification groupId="JavaScript debugger" displayType="TOOL_WINDOW" shouldLog="false" />
     <notification groupId="JavaScript Library Management" displayType="STICKY_BALLOON" />
@@ -15,6 +15,5 @@
     <notification groupId="Plugins Lifecycle Group" displayType="STICKY_BALLOON" />
     <notification groupId="Svn Roots Detection Errors" displayType="STICKY_BALLOON" />
     <notification groupId="Update Checker" displayType="STICKY_BALLOON" />
-    <notification groupId="Vcs Important Messages" displayType="STICKY_BALLOON" shouldReadAloud="true" />
   </component>
 </application>
