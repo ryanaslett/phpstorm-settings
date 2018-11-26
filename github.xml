@@ -1,7 +1,11 @@
 <application>
+  <component name="GithubAccounts">
+    <account id="583eb560-f51a-4c25-8b14-4a159a8c276d" name="ryanaslett">
+      <server host="github.com" />
+    </account>
+  </component>
   <component name="GithubSettings">
     <option name="AUTH_TYPE" value="TOKEN" />
-    <option name="ANONYMOUS_GIST" value="true" />
     <option name="PRIVATE_GIST" value="false" />
     <option name="CREATE_PULL_REQUEST_CREATE_REMOTE" value="YES" />
   </component>
