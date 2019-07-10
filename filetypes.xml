@@ -2,6 +2,8 @@
   <component name="FileTypeManager" version="17">
     <ignoreFiles list="*.hprof;*.orig;*.pyc;*.pyo;*.rbc;*~;.DS_Store;.git;.hg;.svn;CVS;RCS;SCCS;__pycache__;_svn;rcs;" />
     <extensionMap>
+      <mapping pattern="selenium" type="Bash" />
+      <mapping pattern="compress-logs" type="Bash" />
       <mapping ext="old" type="Dockerfile" />
       <mapping ext="lock" type="JSON" />
       <mapping ext="sqlite" type="Native" />
@@ -29,12 +31,12 @@
       <mapping pattern="thing" type="PLAIN_TEXT" />
       <mapping pattern="aliases" type="PLAIN_TEXT" />
       <mapping pattern="docker-php-source-head" type="PLAIN_TEXT" />
+      <mapping pattern="docker-php-entrypoint-phantomjs" type="PLAIN_TEXT" />
       <mapping pattern="pub" type="PLAIN_TEXT" />
       <mapping pattern="sysstat" type="PLAIN_TEXT" />
       <mapping pattern="docker-php-source" type="PLAIN_TEXT" />
-      <mapping pattern="OldDockerfile" type="PLAIN_TEXT" />
-      <mapping pattern="docker-php-entrypoint-phantomjs" type="PLAIN_TEXT" />
       <mapping pattern="Vagrantfile" type="PLAIN_TEXT" />
+      <mapping pattern="OldDockerfile" type="PLAIN_TEXT" />
       <mapping pattern="docker-php-ext-pecl-install" type="PLAIN_TEXT" />
       <mapping ext="4_docker-php-ext-enable" type="PLAIN_TEXT" />
       <mapping ext="5" type="PLAIN_TEXT" />
@@ -48,6 +50,7 @@
       <mapping ext="eyaml" type="PLAIN_TEXT" />
       <mapping ext="5_docker-php-ext-install" type="PLAIN_TEXT" />
       <mapping ext="5_docker-php-ext-configure" type="PLAIN_TEXT" />
+      <mapping pattern="project_sql" type="SQL" />
       <mapping pattern="*.xml.dist" type="XML" />
       <mapping ext="dist" type="YAML" />
       <mapping ext="5_php7" type="YAML" />
@@ -56,8 +59,6 @@
       <mapping ext="gawk" type="Awk/Gawk" />
       <mapping ext="info" type="drupal-7-info" />
       <mapping pattern="awstats_reformatter" type="Awk/Gawk" />
-      <mapping pattern="compress-logs" type="Bash" />
-      <mapping pattern="selenium" type="Bash" />
     </extensionMap>
   </component>
 </application>
