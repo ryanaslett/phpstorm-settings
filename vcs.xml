@@ -534,6 +534,16 @@
     </option>
     <option name="cloneParentDir" value="$USER_HOME$/Documents/Work/Current/DrupalAssociation" />
   </component>
+  <component name="Vcs.Log.App.Settings">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="1" />
+        <option value="2" />
+        <option value="3" />
+      </list>
+    </option>
+  </component>
   <component name="VcsApplicationSettings">
     <option name="PATCH_STORAGE_LOCATION" value="$USER_HOME$/Documents/Work/Current/DA/Devops/puppet" />
     <option name="SHOW_LST_WORD_DIFFERENCES" value="false" />
