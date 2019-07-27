@@ -530,9 +530,13 @@
           <option name="url" value="https://github.com/phpstan/phpstan.git" />
           <option name="userName" value="" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="https://github.com/TYPO3/phar-stream-wrapper.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
       </list>
     </option>
-    <option name="cloneParentDir" value="$USER_HOME$/Documents/Work/Current/DrupalAssociation" />
+    <option name="cloneParentDir" value="$USER_HOME$/Documents/Work/Current/DrupalAssociation/composer" />
   </component>
   <component name="Vcs.Log.App.Settings">
     <option name="COLUMN_ORDER">
