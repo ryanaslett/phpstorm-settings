@@ -19,9 +19,9 @@
     <mask>*.css</mask>
     <mask>*.mxml</mask>
     <mask>*.yml</mask>
-    <mask>*.awk</mask>
     <mask>*.pp</mask>
     <mask>*.erb</mask>
     <mask>*.php</mask>
+    <mask>*.awk</mask>
   </component>
 </application>
