@@ -1,6 +1,6 @@
 <application>
-  <component name="DatabaseSettings" version="3">
-    <option name="page-size" value="100000" />
+  <component name="DatabaseSettings" version="4">
+    <option name="page-size" value="100" />
     <option name="reuse-result-tab" value="false" />
     <option name="execute-inside-option" value="2" />
     <option name="ddl-editor-confirm-loss" value="false" />
@@ -13,7 +13,7 @@
       <parameter-patterns>
         <parameter-pattern value="?\d+" />
         <parameter-pattern value=":(\w+)" />
-        <parameter-pattern value="%\w+" scope="JAVA,Python" predefined="%name" />
+        <parameter-pattern value="%\w+" scope="JAVA,Python,PHP" predefined="%name" />
         <parameter-pattern value="$\{[^$\{\}]*\}" />
         <parameter-pattern value="$\w+$" />
         <parameter-pattern value="#(\w+)#" scope="XML" predefined="#name#" />
