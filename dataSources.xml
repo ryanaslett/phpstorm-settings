@@ -163,5 +163,19 @@
         <property name="autoReconnect" value="true" />
       </driver-properties>
     </data-source>
+    <data-source source="LOCAL" name="gitlab1 on devwww" uuid="ad0783cb-e73f-4726-8bb5-f4cb9fad37d5">
+      <driver-ref>mysql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://dbdev1.drupal.bak:3306/gitlab1_drupal</jdbc-url>
+      <driver-properties>
+        <property name="zeroDateTimeBehavior" value="convertToNull" />
+        <property name="tinyInt1isBit" value="false" />
+        <property name="characterEncoding" value="utf8" />
+        <property name="characterSetResults" value="utf8" />
+        <property name="yearIsDateType" value="false" />
+        <property name="autoReconnect" value="true" />
+      </driver-properties>
+    </data-source>
   </component>
 </application>
