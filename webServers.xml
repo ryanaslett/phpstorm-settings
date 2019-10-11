@@ -15,7 +15,7 @@
       <webServer id="6604661a-5c85-4119-b4ec-9fb0577aa37d" name="http://pgc3" url="http://localhost">
         <fileTransfer accessType="LOCAL" />
       </webServer>
-      <webServer id="a400b0da-fde9-48e0-9a48-5b7930d4da16" name="mixologic composer dev site" url="https://composer2-drupal.dev.devdrupal.org/">
+      <webServer id="a400b0da-fde9-48e0-9a48-5b7930d4da16" name="mixologic gitlab1 dev site" url="https://gitlab1-drupal.dev.devdrupal.org/">
         <fileTransfer host="wwwdev1.drupalsystems.org" port="22" privateKey="$USER_HOME$/.ssh/drupal" accessType="SFTP" keyPair="true">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
