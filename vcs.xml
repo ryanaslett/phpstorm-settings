@@ -538,6 +538,10 @@
           <option name="url" value="https://github.com/drupal-composer/drupal-project.git" />
           <option name="userName" value="" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="git@github.com:zaporylie/composer-drupal-optimizations.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
       </list>
     </option>
     <option name="cloneParentDir" value="$USER_HOME$/Documents/Work/Current/DrupalAssociation/composer" />
