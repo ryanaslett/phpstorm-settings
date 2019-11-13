@@ -34,6 +34,9 @@
   <action id="FindInPath">
     <keyboard-shortcut first-keystroke="shift meta s" />
   </action>
+  <action id="Forward">
+    <keyboard-shortcut first-keystroke="meta alt right" />
+  </action>
   <action id="Github.Create.Gist">
     <keyboard-shortcut first-keystroke="shift meta g" />
   </action>
@@ -98,6 +101,9 @@
   </action>
   <action id="Tool_Drupal_Drupal Code Repository Viewer">
     <keyboard-shortcut first-keystroke="shift alt d" />
+  </action>
+  <action id="Tool_Drupal_Link Block to git.drupalcode.org">
+    <mouse-shortcut keystroke="button5" />
   </action>
   <action id="Tool_Drupal_Link to cgit">
     <keyboard-shortcut first-keystroke="shift meta f" />
