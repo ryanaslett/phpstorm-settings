@@ -1,14 +1,15 @@
 <application>
+  <component name="CodeInsightSettings">
+    <option name="AUTOINSERT_PAIR_QUOTE" value="false" />
+  </component>
+  <component name="DaemonCodeAnalyzerSettings">
+    <option name="SHOW_METHOD_SEPARATORS" value="true" />
+  </component>
   <component name="EditorSettings">
     <option name="USE_SOFT_WRAPS" value="MAIN_EDITOR:CONSOLE" />
     <option name="STRIP_TRAILING_SPACES" value="Whole" />
     <option name="IS_ENSURE_NEWLINE_AT_EOF" value="true" />
     <option name="IS_ALL_SOFTWRAPS_SHOWN" value="true" />
-    <option name="SHOW_PARAMETER_NAME_HINTS" value="false" />
-  </component>
-  <component name="SqlEditorOptions">
-    <option name="concatenateStringsOnEnter" value="true" />
-    <option name="qualificationType" value="On collisions" />
   </component>
   <component name="TodoConfiguration">
     <pattern pattern="\btodo\b.*" />
@@ -24,11 +25,11 @@
     <pattern case-sensitive="true" pattern="OPUT" />
     <filter name="xxx" />
     <filter name="Plans">
-      <pattern index="4" />
+      <pattern index="6" />
       <pattern index="5" />
       <pattern index="3" />
       <pattern index="7" />
-      <pattern index="6" />
+      <pattern index="4" />
     </filter>
     <filter name="Normasl" />
     <filter name="enviros">
