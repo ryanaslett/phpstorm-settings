@@ -16,7 +16,7 @@
     <data-source source="LOCAL" name="Drupal Production" uuid="e244efd5-e298-447c-b9db-8eddb23ad16e">
       <driver-ref>mysql</driver-ref>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://10.1.1.41:3306/drupal</jdbc-url>
+      <jdbc-url>jdbc:mysql://10.1.1.42:3306/drupal</jdbc-url>
     </data-source>
     <data-source source="LOCAL" name="Events Production" uuid="228b713a-cca7-43b3-84c8-ab195e8d880f">
       <driver-ref>mysql</driver-ref>
