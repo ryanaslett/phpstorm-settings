@@ -1,6 +1,6 @@
 <application>
   <component name="DatabaseSettings" version="4">
-    <option name="page-size" value="1000" />
+    <option name="page-size" value="10000" />
     <option name="reuse-result-tab" value="false" />
     <option name="execute-inside-option" value="2" />
     <option name="ddl-editor-confirm-loss" value="false" />
