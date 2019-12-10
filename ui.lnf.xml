@@ -4,9 +4,9 @@
   </component>
   <component name="UISettings">
     <option name="EDITOR_TAB_LIMIT" value="100" />
-    <option name="HIDE_TOOL_STRIPES" value="false" />
+    <option name="MAX_LOOKUP_LIST_HEIGHT" value="22" />
     <option name="SHOW_MAIN_TOOLBAR" value="true" />
     <option name="SORT_LOOKUP_ELEMENTS_LEXICOGRAPHICALLY" value="true" />
-    <option name="MAX_LOOKUP_LIST_HEIGHT" value="22" />
+    <option name="WIDESCREEN_SUPPORT" value="true" />
   </component>
 </application>
