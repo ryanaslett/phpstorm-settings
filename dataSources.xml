@@ -59,39 +59,17 @@
         <property name="autoReconnect" value="true" />
       </driver-properties>
     </data-source>
-    <data-source source="LOCAL" name="composer2 on devwww" uuid="4d275473-5437-45d4-8134-7c1c1bd9e122">
+    <data-source source="LOCAL" name="composer4 on devwww" uuid="4d275473-5437-45d4-8134-7c1c1bd9e122">
       <driver-ref>mysql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://dbdev1.drupal.bak:3306/composer2_drupal</jdbc-url>
-      <driver-properties>
-        <property name="zeroDateTimeBehavior" value="convertToNull" />
-        <property name="tinyInt1isBit" value="false" />
-        <property name="characterEncoding" value="utf8" />
-        <property name="characterSetResults" value="utf8" />
-        <property name="yearIsDateType" value="false" />
-        <property name="autoReconnect" value="true" />
-      </driver-properties>
+      <jdbc-url>jdbc:mysql://dbdev1.drupal.bak:3306/composer4_drupal</jdbc-url>
     </data-source>
     <data-source source="LOCAL" name="pift on devwww [3]" uuid="38f24373-d4f9-40e3-be12-224c342521b3">
       <driver-ref>mysql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://dbdev1.drupal.bak:3306/pift_drupal</jdbc-url>
-      <driver-properties>
-        <property name="zeroDateTimeBehavior" value="convertToNull" />
-        <property name="tinyInt1isBit" value="false" />
-        <property name="characterEncoding" value="utf8" />
-        <property name="characterSetResults" value="utf8" />
-        <property name="yearIsDateType" value="false" />
-        <property name="autoReconnect" value="true" />
-      </driver-properties>
-    </data-source>
-    <data-source source="LOCAL" name="composer2 on devwww [2]" uuid="6a458894-0226-48bc-961e-08123d0d356f">
-      <driver-ref>mysql</driver-ref>
-      <synchronize>true</synchronize>
-      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://dbdev1.drupal.bak:3306/composer2_drupal</jdbc-url>
       <driver-properties>
         <property name="zeroDateTimeBehavior" value="convertToNull" />
         <property name="tinyInt1isBit" value="false" />
