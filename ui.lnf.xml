@@ -3,8 +3,10 @@
     <option name="UI_SHOW_FILES" value="false" />
   </component>
   <component name="UISettings">
+    <option name="ANIMATE_WINDOWS" value="false" />
     <option name="EDITOR_TAB_LIMIT" value="100" />
     <option name="MAX_LOOKUP_LIST_HEIGHT" value="22" />
+    <option name="RIGHT_HORIZONTAL_SPLIT" value="true" />
     <option name="SHOW_MAIN_TOOLBAR" value="true" />
     <option name="SORT_LOOKUP_ELEMENTS_LEXICOGRAPHICALLY" value="true" />
     <option name="WIDESCREEN_SUPPORT" value="true" />
