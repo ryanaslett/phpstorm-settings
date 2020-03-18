@@ -1,4 +1,5 @@
 <scheme name="Solarized Dark With Better Font" version="142" parent_scheme="Default">
+  <option name="FONT_SCALE" value="1.0" />
   <option name="LINE_SPACING" value="1.25" />
   <font>
     <option name="EDITOR_FONT_NAME" value="Source Code Pro" />
@@ -6,7 +7,7 @@
   </font>
   <font>
     <option name="EDITOR_FONT_NAME" value="Monospaced" />
-    <option name="EDITOR_FONT_SIZE" value="14" />
+    <option name="EDITOR_FONT_SIZE" value="24" />
   </font>
   <option name="CONSOLE_FONT_NAME" value="Menlo" />
   <option name="CONSOLE_LINE_SPACING" value="1.0" />
