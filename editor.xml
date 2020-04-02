@@ -12,6 +12,7 @@
     <option name="IS_ENSURE_NEWLINE_AT_EOF" value="true" />
     <option name="IS_ALL_SOFTWRAPS_SHOWN" value="true" />
     <option name="ADDITIONAL_PAGE_AT_BOTTOM" value="true" />
+    <option name="IS_WHEEL_FONTCHANGE_ENABLED" value="true" />
   </component>
   <component name="TodoConfiguration">
     <pattern pattern="\btodo\b.*" />
@@ -27,11 +28,11 @@
     <pattern case-sensitive="true" pattern="OPUT" />
     <filter name="xxx" />
     <filter name="Plans">
-      <pattern index="7" />
+      <pattern index="4" />
       <pattern index="5" />
       <pattern index="3" />
+      <pattern index="7" />
       <pattern index="6" />
-      <pattern index="4" />
     </filter>
     <filter name="Normasl" />
     <filter name="enviros">
