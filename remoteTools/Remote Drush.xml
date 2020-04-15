@@ -1,26 +1,26 @@
 <toolSet name="Remote Drush">
-  <tool name="project_dependency process project" description="Processes a single project's dependencies" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true" CONNECTION_TYPE="DEPLOYMENT_SERVER" CONNECTION_ID="a400b0da-fde9-48e0-9a48-5b7930d4da16">
+  <tool name="project_dependency process project" description="Processes a single project's dependencies" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true" CONNECTION_TYPE="SSH_CONFIG" CONNECTION_ID="mixologic buildpipeline dev site" CONNECTION_ADDITIONAL_DATA="d804be31-483e-4338-8282-5a7e5a86dbc0">
     <exec>
       <option name="COMMAND" value="php" />
       <option name="PARAMETERS" value="-dzend_extension=/usr/lib/php5/20131226/xdebug.so -dxdebug.remote_enable=1 -dxdebug.remote_mode=req -dxdebug.remote_port=6234 -dxdebug.idekey=composerdebug /usr/local/bin/drush pdpp $Prompt$" />
       <option name="WORKING_DIRECTORY" value="/var/www/dev/composer2-drupal.dev.devdrupal.org/htdocs" />
     </exec>
   </tool>
-  <tool name="project_dependency show dependencies" description="Show the dependencies for a particular release" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true" CONNECTION_TYPE="DEPLOYMENT_SERVER" CONNECTION_ID="a400b0da-fde9-48e0-9a48-5b7930d4da16">
+  <tool name="project_dependency show dependencies" description="Show the dependencies for a particular release" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true" CONNECTION_TYPE="SSH_CONFIG" CONNECTION_ID="mixologic buildpipeline dev site" CONNECTION_ADDITIONAL_DATA="d804be31-483e-4338-8282-5a7e5a86dbc0">
     <exec>
       <option name="COMMAND" value="php" />
       <option name="PARAMETERS" value="-dzend_extension=/usr/lib/php5/20131226/xdebug.so -dxdebug.remote_enable=1 -dxdebug.remote_mode=req -dxdebug.remote_port=6234 -dxdebug.idekey=composerdebug /usr/local/bin/drush pdsd $Prompt$" />
       <option name="WORKING_DIRECTORY" value="/var/www/dev/composer2-drupal.dev.devdrupal.org/htdocs" />
     </exec>
   </tool>
-  <tool name="project_composer process project" description="Processes a single project's dependencies" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true" CONNECTION_TYPE="DEPLOYMENT_SERVER" CONNECTION_ID="a400b0da-fde9-48e0-9a48-5b7930d4da16">
+  <tool name="project_composer process project" description="Processes a single project's dependencies" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true" CONNECTION_TYPE="SSH_CONFIG" CONNECTION_ID="mixologic buildpipeline dev site" CONNECTION_ADDITIONAL_DATA="d804be31-483e-4338-8282-5a7e5a86dbc0">
     <exec>
       <option name="COMMAND" value="sudo" />
       <option name="PARAMETERS" value="-u drupal_site php -dzend_extension=/usr/lib/php5/20131226/xdebug.so -dxdebug.remote_enable=1 -dxdebug.remote_mode=req -dxdebug.remote_port=6234 -dxdebug.idekey=composerdebug /usr/local/bin/drush -r /var/www/dev/composer2-drupal.dev.devdrupal.org/htdocs pcpp $Prompt$" />
       <option name="WORKING_DIRECTORY" value="/var/www/dev/composer2-drupal.dev.devdrupal.org/htdocs" />
     </exec>
   </tool>
-  <tool name="download config_installer" description="downloads config installer for debugging purposes" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true" CONNECTION_TYPE="DEPLOYMENT_SERVER" CONNECTION_ID="a400b0da-fde9-48e0-9a48-5b7930d4da16">
+  <tool name="download config_installer" description="downloads config installer for debugging purposes" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true" CONNECTION_TYPE="SSH_CONFIG" CONNECTION_ID="mixologic buildpipeline dev site" CONNECTION_ADDITIONAL_DATA="d804be31-483e-4338-8282-5a7e5a86dbc0">
     <exec>
       <option name="COMMAND" value="php" />
       <option name="PARAMETERS" value="-dzend_extension=/usr/lib/php5/20131226/xdebug.so -dxdebug.remote_enable=1 -dxdebug.remote_mode=req -dxdebug.remote_port=6234 -dxdebug.idekey=composerdebug /usr/local/bin/drush dl config_installer" />

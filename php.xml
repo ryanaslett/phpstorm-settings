@@ -13,22 +13,8 @@
   <component name="PhpInterpreters">
     <interpreters>
       <interpreter id="96f6e5e3-f135-44d8-8003-b309b5f16fa7" name="Remote PHP 5.5" home="vagrant://DATA" debugger_id="php.debugger.XDebug" debugger_extension="/usr/lib/php5/20121212/xdebug.so">
-        <remote_data VAGRANT_FOLDER="$USER_HOME$/Documents/Work/Current/Drupal Association/drupalci/drupalci_testbot" INTERPRETER_PATH="/usr/bin/php" HELPERS_PATH="/home/vagrant/.phpstorm_helpers" INITIALIZED="false" VALID="true" RUN_AS_ROOT_VIA_SUDO="false" />
+        <remote_data INTERPRETER_PATH="/usr/bin/php" HELPERS_PATH="/home/vagrant/.phpstorm_helpers" INITIALIZED="false" VALID="true" RUN_AS_ROOT_VIA_SUDO="false" VAGRANT_FOLDER="$USER_HOME$/Documents/Work/Current/Drupal Association/drupalci/drupalci_testbot" />
       </interpreter>
-      <interpreter id="f5991be7-45c3-4232-9646-3dbe875151e7" name="Remote PHP 5.4" home="ssh://DATA" debugger_id="php.debugger.XDebug">
-        <remote_data HOST="stagingwww1.drupalsystems.org" PORT="22" USERNAME="mixologic" PRIVATE_KEY_FILE="$USER_HOME$/.ssh/drupal" USE_KEY_PAIR="true" USE_AUTH_AGENT="false" INTERPRETER_PATH="/usr/bin/php" HELPERS_PATH="/home/mixologic/.phpstorm_helpers" INITIALIZED="false" VALID="true" RUN_AS_ROOT_VIA_SUDO="false" />
-      </interpreter>
-      <interpreter id="04d3bdc6-ebc1-4278-8b26-ed2984279aed" name="Remote PHP on Devwww" home="sftp://DATA" debugger_id="php.debugger.XDebug">
-        <configuration_options>
-          <configuration_option name="xdebug.remote_host" value="127.0.0.1" />
-          <configuration_option name="xdebug.remote_port" value="6452" />
-        </configuration_options>
-        <remote_data WEB_SERVER_CONFIG_ID="f0ca1bf0-6aa4-4cf9-8ac8-f60a0c1804c9" WEB_SERVER_CONFIG_NAME="pift-dev" WEB_SERVER_CREDENTIALS_ID="sftp://mixologic@wwwdev1.drupalsystems.org:22" INTERPRETER_PATH="/usr/bin/php" HELPERS_PATH="/home/mixologic/.phpstorm_helpers" INITIALIZED="false" VALID="true" RUN_AS_ROOT_VIA_SUDO="false" />
-      </interpreter>
-      <interpreter id="8671dcb0-2ac1-429e-bd18-c04139a1f79a" name="Vagrant PHP 7.1.1" home="vagrant://DATA" debugger_id="php.debugger.XDebug" debugger_extension="/usr/lib/php/20160303/xdebug.so">
-        <remote_data VAGRANT_FOLDER="$USER_HOME$/Documents/Work/Current/DrupalAssociation/drupalci/drupalci_testbot" INTERPRETER_PATH="/usr/bin/php" HELPERS_PATH="/home/testbot/.phpstorm_helpers" INITIALIZED="false" VALID="true" RUN_AS_ROOT_VIA_SUDO="false" />
-      </interpreter>
-      <interpreter id="3bbffc5b-61f5-4ff8-ad3e-85248cff63a6" name="PHPbrew 7.2.3" home="$USER_HOME$/.phpbrew/php/php-7.2.3/bin/php" debugger_id="php.debugger.XDebug" debugger_extension="$USER_HOME$/.phpbrew/php/php-7.2.3/lib/php/extensions/no-debug-non-zts-20170718/xdebug.so" />
     </interpreters>
   </component>
   <component name="PhpInterpretersPhpInfoCache">
@@ -372,7 +358,6 @@
   <component name="PhpUnit">
     <phpunit_settings>
       <phpunit_by_interpreter interpreter_id="96f6e5e3-f135-44d8-8003-b309b5f16fa7" interpreter_name="Remote PHP 5.5" configuration_file_path="/opt/drupalci_testbot/phpunit.xml" custom_loader_path="/opt/drupalci_testbot/vendor/autoload.php" phpunit_phar_path="/opt/drupalci_testbot/bin/phpunit" use_configuration_file="true" />
-      <phpunit_by_interpreter interpreter_id="8671dcb0-2ac1-429e-bd18-c04139a1f79a" custom_loader_path="/home/testbot/testrunner/vendor/autoload.php" phpunit_phar_path="/Users/Ryan/.composer/vendor/phpunit/phpunit/phpunit" />
     </phpunit_settings>
   </component>
 </application>
