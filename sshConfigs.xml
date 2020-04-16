@@ -8,6 +8,9 @@
       <sshConfig host="jenkins1.drupal.org" id="b49e1a2e-13a9-492b-8a43-c06cefebfefb" keyPath="$USER_HOME$/.ssh/drupal" port="22" nameFormat="DESCRIPTIVE" username="mixologic" />
       <sshConfig host="www1.drupal.org" id="c2572c54-5f62-48bd-9bc0-25d0b4e221a3" keyPath="$USER_HOME$/.ssh/drupal" port="22" nameFormat="DESCRIPTIVE" username="mixologic" />
       <sshConfig host="stagingwww1.drupalsystems.org" id="18ce6aed-49d8-4618-a520-a37b2f05e97d" keyPath="$USER_HOME$/.ssh/drupal" port="22" nameFormat="DESCRIPTIVE" username="mixologic" />
+      <sshConfig host="ec2-54-69-224-48.us-west-2.compute.amazonaws.com" id="e035826c-568a-411b-bfc3-5fc9757d8215" keyPath="$USER_HOME$/.ssh/id_rsa-drupalci-incl-slave" port="22" customName="drupalcitestbot" nameFormat="CUSTOM" />
+      <sshConfig host="wwwdev1.drupalsystems.org" id="46b255cc-45fa-4157-ac35-23d31806b988" keyPath="$USER_HOME$/.ssh/drupal" port="22" customName="pift-ping" nameFormat="CUSTOM" />
+      <sshConfig host="wwwdev1.drupalsystems.org" id="5acd3aa6-6821-4321-90dd-b95155206749" keyPath="$USER_HOME$/.ssh/drupal" port="22" customName="devassoc" nameFormat="CUSTOM" />
     </configs>
   </component>
 </application>
