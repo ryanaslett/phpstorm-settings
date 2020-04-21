@@ -4,9 +4,10 @@
       <sshConfig host="wwwdev1.drupalsystems.org" id="02637693-62f4-434d-be18-874608a00dea" keyPath="$USER_HOME$/.ssh/drupal" port="22" customName="devassoc" nameFormat="CUSTOM" />
       <sshConfig host="jenkins1.drupal.org" id="b49e1a2e-13a9-492b-8a43-c06cefebfefb" keyPath="$USER_HOME$/.ssh/drupal" port="22" nameFormat="DESCRIPTIVE" username="mixologic" />
       <sshConfig host="www1.drupal.org" id="c2572c54-5f62-48bd-9bc0-25d0b4e221a3" keyPath="$USER_HOME$/.ssh/drupal" port="22" nameFormat="DESCRIPTIVE" username="mixologic" />
-      <sshConfig host="wwwdev1.drupalsystems.org" id="5f48f4f1-2d62-40ce-bb6f-a6b788c5989d" keyPath="$USER_HOME$/.ssh/drupal" port="22" customName="pift-ping" nameFormat="CUSTOM" />
+      <sshConfig host="wwwdev1.drupalsystems.org" id="5f48f4f1-2d62-40ce-bb6f-a6b788c5989d" keyPath="$USER_HOME$/.ssh/drupal" port="22" customName="pift-ping" nameFormat="CUSTOM" username="mixologic" />
       <sshConfig host="wwwdev1.drupalsystems.org" id="0339ed30-2d13-4255-8622-32f83db3093c" keyPath="$USER_HOME$/.ssh/drupal" port="22" customName="mixologic buildpipeline dev site" nameFormat="CUSTOM" username="mixologic" />
       <sshConfig host="wwwstg1.drupalsystems.org" id="8ab2de3d-b5e0-480a-98a4-8996d2d5dd36" keyPath="$USER_HOME$/.ssh/drupal" port="22" customName="mixologic@wwwstg1.drupalsystems.org" nameFormat="CUSTOM" username="mixologic" />
+      <sshConfig host="shell.drupalsystems.org" id="cca233b7-92c3-4cdd-ad25-c6ceb027d163" keyPath="$USER_HOME$/.ssh/drupal" port="22" nameFormat="DESCRIPTIVE" username="mixologic" />
     </configs>
   </component>
 </application>
