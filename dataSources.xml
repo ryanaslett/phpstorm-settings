@@ -70,14 +70,6 @@
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://dbdev1.drupal.bak:3306/pift_drupal</jdbc-url>
-      <driver-properties>
-        <property name="zeroDateTimeBehavior" value="convertToNull" />
-        <property name="tinyInt1isBit" value="false" />
-        <property name="characterEncoding" value="utf8" />
-        <property name="characterSetResults" value="utf8" />
-        <property name="yearIsDateType" value="false" />
-        <property name="autoReconnect" value="true" />
-      </driver-properties>
     </data-source>
     <data-source source="LOCAL" name="Association Site" uuid="a553d3d0-fb9f-4e6b-916d-07e81dfbb6f7">
       <driver-ref>mysql</driver-ref>
@@ -97,47 +89,28 @@
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://dbdev1.drupal.bak:3306/gitlab4_drupal</jdbc-url>
-      <driver-properties>
-        <property name="zeroDateTimeBehavior" value="convertToNull" />
-        <property name="tinyInt1isBit" value="false" />
-        <property name="characterEncoding" value="utf8" />
-        <property name="characterSetResults" value="utf8" />
-        <property name="yearIsDateType" value="false" />
-        <property name="autoReconnect" value="true" />
-      </driver-properties>
     </data-source>
     <data-source source="LOCAL" name="gitlab3 on devwww" uuid="458a25de-9af9-48ef-b8fb-cddb42691336">
       <driver-ref>mysql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://dbdev1.drupal.bak:3306/gitlab3_drupal</jdbc-url>
-      <driver-properties>
-        <property name="zeroDateTimeBehavior" value="convertToNull" />
-        <property name="tinyInt1isBit" value="false" />
-        <property name="characterEncoding" value="utf8" />
-        <property name="characterSetResults" value="utf8" />
-        <property name="yearIsDateType" value="false" />
-        <property name="autoReconnect" value="true" />
-      </driver-properties>
     </data-source>
     <data-source source="LOCAL" name="gitlab1 on devwww" uuid="ad0783cb-e73f-4726-8bb5-f4cb9fad37d5">
       <driver-ref>mysql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://dbdev1.drupal.bak:3306/gitlab1_drupal</jdbc-url>
-      <driver-properties>
-        <property name="zeroDateTimeBehavior" value="convertToNull" />
-        <property name="tinyInt1isBit" value="false" />
-        <property name="characterEncoding" value="utf8" />
-        <property name="characterSetResults" value="utf8" />
-        <property name="yearIsDateType" value="false" />
-        <property name="autoReconnect" value="true" />
-      </driver-properties>
     </data-source>
     <data-source source="LOCAL" name="Drupal Production DB5" uuid="c22a61c4-f233-4e70-b021-37b76a092126">
       <driver-ref>mysql</driver-ref>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://db5.drupal.bak:3306/drupal</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="Drupal staging DB1" uuid="fae54b11-c534-4369-bc96-bf94cddba1f6">
+      <driver-ref>mysql</driver-ref>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://dbstg-writer-vip.drupal.bak:3306/drupal_staging1</jdbc-url>
     </data-source>
   </component>
 </application>
