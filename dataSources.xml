@@ -110,7 +110,7 @@
     <data-source source="LOCAL" name="Drupal staging DB1" uuid="fae54b11-c534-4369-bc96-bf94cddba1f6">
       <driver-ref>mysql</driver-ref>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://dbstg-writer-vip.drupal.bak:3306/drupal_staging1</jdbc-url>
+      <jdbc-url>jdbc:mysql://dbstg1.drupal.bak:3306/drupal_staging1</jdbc-url>
     </data-source>
   </component>
 </application>

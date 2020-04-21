@@ -1,25 +1,12 @@
 <application>
   <component name="SshConfigs">
     <configs>
-      <sshConfig host="ec2-54-69-224-48.us-west-2.compute.amazonaws.com" id="54e766ee-b9f2-485b-b058-c6fc5915b8b8" keyPath="$USER_HOME$/.ssh/id_rsa-drupalci-incl-slave" port="22" customName="drupalcitestbot" nameFormat="CUSTOM" />
-      <sshConfig host="wwwdev1.drupalsystems.org" id="511e43e0-8769-41c4-bfa1-6eae7211b1e8" keyPath="$USER_HOME$/.ssh/drupal" port="22" customName="pift-ping" nameFormat="CUSTOM" />
       <sshConfig host="wwwdev1.drupalsystems.org" id="02637693-62f4-434d-be18-874608a00dea" keyPath="$USER_HOME$/.ssh/drupal" port="22" customName="devassoc" nameFormat="CUSTOM" />
       <sshConfig host="jenkins1.drupal.org" id="b49e1a2e-13a9-492b-8a43-c06cefebfefb" keyPath="$USER_HOME$/.ssh/drupal" port="22" nameFormat="DESCRIPTIVE" username="mixologic" />
       <sshConfig host="www1.drupal.org" id="c2572c54-5f62-48bd-9bc0-25d0b4e221a3" keyPath="$USER_HOME$/.ssh/drupal" port="22" nameFormat="DESCRIPTIVE" username="mixologic" />
-      <sshConfig host="wwwstg1.drupalsystems.org" id="18ce6aed-49d8-4618-a520-a37b2f05e97d" keyPath="$USER_HOME$/.ssh/drupal" port="22" nameFormat="DESCRIPTIVE" username="mixologic" />
-      <sshConfig host="ec2-54-69-224-48.us-west-2.compute.amazonaws.com" id="e035826c-568a-411b-bfc3-5fc9757d8215" keyPath="$USER_HOME$/.ssh/id_rsa-drupalci-incl-slave" port="22" customName="drupalcitestbot" nameFormat="CUSTOM" />
-      <sshConfig host="wwwdev1.drupalsystems.org" id="46b255cc-45fa-4157-ac35-23d31806b988" keyPath="$USER_HOME$/.ssh/drupal" port="22" customName="pift-ping" nameFormat="CUSTOM" />
-      <sshConfig host="wwwdev1.drupalsystems.org" id="5acd3aa6-6821-4321-90dd-b95155206749" keyPath="$USER_HOME$/.ssh/drupal" port="22" customName="devassoc" nameFormat="CUSTOM" />
-      <sshConfig host="ec2-54-69-224-48.us-west-2.compute.amazonaws.com" id="79b8044a-bf58-44a0-b4d7-0c148d363610" keyPath="$USER_HOME$/.ssh/id_rsa-drupalci-incl-slave" port="22" customName="drupalcitestbot" nameFormat="CUSTOM" />
       <sshConfig host="wwwdev1.drupalsystems.org" id="5f48f4f1-2d62-40ce-bb6f-a6b788c5989d" keyPath="$USER_HOME$/.ssh/drupal" port="22" customName="pift-ping" nameFormat="CUSTOM" />
-      <sshConfig host="wwwdev1.drupalsystems.org" id="c963e2fa-16d9-417a-992f-a3e6945bca81" keyPath="$USER_HOME$/.ssh/drupal" port="22" customName="devassoc" nameFormat="CUSTOM" />
       <sshConfig host="wwwdev1.drupalsystems.org" id="0339ed30-2d13-4255-8622-32f83db3093c" keyPath="$USER_HOME$/.ssh/drupal" port="22" customName="mixologic buildpipeline dev site" nameFormat="CUSTOM" username="mixologic" />
-      <sshConfig host="ec2-54-69-224-48.us-west-2.compute.amazonaws.com" id="ccdb43c5-6cc6-4ed1-be2c-7be403360b3a" keyPath="$USER_HOME$/.ssh/id_rsa-drupalci-incl-slave" port="22" customName="drupalcitestbot" nameFormat="CUSTOM" />
-      <sshConfig host="wwwdev1.drupalsystems.org" id="cce5b2b8-da73-4ad9-a3ca-5defddd2d5b4" keyPath="$USER_HOME$/.ssh/drupal" port="22" customName="pift-ping" nameFormat="CUSTOM" />
-      <sshConfig host="wwwdev1.drupalsystems.org" id="0bc87e77-dc53-4830-a7b8-54746735e4a5" keyPath="$USER_HOME$/.ssh/drupal" port="22" customName="devassoc" nameFormat="CUSTOM" />
-      <sshConfig host="ec2-54-69-224-48.us-west-2.compute.amazonaws.com" id="cddac642-4d62-4078-af72-4a10d934859e" keyPath="$USER_HOME$/.ssh/id_rsa-drupalci-incl-slave" port="22" customName="drupalcitestbot" nameFormat="CUSTOM" />
-      <sshConfig host="wwwdev1.drupalsystems.org" id="bf0e5be4-deef-4ef9-bb9e-1097b94a819f" keyPath="$USER_HOME$/.ssh/drupal" port="22" customName="pift-ping" nameFormat="CUSTOM" />
-      <sshConfig host="wwwdev1.drupalsystems.org" id="ed8a3f4e-31af-42ae-aad8-7a38838d762f" keyPath="$USER_HOME$/.ssh/drupal" port="22" customName="devassoc" nameFormat="CUSTOM" />
+      <sshConfig host="wwwstg1.drupalsystems.org" id="8ab2de3d-b5e0-480a-98a4-8996d2d5dd36" keyPath="$USER_HOME$/.ssh/drupal" port="22" customName="mixologic@wwwstg1.drupalsystems.org" nameFormat="CUSTOM" username="mixologic" />
     </configs>
   </component>
 </application>
