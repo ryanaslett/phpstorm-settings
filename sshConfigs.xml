@@ -17,6 +17,9 @@
       <sshConfig host="ec2-54-69-224-48.us-west-2.compute.amazonaws.com" id="ccdb43c5-6cc6-4ed1-be2c-7be403360b3a" keyPath="$USER_HOME$/.ssh/id_rsa-drupalci-incl-slave" port="22" customName="drupalcitestbot" nameFormat="CUSTOM" />
       <sshConfig host="wwwdev1.drupalsystems.org" id="cce5b2b8-da73-4ad9-a3ca-5defddd2d5b4" keyPath="$USER_HOME$/.ssh/drupal" port="22" customName="pift-ping" nameFormat="CUSTOM" />
       <sshConfig host="wwwdev1.drupalsystems.org" id="0bc87e77-dc53-4830-a7b8-54746735e4a5" keyPath="$USER_HOME$/.ssh/drupal" port="22" customName="devassoc" nameFormat="CUSTOM" />
+      <sshConfig host="ec2-54-69-224-48.us-west-2.compute.amazonaws.com" id="cddac642-4d62-4078-af72-4a10d934859e" keyPath="$USER_HOME$/.ssh/id_rsa-drupalci-incl-slave" port="22" customName="drupalcitestbot" nameFormat="CUSTOM" />
+      <sshConfig host="wwwdev1.drupalsystems.org" id="bf0e5be4-deef-4ef9-bb9e-1097b94a819f" keyPath="$USER_HOME$/.ssh/drupal" port="22" customName="pift-ping" nameFormat="CUSTOM" />
+      <sshConfig host="wwwdev1.drupalsystems.org" id="ed8a3f4e-31af-42ae-aad8-7a38838d762f" keyPath="$USER_HOME$/.ssh/drupal" port="22" customName="devassoc" nameFormat="CUSTOM" />
     </configs>
   </component>
 </application>
