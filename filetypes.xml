@@ -32,9 +32,9 @@
       <mapping pattern="pub" type="PLAIN_TEXT" />
       <mapping pattern="sysstat" type="PLAIN_TEXT" />
       <mapping pattern="docker-php-source" type="PLAIN_TEXT" />
-      <mapping pattern="docker-php-ext-pecl-install" type="PLAIN_TEXT" />
       <mapping pattern="OldDockerfile" type="PLAIN_TEXT" />
       <mapping pattern="Vagrantfile" type="PLAIN_TEXT" />
+      <mapping pattern="docker-php-ext-pecl-install" type="PLAIN_TEXT" />
       <mapping ext="5_docker-php-ext-configure" type="PLAIN_TEXT" />
       <mapping ext="4_docker-php-ext-install" type="PLAIN_TEXT" />
       <mapping ext="4_docker-php-ext-configure" type="PLAIN_TEXT" />
@@ -46,9 +46,9 @@
       <mapping ext="2_docker-php-ext-install" type="PLAIN_TEXT" />
       <mapping ext="5" type="PLAIN_TEXT" />
       <mapping ext="5_docker-php-ext-install" type="PLAIN_TEXT" />
-      <removed_mapping ext="bat" approved="true" type="PLAIN_TEXT" />
       <removed_mapping ext="cmd" approved="true" type="PLAIN_TEXT" />
       <removed_mapping ext="log" approved="true" type="PLAIN_TEXT" />
+      <removed_mapping ext="bat" approved="true" type="PLAIN_TEXT" />
       <mapping pattern="project_sql" type="SQL" />
       <mapping pattern="*.xml.dist" type="XML" />
       <mapping ext="dist" type="YAML" />
