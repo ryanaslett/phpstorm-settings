@@ -15,8 +15,8 @@
       <webServer id="6604661a-5c85-4119-b4ec-9fb0577aa37d" name="http://pgc3" url="http://localhost">
         <fileTransfer accessType="LOCAL" />
       </webServer>
-      <webServer id="a400b0da-fde9-48e0-9a48-5b7930d4da16" name="mixologic buildpipeline dev site" url="https://buildpipeline-drupal.dev.devdrupal.org/">
-        <fileTransfer accessType="SFTP" sshConfigId="cc7974a7-6331-4091-9684-8de53728d2c6" sshConfig="mixologic buildpipeline dev site">
+      <webServer id="a400b0da-fde9-48e0-9a48-5b7930d4da16" name="mixologic buildpipeline dev site" url="https://mixologic-drupal.dev.devdrupal.org/">
+        <fileTransfer accessType="SFTP" host="wwwdev1.drupalsystems.org" port="22" sshConfigId="0339ed30-2d13-4255-8622-32f83db3093c" sshConfig="mixologic buildpipeline dev site" keyPair="true">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
           </advancedOptions>
@@ -26,14 +26,14 @@
         <fileTransfer accessType="SFTP" sshConfigId="cddac642-4d62-4078-af72-4a10d934859e" sshConfig="drupalcitestbot" />
       </webServer>
       <webServer id="f0ca1bf0-6aa4-4cf9-8ac8-f60a0c1804c9" name="pift-ping" url="https://pift-ping-drupal.dev.devdrupal.org">
-        <fileTransfer accessType="SFTP" sshConfigId="bf0e5be4-deef-4ef9-bb9e-1097b94a819f" sshConfig="pift-ping">
+        <fileTransfer accessType="SFTP" host="wwwdev1.drupalsystems.org" port="22" sshConfigId="5f48f4f1-2d62-40ce-bb6f-a6b788c5989d" sshConfig="pift-ping" keyPair="true">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
           </advancedOptions>
         </fileTransfer>
       </webServer>
       <webServer id="9a47d775-fa15-493f-bb89-4d92e3a13824" name="devassoc" url="https://ryanassoc2-association.dev.devdrupal.org">
-        <fileTransfer accessType="SFTP" sshConfigId="ed8a3f4e-31af-42ae-aad8-7a38838d762f" sshConfig="devassoc">
+        <fileTransfer accessType="SFTP" host="wwwdev1.drupalsystems.org" port="22" sshConfigId="02637693-62f4-434d-be18-874608a00dea" sshConfig="devassoc" keyPair="true">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
           </advancedOptions>
