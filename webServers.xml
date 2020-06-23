@@ -16,7 +16,7 @@
         <fileTransfer accessType="LOCAL" />
       </webServer>
       <webServer id="a400b0da-fde9-48e0-9a48-5b7930d4da16" name="mixologic buildpipeline dev site" url="https://mixologic-drupal.dev.devdrupal.org/">
-        <fileTransfer accessType="SFTP" host="wwwdev1.drupalsystems.org" port="22" sshConfigId="0339ed30-2d13-4255-8622-32f83db3093c" sshConfig="mixologic buildpipeline dev site" keyPair="true">
+        <fileTransfer accessType="SFTP" host="wwwdev1.drupalsystems.org" port="22" sshConfigId="0339ed30-2d13-4255-8622-32f83db3093c" sshConfig="mixologic dev site" keyPair="true">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
           </advancedOptions>
