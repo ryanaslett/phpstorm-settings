@@ -16,9 +16,9 @@
     <keywords4 keywords="BEGIN;END;print" />
   </highlighting>
   <extensionMap>
-    <mapping pattern="awstats_reformatter" />
     <mapping pattern="scratch_12.awk" />
-    <mapping ext="gawk" />
+    <mapping pattern="awstats_reformatter" />
     <mapping ext="awk" />
+    <mapping ext="gawk" />
   </extensionMap>
 </filetype>
