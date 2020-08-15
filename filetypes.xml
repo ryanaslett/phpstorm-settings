@@ -3,6 +3,7 @@
     <ignoreFiles list="*.hprof;*.orig;*.pyc;*.pyo;*.rbc;*~;.DS_Store;.git;.hg;.svn;CVS;RCS;SCCS;__pycache__;_svn;rcs;" />
     <extensionMap>
       <mapping ext="old" type="Dockerfile" />
+      <mapping pattern="dumpfile2" type="JSON" />
       <mapping pattern="dumpfile" type="JSON" />
       <mapping ext="lock" type="JSON" />
       <mapping ext="sqlite" type="Native" />
