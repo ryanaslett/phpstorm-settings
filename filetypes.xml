@@ -53,6 +53,7 @@
       <removed_mapping ext="cmd" approved="true" type="PLAIN_TEXT" />
       <mapping pattern="project_sql" type="SQL" />
       <mapping pattern="*.xml.dist" type="XML" />
+      <mapping ext="neon" type="YAML" />
       <mapping ext="5_php7" type="YAML" />
       <mapping ext="dist" type="YAML" />
       <mapping ext="tmpl" type="YAML" />
