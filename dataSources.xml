@@ -59,11 +59,11 @@
         <property name="autoReconnect" value="true" />
       </driver-properties>
     </data-source>
-    <data-source source="LOCAL" name="buildpipeline on devwww" uuid="4d275473-5437-45d4-8134-7c1c1bd9e122">
+    <data-source source="LOCAL" name="mixologic_drupal on devwww" uuid="4d275473-5437-45d4-8134-7c1c1bd9e122">
       <driver-ref>mysql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://dbdev1.drupal.bak:3306/buildpipeline_dr</jdbc-url>
+      <jdbc-url>jdbc:mysql://dbdev1.drupal.bak:3306/mixologic_drupal</jdbc-url>
     </data-source>
     <data-source source="LOCAL" name="pift on devwww [3]" uuid="38f24373-d4f9-40e3-be12-224c342521b3">
       <driver-ref>mysql</driver-ref>
