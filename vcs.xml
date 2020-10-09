@@ -562,6 +562,10 @@
           <option name="url" value="https://git.drupalcode.org/project/bugherd.git" />
           <option name="userName" value="" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="https://git.drupalcode.org/project/civicrm_entity.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
       </list>
     </option>
     <option name="cloneParentDir" value="$USER_HOME$/Documents/Work/Current/DrupalAssociation/contrib_modules" />
@@ -578,6 +582,5 @@
   </component>
   <component name="VcsApplicationSettings">
     <option name="PATCH_STORAGE_LOCATION" value="$USER_HOME$/Documents/Work/Current/DA/Devops/puppet" />
-    <option name="SHOW_LST_WORD_DIFFERENCES" value="false" />
   </component>
 </application>
