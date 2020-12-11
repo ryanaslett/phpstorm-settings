@@ -1,6 +1,6 @@
 <application>
-  <component name="FileTypeManager" version="17">
-    <ignoreFiles list="*.hprof;*.orig;*.pyc;*.pyo;*.rbc;*~;.DS_Store;.git;.hg;.svn;CVS;RCS;SCCS;__pycache__;_svn;rcs;" />
+  <component name="FileTypeManager" version="18">
+    <ignoreFiles list="*.orig;*.pyc;*.pyo;*.rbc;*~;.DS_Store;.git;.hg;.svn;CVS;RCS;SCCS;__pycache__;_svn;rcs;" />
     <extensionMap>
       <mapping ext="old" type="Dockerfile" />
       <mapping pattern="dumpfile2" type="JSON" />
@@ -23,19 +23,19 @@
       <mapping pattern="README" type="PLAIN_TEXT" />
       <mapping pattern="OldDockerfile" type="PLAIN_TEXT" />
       <mapping pattern="file" type="PLAIN_TEXT" />
-      <mapping pattern="docker-php-source" type="PLAIN_TEXT" />
       <mapping pattern="PROVISIONED" type="PLAIN_TEXT" />
-      <mapping pattern="fastlyusagestats2" type="PLAIN_TEXT" />
+      <mapping pattern="docker-php-source" type="PLAIN_TEXT" />
       <mapping pattern="docker-php-source-head" type="PLAIN_TEXT" />
+      <mapping pattern="fastlyusagestats2" type="PLAIN_TEXT" />
       <mapping pattern="twisted-drupalGitSSHDaemon" type="PLAIN_TEXT" />
       <mapping pattern="foo" type="PLAIN_TEXT" />
-      <mapping pattern="aws_deploy" type="PLAIN_TEXT" />
       <mapping pattern="docker-php-ext-pecl-install" type="PLAIN_TEXT" />
+      <mapping pattern="aws_deploy" type="PLAIN_TEXT" />
       <mapping pattern="docker-php-entrypoint" type="PLAIN_TEXT" />
       <mapping pattern="apache2-foreground" type="PLAIN_TEXT" />
       <mapping pattern="todos" type="PLAIN_TEXT" />
-      <mapping pattern="docker-php-entrypoint-phantomjs" type="PLAIN_TEXT" />
       <mapping pattern="Vagrantfile" type="PLAIN_TEXT" />
+      <mapping pattern="docker-php-entrypoint-phantomjs" type="PLAIN_TEXT" />
       <mapping pattern="sysstat" type="PLAIN_TEXT" />
       <mapping ext="m4" type="PLAIN_TEXT" />
       <mapping ext="te" type="PLAIN_TEXT" />
@@ -48,9 +48,6 @@
       <mapping ext="4_docker-php-ext-enable" type="PLAIN_TEXT" />
       <mapping ext="5" type="PLAIN_TEXT" />
       <mapping ext="5_docker-php-ext-configure" type="PLAIN_TEXT" />
-      <removed_mapping ext="bat" approved="true" type="PLAIN_TEXT" />
-      <removed_mapping ext="log" approved="true" type="PLAIN_TEXT" />
-      <removed_mapping ext="cmd" approved="true" type="PLAIN_TEXT" />
       <mapping pattern="project_sql" type="SQL" />
       <mapping pattern="*.xml.dist" type="XML" />
       <mapping ext="neon" type="YAML" />
@@ -58,11 +55,11 @@
       <mapping ext="dist" type="YAML" />
       <mapping ext="tmpl" type="YAML" />
       <removed_mapping ext="bat" approved="true" type="PLAIN_TEXT" />
-      <removed_mapping ext="log" approved="true" type="PLAIN_TEXT" />
-      <removed_mapping ext="dockerfile" approved="true" type="textmate" />
-      <removed_mapping ext="makefile" approved="true" type="textmate" />
       <removed_mapping ext="cmd" approved="true" type="PLAIN_TEXT" />
+      <removed_mapping ext="dockerfile" approved="true" type="textmate" />
       <removed_mapping ext="eyaml" approved="true" type="PLAIN_TEXT" />
+      <removed_mapping ext="log" approved="true" type="PLAIN_TEXT" />
+      <removed_mapping ext="makefile" approved="true" type="textmate" />
       <removed_mapping ext="snakefile" approved="true" type="textmate" />
       <mapping ext="awk" type="Awk/Gawk" />
       <mapping ext="gawk" type="Awk/Gawk" />
