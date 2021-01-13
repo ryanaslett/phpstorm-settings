@@ -574,9 +574,13 @@
           <option name="url" value="https://github.com/php/php-src.git" />
           <option name="userName" value="" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="git@bitbucket.org:drupalorg-infrastructure/drupalci_k8s.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
       </list>
     </option>
-    <option name="cloneParentDir" value="$USER_HOME$/Documents/Work/Current/DrupalAssociation/contrib_modules" />
+    <option name="cloneParentDir" value="$USER_HOME$/Documents/Work/Current/DrupalAssociation/infrastructure" />
   </component>
   <component name="Vcs.Log.App.Settings">
     <option name="COLUMN_ORDER">
