@@ -1,0 +1,10 @@
+<application>
+  <component name="com.intellij.ide.ui.customization.CustomActionsSchema">
+    <group value="Vcs.VcsClone" is_action="true" action_type="1" position="2">
+      <path value="root" />
+      <path value="Main Menu" />
+      <path value="Git" />
+      <option name="myInitialPosition" value="-1" />
+    </group>
+  </component>
+</application>
