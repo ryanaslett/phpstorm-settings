@@ -586,6 +586,10 @@
           <option name="url" value="https://git.drupalcode.org/project/general_example.git" />
           <option name="userName" value="" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="git@git.drupal.org:project/general_example.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
       </list>
     </option>
     <option name="cloneParentDir" value="$USER_HOME$/Documents/Work/Current/DrupalAssociation/js_initiaitve" />
