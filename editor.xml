@@ -5,6 +5,11 @@
   <component name="DaemonCodeAnalyzerSettings">
     <option name="SHOW_METHOD_SEPARATORS" value="true" />
   </component>
+  <component name="DefaultFont">
+    <option name="FONT_SIZE" value="16" />
+    <option name="FONT_FAMILY" value="Source Code Pro" />
+    <option name="LINE_SPACING" value="1.4" />
+  </component>
   <component name="EditorSettings">
     <option name="USE_SOFT_WRAPS" value="MAIN_EDITOR:CONSOLE" />
     <option name="SOFT_WRAP_FILE_MASKS" value="*" />
@@ -28,11 +33,11 @@
     <pattern case-sensitive="true" pattern="OPUT" />
     <filter name="xxx" />
     <filter name="Plans">
-      <pattern index="4" />
+      <pattern index="6" />
       <pattern index="5" />
       <pattern index="3" />
       <pattern index="7" />
-      <pattern index="6" />
+      <pattern index="4" />
     </filter>
     <filter name="Normasl" />
     <filter name="enviros">
