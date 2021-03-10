@@ -8,7 +8,7 @@
   <component name="DefaultFont">
     <option name="FONT_SIZE" value="16" />
     <option name="FONT_FAMILY" value="Source Code Pro" />
-    <option name="LINE_SPACING" value="1.4" />
+    <option name="LINE_SPACING" value="1.1" />
   </component>
   <component name="EditorSettings">
     <option name="USE_SOFT_WRAPS" value="MAIN_EDITOR:CONSOLE" />
@@ -33,10 +33,10 @@
     <pattern case-sensitive="true" pattern="OPUT" />
     <filter name="xxx" />
     <filter name="Plans">
-      <pattern index="6" />
+      <pattern index="7" />
       <pattern index="5" />
       <pattern index="3" />
-      <pattern index="7" />
+      <pattern index="6" />
       <pattern index="4" />
     </filter>
     <filter name="Normasl" />
