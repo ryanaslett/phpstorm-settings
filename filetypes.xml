@@ -2,6 +2,7 @@
   <component name="FileTypeManager" version="18">
     <ignoreFiles list="*.orig;*.pyc;*.pyo;*.rbc;*~;.DS_Store;.git;.hg;.svn;CVS;RCS;SCCS;__pycache__;_svn;rcs;" />
     <extensionMap>
+      <mapping pattern="pg_trgm.yml" type="AUTO_DETECTED" />
       <mapping ext="old" type="Dockerfile" />
       <mapping pattern="dumpfile2" type="JSON" />
       <mapping pattern="dumpfile" type="JSON" />
