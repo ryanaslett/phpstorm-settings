@@ -16,6 +16,9 @@
         <option name="customName" value="mixologic@wwwstg1.drupalsystems.org" />
       </sshConfig>
       <sshConfig host="shell.drupalsystems.org" id="cca233b7-92c3-4cdd-ad25-c6ceb027d163" keyPath="$USER_HOME$/.ssh/drupal" port="22" nameFormat="DESCRIPTIVE" username="mixologic" />
+      <sshConfig connectionConfig="{&quot;serverAliveInterval&quot;:300}" host="ec2-54-69-224-48.us-west-2.compute.amazonaws.com" id="fe59829a-a488-41cd-9585-1ec000d1f22d" keyPath="$USER_HOME$/.ssh/id_rsa-drupalci-incl-slave" port="22" customName="drupalcitestbot" nameFormat="CUSTOM" useOpenSSHConfig="true">
+        <option name="customName" value="drupalcitestbot" />
+      </sshConfig>
     </configs>
   </component>
 </application>
