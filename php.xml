@@ -1,32 +1,33 @@
 <application>
   <component name="MessDetector">
     <phpmd_settings>
-      <MessDetectorConfiguration max_messages_per_file="100" tool_path="$USER_HOME$/.composer/vendor/phpmd/phpmd/src/bin/phpmd" timeout="30000" />
+      <MessDetectorConfiguration tool_path="$USER_HOME$/.composer/vendor/phpmd/phpmd/src/bin/phpmd" timeout="30000" />
     </phpmd_settings>
   </component>
   <component name="PhpAutoImport" auto_import_file_scope="true" />
   <component name="PhpCodeSniffer">
     <phpcs_settings>
-      <PhpCSConfiguration max_messages_per_file="100" standards="Drupal;DrupalPractice;MySource;PEAR;PHPCS;PSR1;PSR2;Squiz;Zend" tool_path="$USER_HOME$/.composer/vendor/bin/phpcs" timeout="30000" />
+      <PhpCSConfiguration standards="Drupal;DrupalPractice;MySource;PEAR;PHPCS;PSR1;PSR2;Squiz;Zend" tool_path="$USER_HOME$/.composer/vendor/bin/phpcs" timeout="30000" />
     </phpcs_settings>
   </component>
   <component name="PhpInterpreters">
     <interpreters>
       <interpreter id="ef5a877c-b7ac-4477-90f1-2d8ab36e8379" name="PHP" home="$USER_HOME$/.phpbrew/php/php-7.3.12/bin/php" debugger_id="php.debugger.XDebug" />
       <interpreter id="0571f879-0d81-47e3-a748-4da56b4b9e55" name="PHP 7.4.7" home="$USER_HOME$/.phpbrew/php/php-7.4.7/bin/php" debugger_id="php.debugger.XDebug" />
+      <interpreter id="58ca41cb-5954-481d-9cc1-907c3fc6f202" name="PHP 8.0.2" home="$USER_HOME$/.phpbrew/php/php-8.0.2/bin/php" debugger_id="php.debugger.XDebug" />
     </interpreters>
   </component>
   <component name="PhpInterpretersPhpInfoCache">
     <phpInfoCache>
       <interpreter name="PHP">
         <phpinfo binary_type="PHP" php_cgi="$USER_HOME$/.phpbrew/php/php-7.3.12/bin/php-cgi" php_cli="$USER_HOME$/.phpbrew/php/php-7.3.12/bin/php" path_separator=":" version="7.3.12">
-          <additional_php_ini>$USER_HOME$/.phpbrew/php/php-7.3.12/var/db/gd.ini, /Users/ryan/.phpbrew/php/php-7.3.12/var/db/iconv.ini, /Users/ryan/.phpbrew/php/php-7.3.12/var/db/pdo.ini, /Users/ryan/.phpbrew/php/php-7.3.12/var/db/xdebug.ini</additional_php_ini>
+          <additional_php_ini>$USER_HOME$/.phpbrew/php/php-7.3.12/var/db/apcu.ini, /Users/ryan/.phpbrew/php/php-7.3.12/var/db/gd.ini, /Users/ryan/.phpbrew/php/php-7.3.12/var/db/iconv.ini, /Users/ryan/.phpbrew/php/php-7.3.12/var/db/pdo.ini, /Users/ryan/.phpbrew/php/php-7.3.12/var/db/xdebug.ini</additional_php_ini>
           <configuration_file>$USER_HOME$/.phpbrew/php/php-7.3.12/etc/php.ini</configuration_file>
           <configuration_options>
             <configuration_option name="include_path" value=".:/Users/ryan/.phpbrew/php/php-7.3.12/lib/php/pear" />
           </configuration_options>
           <debuggers>
-            <debugger_info debugger="xdebug" debugger_version="2.9.4">
+            <debugger_info debugger="xdebug" debugger_version="2.9.6">
               <debug_extensions />
             </debugger_info>
           </debuggers>
@@ -37,6 +38,7 @@
             <extension name="Reflection" />
             <extension name="SPL" />
             <extension name="SimpleXML" />
+            <extension name="apcu" />
             <extension name="bcmath" />
             <extension name="bz2" />
             <extension name="calendar" />
@@ -75,9 +77,64 @@
           </loaded_extensions>
         </phpinfo>
       </interpreter>
+      <interpreter name="PHP 8.0.2">
+        <phpinfo binary_type="PHP" php_cgi="$USER_HOME$/.phpbrew/php/php-8.0.2/bin/php-cgi" php_cli="$USER_HOME$/.phpbrew/php/php-8.0.2/bin/php" path_separator=":" version="8.0.2">
+          <additional_php_ini>$USER_HOME$/.phpbrew/php/php-8.0.2/var/db/xdebug.ini</additional_php_ini>
+          <configuration_file>$USER_HOME$/.phpbrew/php/php-8.0.2/etc/php.ini</configuration_file>
+          <configuration_options>
+            <configuration_option name="include_path" value=".:/Users/ryan/.phpbrew/php/php-8.0.2/lib/php/pear" />
+          </configuration_options>
+          <debuggers>
+            <debugger_info debugger="xdebug" debugger_version="3.1.2">
+              <debug_extensions />
+            </debugger_info>
+          </debuggers>
+          <loaded_extensions>
+            <extension name="Core" />
+            <extension name="PDO" />
+            <extension name="Phar" />
+            <extension name="Reflection" />
+            <extension name="SPL" />
+            <extension name="SimpleXML" />
+            <extension name="bcmath" />
+            <extension name="bz2" />
+            <extension name="calendar" />
+            <extension name="ctype" />
+            <extension name="curl" />
+            <extension name="date" />
+            <extension name="dom" />
+            <extension name="fileinfo" />
+            <extension name="filter" />
+            <extension name="hash" />
+            <extension name="json" />
+            <extension name="libxml" />
+            <extension name="mbstring" />
+            <extension name="openssl" />
+            <extension name="pcntl" />
+            <extension name="pcre" />
+            <extension name="posix" />
+            <extension name="readline" />
+            <extension name="session" />
+            <extension name="shmop" />
+            <extension name="sockets" />
+            <extension name="standard" />
+            <extension name="sysvmsg" />
+            <extension name="sysvsem" />
+            <extension name="sysvshm" />
+            <extension name="tokenizer" />
+            <extension name="xdebug" />
+            <extension name="xml" />
+            <extension name="xmlreader" />
+            <extension name="xmlwriter" />
+            <extension name="xsl" />
+            <extension name="zip" />
+            <extension name="zlib" />
+          </loaded_extensions>
+        </phpinfo>
+      </interpreter>
       <interpreter name="PHP 7.4.7">
         <phpinfo binary_type="PHP" php_cgi="$USER_HOME$/.phpbrew/php/php-7.4.7/bin/php-cgi" php_cli="$USER_HOME$/.phpbrew/php/php-7.4.7/bin/php" path_separator=":" version="7.4.7">
-          <additional_php_ini>$USER_HOME$/.phpbrew/php/php-7.4.7/var/db/apcu.ini, /Users/ryan/.phpbrew/php/php-7.4.7/var/db/xdebug.ini</additional_php_ini>
+          <additional_php_ini>$USER_HOME$/.phpbrew/php/php-7.4.7/var/db/apcu.ini, /Users/ryan/.phpbrew/php/php-7.4.7/var/db/gd.ini, /Users/ryan/.phpbrew/php/php-7.4.7/var/db/iconv.ini, /Users/ryan/.phpbrew/php/php-7.4.7/var/db/intl.ini, /Users/ryan/.phpbrew/php/php-7.4.7/var/db/opcache.ini, /Users/ryan/.phpbrew/php/php-7.4.7/var/db/xdebug.ini</additional_php_ini>
           <configuration_file>$USER_HOME$/.phpbrew/php/php-7.4.7/etc/php.ini</configuration_file>
           <configuration_options>
             <configuration_option name="include_path" value=".:/Users/ryan/.phpbrew/php/php-7.4.7/lib/php/pear" />
@@ -94,8 +151,10 @@
             <extension name="Reflection" />
             <extension name="SPL" />
             <extension name="SimpleXML" />
+            <extension name="Zend OPcache" />
             <extension name="apcu" />
             <extension name="bcmath" />
+            <extension name="blackfire" />
             <extension name="bz2" />
             <extension name="calendar" />
             <extension name="ctype" />
@@ -104,7 +163,9 @@
             <extension name="dom" />
             <extension name="fileinfo" />
             <extension name="filter" />
+            <extension name="gd" />
             <extension name="hash" />
+            <extension name="iconv" />
             <extension name="json" />
             <extension name="libxml" />
             <extension name="mbstring" />
