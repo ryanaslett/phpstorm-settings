@@ -606,9 +606,13 @@
           <option name="url" value="https://github.com/xjm/security_testing.git" />
           <option name="userName" value="" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="git@gitlab.com:drupal-infrastructure/security-poc/drupal-core/drupal-core-testing-fork.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
       </list>
     </option>
-    <option name="cloneParentDir" value="$USER_HOME$/Documents/Work/Current/DrupalAssociation" />
+    <option name="cloneParentDir" value="$USER_HOME$/Documents/Work/Current/DrupalAssociation/drupal_core" />
   </component>
   <component name="Vcs.Log.App.Settings">
     <option name="COLUMN_ID_ORDER">
