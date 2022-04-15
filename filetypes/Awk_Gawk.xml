@@ -1,4 +1,4 @@
-<filetype binary="false" description="Awk and Gawk Script types" name="Awk/Gawk">
+<filetype binary="false" default_extension="awk" description="Awk and Gawk Script types" name="Awk/Gawk">
   <highlighting>
     <options>
       <option name="LINE_COMMENT" value="#" />

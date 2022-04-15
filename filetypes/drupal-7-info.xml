@@ -1,4 +1,4 @@
-<filetype binary="false" description="Drupal 7 - Info" name="drupal-7-info">
+<filetype binary="false" default_extension="info" description="Drupal 7 - Info" name="drupal-7-info">
   <highlighting>
     <options>
       <option name="LINE_COMMENT" value=";" />
